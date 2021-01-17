@@ -1,0 +1,25 @@
+version: '3.7'
+
+services:
+  wordpress:
+    container_name: WP__poongwon
+    image: wordpress:php7.4
+    restart: always
+    ports:
+      - 40005:80
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: root
+      WORDPRESS_DB_PASSWORD: 1
+      WORDPRESS_DB_NAME: poongwon
+    volumes:
+      - ./.wordpress:/var/www/html
+      - ./Theme:/var/www/html/wp-content/themes/base
+      - ./backup:/var/www/html/wp-content/ai1wm-backups
+    external_links:
+      - DB__wordpress:mariadb
+  
+networks:
+  default:
+    external:
+      name: db_net
