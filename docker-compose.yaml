@@ -14,6 +14,7 @@ services:
       WORDPRESS_DB_NAME: poongwon
     volumes:
       - ./.wordpress:/var/www/html
+      - ./zeplin:/var/www/html/wp-content/uploads/zeplin
       - ./Theme:/var/www/html/wp-content/themes/base
       - ./backup:/var/www/html/wp-content/ai1wm-backups
     external_links:

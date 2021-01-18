@@ -1,0 +1,83 @@
+nav.GNB {
+  position: relative;
+  &:hover {
+    background-color: $dark-blue-grey;
+  }
+  .logo {
+    position: absolute;
+    top: 23px;
+    left: 54px;
+    width: 188px;
+    height: 30px;
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .menu-gnb-container {
+    display: flex;
+    justify-content: center;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 77px;
+      height: 1px;
+      width: 100%;
+      background-color: rgba($white, 0.1);
+      z-index: 200;
+    }
+  }
+  .menu {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    &:hover .sub-menu {
+      opacity: 1;
+      display: block;
+    }
+    > .menu-item {
+      position: relative;
+
+      &:hover .sub-menu {
+        background-color: $dark;
+        a {
+          opacity: 1;
+        }
+      }
+    }
+    > .menu-item > a {
+      display: block;
+      padding: 27px 55px;
+      text-decoration: none;
+      position: relative;
+      z-index: 2;
+      @include Text-Style-22;
+    }
+    .sub-menu {
+      display: none;
+      opacity: 0;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      padding-top: calc(77px + 35px);
+      padding-bottom: 45px;
+      transition: opacity 0.4s, background-color 0.1s ease-in-out;
+      margin-top: -77px;
+      a {
+        display: block;
+        padding: 0 28px;
+        text-decoration: none;
+        opacity: 0.6;
+        @include Text-Style-23;
+        transition: opacity 0.1s ease-in-out;
+        &:hover {
+          color: $turquoise;
+        }
+      }
+    }
+  }
+}
