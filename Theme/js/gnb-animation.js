@@ -10,9 +10,9 @@
   $(window).scroll(function () {
     var scroll = getCurrentScroll();
     if (scroll >= shrinkHeader) {
-      $("nav.GNB.mobile").addClass("shrink");
+      $("nav.GNB").addClass("shrink");
     } else {
-      $("nav.GNB.mobile").removeClass("shrink");
+      $("nav.GNB").removeClass("shrink");
     }
   });
   function getCurrentScroll() {

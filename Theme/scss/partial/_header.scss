@@ -1,0 +1,72 @@
+header.default {
+  padding-top: 77px;
+  position: relative;
+  color: $white;
+  .coverBg {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    img {
+      width: 100%;
+    }
+  }
+  .container {
+    z-index: 200;
+    position: relative;
+    padding-top: 108px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .parent {
+      @include Text-Style-24;
+      margin-bottom: 9px;
+    }
+    .downArrow {
+      width: 18px;
+      margin-bottom: 8px;
+      svg {
+        width: 100%;
+        path {
+          fill: $white;
+        }
+      }
+    }
+    button {
+      all: unset;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      &:hover circle {
+        opacity: 1;
+      }
+      p {
+        margin-right: 13px;
+        @include Text-Style-25;
+        margin-bottom: 0;
+      }
+      circle {
+        opacity: 0.6;
+        fill: $off-white;
+        transition: opacity 0.3s;
+      }
+    }
+    .selectorWrap {
+      position: relative;
+    }
+    .dropdown-menu {
+      margin-top: 18px;
+      padding: 20px 0;
+      background-color: $white;
+      width: 100%;
+      ul {
+        list-style: none;
+        margin: 0;
+        a {
+          color: $black;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

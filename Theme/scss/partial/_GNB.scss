@@ -19,10 +19,20 @@ nav.GNB {
   top: 0;
   width: 100%;
   z-index: 9999;
+  transition: background-color 0.3s, transform 200ms linear;
 
+  &.shrink {
+    background-color: $dark-blue-grey;
+    box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.1);
+    .menu-gnb-container::after {
+      opacity: 0;
+    }
+    &:hover .menu-gnb-container::after {
+      opacity: 1;
+    }
+  }
   &.headroom {
     will-change: transform;
-    transition: transform 200ms linear;
     &--pinned {
       transform: translateY(0%);
     }
