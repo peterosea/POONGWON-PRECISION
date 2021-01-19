@@ -1,5 +1,36 @@
+body.admin-bar nav.GNB {
+  top: 32px;
+  &.mobile {
+    top: 46px;
+    @media screen and (min-width: 783px) {
+      top: 32px;
+    }
+    &.shrink {
+      top: 0;
+      @media screen and (min-width: 600px) {
+        top: inherit;
+      }
+    }
+  }
+}
+
 nav.GNB {
-  position: relative;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+
+  &.headroom {
+    will-change: transform;
+    transition: transform 200ms linear;
+    &--pinned {
+      transform: translateY(0%);
+    }
+    &--unpinned {
+      transform: translateY(-100%);
+    }
+  }
+
   &:hover {
     background-color: $dark-blue-grey;
   }

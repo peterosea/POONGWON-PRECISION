@@ -1,0 +1,292 @@
+main.home {
+  .sectionTitle {
+    @include Text-Style-7;
+    margin-bottom: 18px;
+  }
+  .excerpt {
+    @include Text-Style-8;
+  }
+  .section1 {
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    .container {
+      z-index: 200;
+    }
+    h1 {
+      @include Text-Style;
+    }
+    p {
+      @include Text-Style-2;
+    }
+    .bgImg {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      object-fit: cover;
+    }
+  }
+  .section2 {
+    position: relative;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin-top: calc(-100px - 3vw);
+    @media screen and (min-width: 1900px) {
+      margin-bottom: 200px;
+    }
+    .container {
+      z-index: 200;
+    }
+    .bgImg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      @include respondTo("hg") {
+        height: auto;
+      }
+    }
+    .valueWrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        margin-bottom: 42px;
+      }
+      .textPoint {
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 42px;
+        .point {
+          @include Text-Style-4;
+        }
+        .unit {
+          @include Text-Style-5;
+        }
+      }
+      p {
+        @include Text-Style-6;
+      }
+    }
+  }
+  .section3 {
+    padding-top: 90px;
+    padding-bottom: 232px;
+    position: relative;
+    z-index: 2;
+    background-color: $white;
+    .excerpt {
+      margin-bottom: 76px;
+    }
+    .coverCard {
+      position: relative;
+      overflow: hidden;
+      .imgWrap {
+        padding-top: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          object-fit: cover;
+        }
+        .title {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          opacity: 0.7;
+          @include Text-Style-11;
+        }
+      }
+      .content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0.9;
+        background-color: $turquoise;
+        opacity: 0;
+        bottom: -100%;
+        transition: bottom 0.4s ease-in-out, opacity 0.4s ease-in-out;
+        .innerWrap {
+          max-width: 235px;
+        }
+        .title {
+          @include Text-Style-9;
+          margin-bottom: 20px;
+          text-align: center;
+        }
+        p {
+          @include Text-Style-10;
+        }
+      }
+      &:hover .content {
+        opacity: 1;
+        bottom: 0;
+      }
+    }
+  }
+  .section4 {
+    overflow: hidden;
+    .fullBg {
+      padding-top: 50%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      .container {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding-top: 70px;
+        padding-bottom: 70px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        z-index: 300;
+        h1 {
+          @include Text-Style-12;
+          margin-bottom: 31px;
+        }
+        p {
+          @include Text-Style-13;
+        }
+      }
+      &:nth-child(2) .container {
+        justify-content: flex-start;
+        padding-bottom: 190px;
+      }
+      &:nth-child(1)::after,
+      &:nth-child(2)::after {
+        content: "";
+        display: block;
+        width: 1800px;
+        max-width: 60%;
+        max-height: 120%;
+        height: 1800px;
+        position: absolute;
+        z-index: 200;
+        transform-origin: center;
+      }
+      &:nth-child(1)::after {
+        background-color: $turquoise;
+        right: 0;
+        bottom: 0;
+        transform: translate(50%, calc(50% - 100px)) rotate(45deg);
+      }
+      &:nth-child(2)::after {
+        background-color: $dark-cyan;
+        left: 0;
+        bottom: 0;
+        max-width: 80%;
+        max-height: 160%;
+        transform: translate(-50%, 50%) rotate(45deg);
+      }
+    }
+  }
+  .section5 {
+    background-color: $dark-indigo;
+    padding-top: 250px;
+    padding-bottom: 240px;
+    color: $white;
+    .sectionTitle {
+      color: $white;
+      margin-bottom: 26px;
+    }
+    .excerpt {
+      color: $white;
+      margin-bottom: 36px;
+    }
+    .btnWrap {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 50px;
+    }
+    .btn.circle {
+      border-radius: 999px;
+      border: solid 2px $white;
+      opacity: 0.3;
+      fill: $white;
+      width: 57px;
+      height: 57px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      svg {
+        width: 100%;
+      }
+    }
+    .profileWrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 60px;
+      padding-bottom: 60px;
+      .imgWrap {
+        background-color: $white;
+        border-radius: 999px;
+        width: 190px;
+        height: 190px;
+        margin-bottom: 100px;
+        overflow: hidden;
+        img {
+          width: 100%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+      .nameWrap {
+        display: flex;
+        position: relative;
+        margin-bottom: 14px;
+        span.name {
+          display: flex;
+          align-items: center;
+          @include Text-Style-19;
+          &:after {
+            content: "";
+            display: block;
+            width: 1px;
+            height: 18px;
+            background-color: $white;
+            opacity: 0.5;
+            margin: 0 21px;
+            top: 50%;
+          }
+        }
+        span.department {
+          @include Text-Style-18;
+        }
+      }
+      p {
+        opacity: 0.4;
+        @include Text-Style-20;
+      }
+    }
+  }
+}
