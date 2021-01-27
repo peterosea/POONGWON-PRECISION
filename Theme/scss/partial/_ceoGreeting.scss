@@ -1,0 +1,33 @@
+main.ceoGreeting {
+  .section1 {
+    p {
+      @include Text-Style-27;
+    }
+  }
+  .section2 {
+    text-align: center;
+    .ceo {
+      margin: auto;
+      border-radius: 999px;
+      transform: translateY(50%);
+    }
+    .halfBg {
+      padding-top: 180px;
+      padding-bottom: 93px;
+      background-color: $very-light-pink-two;
+    }
+    .name {
+      color: $black-two;
+      @include Text-Style-30;
+    }
+    .position {
+      color: $black-two;
+      @include Text-Style-31;
+      margin-bottom: 34.7px;
+    }
+    p {
+      color: $black;
+      @include Text-Style-29;
+    }
+  }
+}
