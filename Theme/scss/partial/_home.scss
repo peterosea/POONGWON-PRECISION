@@ -246,18 +246,18 @@ main.home {
       padding-top: 60px;
       padding-bottom: 60px;
       .imgWrap {
-        background-color: $white;
         border-radius: 999px;
         width: 190px;
         height: 190px;
         margin-bottom: 100px;
         overflow: hidden;
+        position: relative;
         img {
           width: 100%;
           position: absolute;
           top: 50%;
           left: 50%;
-          transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%) scale(1.1);
         }
       }
       .nameWrap {
