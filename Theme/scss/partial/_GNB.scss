@@ -95,6 +95,7 @@ nav.GNB {
       position: relative;
       z-index: 2;
       @include Text-Style-22;
+      color: $white;
     }
     .sub-menu {
       display: none;
@@ -115,6 +116,7 @@ nav.GNB {
         opacity: 0.6;
         @include Text-Style-23;
         transition: opacity 0.1s ease-in-out;
+        color: $white;
         &:hover {
           color: $turquoise;
         }
