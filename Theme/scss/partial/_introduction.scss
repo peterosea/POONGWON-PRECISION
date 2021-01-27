@@ -1,4 +1,7 @@
 main.introduction {
+  .pageTitle {
+    margin-bottom: 0;
+  }
   p {
     @include Text-Style-27;
   }

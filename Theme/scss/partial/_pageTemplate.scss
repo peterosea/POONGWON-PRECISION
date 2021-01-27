@@ -2,5 +2,6 @@ main.pageTemplate {
   .pageTitle {
     @include Text-Style-26;
     padding-top: 110px;
+    margin-bottom: 100px;
   }
 }

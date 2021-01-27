@@ -1,10 +1,12 @@
 main.home {
   .sectionTitle {
     @include Text-Style-7;
+    color: $black;
     margin-bottom: 18px;
   }
   .excerpt {
     @include Text-Style-8;
+    color: $greyish-brown;
   }
   .section1 {
     height: 1000px;
@@ -21,9 +23,11 @@ main.home {
     }
     h1 {
       @include Text-Style;
+      color: $white;
     }
     p {
       @include Text-Style-2;
+      color: $white;
     }
     .bgImg {
       position: absolute;
@@ -70,13 +74,16 @@ main.home {
         margin-bottom: 42px;
         .point {
           @include Text-Style-4;
+          color: $white;
         }
         .unit {
           @include Text-Style-5;
+          color: $white;
         }
       }
       p {
         @include Text-Style-6;
+        color: $white;
       }
     }
   }
@@ -112,6 +119,7 @@ main.home {
           transform: translate(-50%, -50%);
           opacity: 0.7;
           @include Text-Style-11;
+          color: $white;
         }
       }
       .content {
@@ -133,11 +141,13 @@ main.home {
         }
         .title {
           @include Text-Style-9;
+          color: $white;
           margin-bottom: 20px;
           text-align: center;
         }
         p {
           @include Text-Style-10;
+          color: $white;
         }
       }
       &:hover .content {
@@ -169,10 +179,12 @@ main.home {
         z-index: 300;
         h1 {
           @include Text-Style-12;
+          color: $pale-grey-two;
           margin-bottom: 31px;
         }
         p {
           @include Text-Style-13;
+          color: $white;
         }
       }
       &:nth-child(2) .container {
