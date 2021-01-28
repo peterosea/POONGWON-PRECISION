@@ -3,31 +3,36 @@ main.ceoGreeting {
     p {
       @include Text-Style-27;
     }
+    margin-bottom: 160px;
   }
   .section2 {
     text-align: center;
+    background-color: #0b0b0b;
+    height: 690px;
+    position: relative;
     .ceo {
-      margin: auto;
-      border-radius: 999px;
-      transform: translateY(50%);
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
     }
-    .halfBg {
-      padding-top: 180px;
-      padding-bottom: 93px;
-      background-color: $very-light-pink-two;
+    .container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: $white;
     }
     .name {
-      color: $black-two;
-      @include Text-Style-30;
+      @include Text-Style-36;
     }
     .position {
-      color: $black-two;
-      @include Text-Style-31;
+      @include Text-Style-37;
       margin-bottom: 34.7px;
     }
     p {
-      color: $black;
-      @include Text-Style-29;
+      @include Text-Style-38;
+      margin-bottom: 40px;
+      max-width: 512px;
     }
   }
 }

@@ -57,7 +57,7 @@ get_template_part('template-parts/header/page');
     </div>
     <div class="bgPadding"></div>
     <div class="bgCover">
-      <img src="<?php echo $zeplin ?>/twi-001-t-3068069.jpg" srcset="<?php echo $zeplin ?>/twi-001-t-3068069@2x.jpg 2x, <?php echo $zeplin ?>/twi-001-t-3068069@3x.jpg 3x">
+      <img src="<?php echo $zeplin ?>/dam-0103.jpg" srcset="<?php echo $zeplin ?>/dam-0103@2x.jpg 2x, <?php echo $zeplin ?>/dam-0103@3x.jpg 3x">
     </div>
   </div>
 </main>

@@ -43,19 +43,16 @@ get_template_part('template-parts/header/page');
     </div>
   </div>
   <div class="section section2">
-    <img class="ceo" src="<?php echo $zeplin ?>/2672.jpg" srcset="<?php echo $zeplin ?>/2672@2x.jpg 2x, <?php echo $zeplin ?>/2672@3x.jpg 3x">
-    <div class="halfBg">
-      <div class="container">
-        <div class="name">
-          유명훈 대표
-        </div>
-        <div class="position">
-          한양대학교 화학공학과 학사 및 석사
-        </div>
-        <p>
-          대학원에서 고분자합성을 전공한 유명훈 대표는 부친이 운영하는 풍원화학에서부터 가업을 배워오던 중<br />
-          부친과 함께 1996년 풍원정밀을 설립하고 R&D뿐 아니라 기획 및 영업까지 전 분야를 아우르며 성장을 주도하고 있다.
-        </p>
+    <img class="ceo" src="<?php echo $zeplin ?>/1104-0344.jpg" srcset="<?php echo $zeplin ?>/1104-0344@2x.jpg 2x, <?php echo $zeplin ?>/1104-0344@3x.jpg 3x">
+    <div class="container">
+      <p>
+        대학원에서 고분자합성을 전공한 유명훈 대표는 부친이 운영하는 풍원화학에서부터 가업을 배워오던 중 부친과 함께 1996년 풍원정밀을 설립하고 R&D뿐 아니라 기획 및 영업까지 전 분야를 아우르며 기업성장을 주도하고 있습니다.
+      </p>
+      <div class="name">
+        유명훈 대표
+      </div>
+      <div class="position">
+        한양대학교 화학공학과 학사 및 석사
       </div>
     </div>
   </div>
