@@ -1,0 +1,133 @@
+@mixin goalElement {
+  .goalElement {
+    color: $black;
+    fill: $brownish-grey;
+    position: relative;
+    overflow: hidden;
+    border-radius: 9999px;
+    width: 400px;
+    height: 400px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $very-light-pink-two;
+    &:hover {
+      color: $white;
+      fill: $white;
+      .bgCover {
+        opacity: 1;
+      }
+    }
+    .bgCover {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: opacity 0.3s;
+      z-index: 1;
+      background-color: $turquoise;
+    }
+    .content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+    }
+    .title {
+      @include Text-Style-34;
+    }
+    .desc {
+      margin-bottom: 50px;
+    }
+    svg {
+      width: 68px;
+      height: 68px;
+    }
+  }
+}
+
+main.managementIdeology {
+  .labelTitle {
+    display: inline-block;
+    @include Text-Style-33;
+    border-bottom: 4px solid $black-two;
+  }
+  .labelContent {
+    @include Text-Style-32;
+  }
+  .container {
+    @include respondTo("hg") {
+      max-width: 1300px;
+    }
+  }
+  .section1 {
+    position: relative;
+    .bgCover {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      height: 100%;
+      width: 50%;
+      transform: translateX(calc(-100% - 1px));
+      img {
+        position: absolute;
+        right: 0;
+      }
+    }
+    .container {
+      position: relative;
+      padding-top: 80px;
+      @include respondTo("hg") {
+        max-width: 1400px;
+      }
+    }
+    .contentCol {
+      padding-top: 300px;
+      padding-left: 8.33%;
+      padding-bottom: 240px;
+      background-color: $white;
+      color: $black;
+      @include respondTo("hg") {
+        clip-path: polygon(0 270px, 100% 0px, 100% calc(100% - 270px), 0 100%);
+      }
+    }
+  }
+  .section2 {
+    padding-top: 100px;
+    padding-bottom: 123px;
+    @include goalElement;
+    .goalWrap {
+      padding-top: 150px;
+      text-align: center;
+      .goalElement:nth-child(3n) {
+        margin-right: 0;
+      }
+      .goalElement {
+        margin-right: 30px;
+      }
+    }
+  }
+  .section3 {
+    position: relative;
+    .bgCover {
+      position: absolute;
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    .container {
+      position: relative;
+      z-index: 2;
+      color: $white;
+      padding-top: 260px;
+      padding-bottom: 170px;
+      .labelTitle {
+        border-bottom-color: $white;
+        margin-bottom: 41px;
+      }
+    }
+  }
+}
