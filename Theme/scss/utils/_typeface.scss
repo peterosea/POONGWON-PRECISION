@@ -185,7 +185,6 @@
   line-height: 1.64;
   letter-spacing: -0.42px;
   text-align: left;
-  color: $white;
 }
 
 @mixin Text-Style-30 {
@@ -195,6 +194,15 @@
   line-height: 1.64;
   letter-spacing: -0.42px;
   text-align: center;
+}
+
+@mixin Text-Style-39 {
+  font-family: NotoSansCJKkr;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: -0.26px;
+  text-align: left;
 }
 
 @mixin Text-Style-33 {
@@ -297,7 +305,6 @@
   line-height: 1.7;
   letter-spacing: -0.3px;
   text-align: left;
-  color: $white;
 }
 
 @mixin Text-Style-31 {
@@ -365,7 +372,6 @@
   line-height: 1.78;
   letter-spacing: -0.18px;
   text-align: left;
-  color: $white;
 }
 
 @mixin Text-Style-29 {

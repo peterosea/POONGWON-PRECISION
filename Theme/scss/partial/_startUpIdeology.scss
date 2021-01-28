@@ -1,0 +1,51 @@
+main.startUpIdeology {
+  .section1 {
+    position: relative;
+    // max-width: 1800px;
+    margin: 0 auto;
+    background-color: $very-light-pink-two;
+    padding-top: 300px;
+    padding-bottom: 180px;
+    clip-path: polygon(0 270px, 100% 0%, 100% calc(100% - 270px), 0 100%);
+    .bgCover {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      height: 100%;
+      background-image: url(#{$zeplin}/rectangle-646@3x.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 50%;
+    }
+    .contentCol {
+      @include respondTo("lg") {
+        padding-left: 100px;
+      }
+      color: $black;
+      @include Text-Style-27;
+    }
+  }
+  .section2 {
+    padding-top: 58px;
+    .imgCol {
+      @include respondTo("lg") {
+        padding-top: 126px;
+      }
+    }
+    .contentCol {
+      @include respondTo("lg") {
+        padding-left: 100px;
+      }
+      .title {
+        color: $black;
+        @include Text-Style-39;
+        margin-bottom: 66px;
+      }
+      p {
+        color: $black;
+        @include Text-Style-27;
+      }
+    }
+  }
+}
