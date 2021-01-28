@@ -109,4 +109,25 @@ main.startUpIdeology {
       }
     }
   }
+  .section3 {
+    position: relative;
+    .bgCover {
+      position: absolute;
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    .container {
+      position: relative;
+      z-index: 2;
+      color: $white;
+      padding-top: 260px;
+      padding-bottom: 170px;
+      .labelTitle {
+        border-bottom-color: $white;
+        margin-bottom: 41px;
+      }
+    }
+  }
 }

@@ -117,6 +117,21 @@ get_template_part('template-parts/header/page');
         </div>
       </div>
     </div>
+  </div>
+  <div class="section section3">
+    <div class="bgCover">
+      <img src="<?php echo $zeplin ?>/2807.png" srcset="<?php echo $zeplin ?>/2807@2x.png 2x, <?php echo $zeplin ?>/2807@3x.png 3x">
+    </div>
+    <div class="container">
+      <h1 class="labelTitle">
+        비전
+      </h1>
+      <p class="labelContent">
+        인간의 삶을 즐겁고 행복하게<br />
+        만들어주는 테크놀로지
+      </p>
+    </div>
+  </div>
 </main>
 <?php
 get_footer();
