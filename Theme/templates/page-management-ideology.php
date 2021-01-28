@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: 창업이념
+ * Template Name: 경영이념
  * Template Post Type: page
  */
 
@@ -14,7 +14,7 @@ $zeplin = get_home_url() . '/wp-content/uploads/zeplin';
 get_header();
 get_template_part('template-parts/header/page');
 ?>
-<main class="pageTemplate startUpIdeology">
+<main class="pageTemplate managementIdeology">
   <div class="section section1">
     <div class="bgCover">
       <img src="<?php echo $zeplin ?>/rectangle-645.png" srcset="<?php echo $zeplin ?>/rectangle-645@2x.png 2x, <?php echo $zeplin ?>/rectangle-645@3x.png 3x">
