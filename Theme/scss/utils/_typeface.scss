@@ -341,6 +341,15 @@
   text-align: left;
 }
 
+@mixin Text-Style-40 {
+  font-family: NotoSansCJKkr;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.9;
+  letter-spacing: -0.2px;
+  text-align: center;
+}
+
 @mixin Text-Style-27 {
   font-family: NotoSansCJKkr;
   font-size: 20px;
