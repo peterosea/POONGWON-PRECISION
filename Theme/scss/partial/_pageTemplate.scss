@@ -3,5 +3,13 @@ main.pageTemplate {
     @include Text-Style-26;
     padding-top: 110px;
     margin-bottom: 100px;
+    p {
+      color: $black;
+      @include Text-Style-40;
+      max-width: 800px;
+      text-align: center;
+      margin: 0 auto;
+      padding-top: 22px;
+    }
   }
 }
