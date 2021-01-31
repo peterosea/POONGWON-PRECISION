@@ -366,6 +366,15 @@
   text-align: left;
 }
 
+@mixin Text-Style-43 {
+  font-family: NotoSansCJKkr;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.78;
+  letter-spacing: -0.18px;
+  text-align: center;
+}
+
 @mixin Text-Style-10 {
   font-family: NotoSansCJKkr;
   font-size: 18px;
@@ -390,6 +399,23 @@
   line-height: 1.78;
   letter-spacing: -0.18px;
   text-align: center;
+}
+
+@mixin Text-Style-41 {
+  font-family: NotoSansCJKkr;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.88;
+  letter-spacing: -0.16px;
+  text-align: left;
+}
+
+@mixin Text-Style-42 {
+  font-family: NotoSansCJKkr;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: -0.16px;
+  text-align: left;
 }
 
 @mixin Text-Style-20 {
