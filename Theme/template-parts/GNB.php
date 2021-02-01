@@ -8,6 +8,6 @@ $zeplin = get_home_url() . '/wp-content/uploads/zeplin';
     </a>
   </div>
   <div class="container">
-    <?php wp_nav_menu() ?>
+    <?php wp_nav_menu(array('menu' => 'GNB')) ?>
   </div>
 </nav>

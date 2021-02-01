@@ -1,0 +1,57 @@
+main.onYourWay {
+  .section1 {
+    padding-top: 60px;
+    padding-bottom: 166px;
+    .container {
+      @include respondTo("hg") {
+        max-width: 90%;
+      }
+    }
+    .address {
+      color: $black;
+      @include Text-Style-46;
+      text-align: left;
+    }
+    .infoCol {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @include respondTo("lg") {
+        align-items: flex-start;
+      }
+    }
+    .iconCol {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 60px;
+      @include respondTo("lg") {
+        margin-bottom: 0px;
+        align-items: center;
+        justify-content: flex-end;
+      }
+    }
+    ul {
+      list-style: unset;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      li {
+        display: flex;
+        align-items: center;
+        &:not(:last-child) {
+          margin-right: 37px;
+        }
+        img {
+          margin-right: 16px;
+        }
+        p,
+        a {
+          margin: 0;
+          color: $black;
+          @include Text-Style-47;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

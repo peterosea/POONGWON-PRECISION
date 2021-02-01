@@ -1,9 +1,20 @@
 @font-face {
   font-family: NotoSansCJKkr;
-  src: local(NotoSansCJKkr-DemiLight),
-    url(/assets/fonts/NotoSansCJKkr-DemiLight.woff2) format("woff2"),
-    url(/assets/fonts/NotoSansCJKkr-DemiLight.woff) format("woff"),
-    url(/assets/fonts/NotoSansCJKkr-DemiLight.ttf) format("truetype");
+  src: local(NotoSansCJKkr-DemiLight-),
+    url(/assets/fonts/NotoSansCJKkr-DemiLight-.woff2) format("woff2"),
+    url(/assets/fonts/NotoSansCJKkr-DemiLight-.woff) format("woff"),
+    url(/assets/fonts/NotoSansCJKkr-DemiLight-.ttf) format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: NotoSansCJKkr;
+  src: local(NotoSansCJKkr-Light-),
+    url(/assets/fonts/NotoSansCJKkr-Light-.woff2) format("woff2"),
+    url(/assets/fonts/NotoSansCJKkr-Light-.woff) format("woff"),
+    url(/assets/fonts/NotoSansCJKkr-Light-.ttf) format("truetype");
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;
@@ -22,11 +33,33 @@
 
 @font-face {
   font-family: NotoSansCJKkr;
+  src: local(NotoSansCJKkr-Regular-),
+    url(/assets/fonts/NotoSansCJKkr-Regular-.woff2) format("woff2"),
+    url(/assets/fonts/NotoSansCJKkr-Regular-.woff) format("woff"),
+    url(/assets/fonts/NotoSansCJKkr-Regular-.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: NotoSansCJKkr;
   src: local(NotoSansCJKkr-Regular),
     url(/assets/fonts/NotoSansCJKkr-Regular.woff2) format("woff2"),
     url(/assets/fonts/NotoSansCJKkr-Regular.woff) format("woff"),
     url(/assets/fonts/NotoSansCJKkr-Regular.ttf) format("truetype");
   font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: NotoSansCJKkr;
+  src: local(NotoSansCJKkr-Medium-),
+    url(/assets/fonts/NotoSansCJKkr-Medium-.woff2) format("woff2"),
+    url(/assets/fonts/NotoSansCJKkr-Medium-.woff) format("woff"),
+    url(/assets/fonts/NotoSansCJKkr-Medium-.ttf) format("truetype");
+  font-weight: 500;
   font-style: normal;
   font-stretch: normal;
 }
@@ -44,6 +77,17 @@
 
 @font-face {
   font-family: NotoSansCJKkr;
+  src: local(NotoSansCJKkr-Bold-),
+    url(/assets/fonts/NotoSansCJKkr-Bold-.woff2) format("woff2"),
+    url(/assets/fonts/NotoSansCJKkr-Bold-.woff) format("woff"),
+    url(/assets/fonts/NotoSansCJKkr-Bold-.ttf) format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: NotoSansCJKkr;
   src: local(NotoSansCJKkr-Bold),
     url(/assets/fonts/NotoSansCJKkr-Bold.woff2) format("woff2"),
     url(/assets/fonts/NotoSansCJKkr-Bold.woff) format("woff"),
@@ -55,10 +99,10 @@
 
 @font-face {
   font-family: NotoSansCJKkr;
-  src: local(NotoSansCJKkr-Black),
-    url(/assets/fonts/NotoSansCJKkr-Black.woff2) format("woff2"),
-    url(/assets/fonts/NotoSansCJKkr-Black.woff) format("woff"),
-    url(/assets/fonts/NotoSansCJKkr-Black.ttf) format("truetype");
+  src: local(NotoSansCJKkr-Black-),
+    url(/assets/fonts/NotoSansCJKkr-Black-.woff2) format("woff2"),
+    url(/assets/fonts/NotoSansCJKkr-Black-.woff) format("woff"),
+    url(/assets/fonts/NotoSansCJKkr-Black-.ttf) format("truetype");
   font-weight: 900;
   font-style: normal;
   font-stretch: normal;
@@ -214,6 +258,15 @@
   text-align: center;
 }
 
+@mixin Text-Style-46 {
+  font-family: NotoSansCJKkr;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 3.33;
+  letter-spacing: -0.24px;
+  text-align: center;
+}
+
 @mixin Text-Style-19 {
   font-family: NotoSansCJKkr;
   font-size: 22px;
@@ -287,6 +340,15 @@
   font-family: NotoSansCJKkr;
   font-size: 22px;
   line-height: 1.09;
+  text-align: left;
+}
+
+@mixin Text-Style-47 {
+  font-family: NotoSansCJKkr;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: -0.2px;
   text-align: left;
 }
 
