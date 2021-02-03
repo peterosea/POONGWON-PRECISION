@@ -108,6 +108,17 @@
   font-stretch: normal;
 }
 
+@font-face {
+  font-family: NotoSansKR;
+  src: local(NotoSansKR-Regular),
+    url(/assets/fonts/NotoSansKR-Regular.woff2) format("woff2"),
+    url(/assets/fonts/NotoSansKR-Regular.woff) format("woff"),
+    url(/assets/fonts/NotoSansKR-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+
 @mixin Text-Style-4 {
   font-family: NotoSansCJKkr;
   font-size: 160px;
@@ -238,6 +249,24 @@
   line-height: 1.64;
   letter-spacing: -0.42px;
   text-align: center;
+}
+
+@mixin Text-Style-48 {
+  font-family: NotoSansCJKkr;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 1.27;
+  letter-spacing: -0.26px;
+  text-align: center;
+}
+
+@mixin Text-Style-49 {
+  font-family: NotoSansCJKkr;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1.85;
+  letter-spacing: -0.26px;
+  text-align: left;
 }
 
 @mixin Text-Style-39 {
@@ -400,6 +429,14 @@
   line-height: 1.7;
   letter-spacing: -0.2px;
   text-align: center;
+}
+
+@mixin Text-Style-50 {
+  font-family: NotoSansKR;
+  font-size: 20px;
+  line-height: 1.45;
+  letter-spacing: -1px;
+  text-align: left;
 }
 
 @mixin Text-Style-15 {
