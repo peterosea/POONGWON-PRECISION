@@ -1,4 +1,4 @@
-main.metalFoil {
+main.fmm {
   .section1 {
     position: relative;
     padding-top: 180px;
@@ -29,17 +29,48 @@ main.metalFoil {
       left: 50%;
       transform: translateX(20px);
     }
-    h1 {
+    .head {
       color: $black;
       @include Text-Style-49;
-      margin-bottom: 26px;
     }
     p {
       color: $black;
       @include Text-Style-27;
+      margin-bottom: 26px;
     }
   }
+
   .section3 {
+    padding-top: 90px;
+    position: relative;
+    .bgCover.double {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-100%);
+      padding-top: 300px;
+      padding-right: 50px;
+      img:first-child {
+        position: absolute;
+        top: 0;
+        transform: translateX(-50%);
+      }
+    }
+    .contentCol {
+      padding-bottom: 370px;
+    }
+    .head {
+      color: $black;
+      @include Text-Style-49;
+    }
+    p {
+      color: $black;
+      @include Text-Style-27;
+      margin-bottom: 26px;
+    }
+  }
+  .section4 {
+    padding-top: 200px;
     @include slickCarouselVideo();
   }
 }
