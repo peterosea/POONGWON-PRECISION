@@ -1,0 +1,84 @@
+main.omm {
+  .section1 {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 84px;
+    .bgCover {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-100%);
+    }
+    .contentCol {
+      .wrap {
+        max-width: 900px;
+        padding: 120px 200px 140px 120px;
+        background-color: $white;
+      }
+      .head {
+        color: $black;
+        @include Text-Style-49;
+        padding: 0;
+      }
+      p {
+        color: $black;
+        @include Text-Style-27;
+        margin-bottom: 26px;
+      }
+    }
+  }
+  .section2 {
+    padding-top: 90px;
+    padding-bottom: 150px;
+    position: relative;
+    .bgCover {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(20px);
+    }
+    .head {
+      color: $black;
+      @include Text-Style-49;
+    }
+    p {
+      color: $black;
+      @include Text-Style-27;
+      margin-bottom: 26px;
+    }
+  }
+
+  .section3 {
+    padding-top: 90px;
+    position: relative;
+    .bgCover.double {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-100%);
+      padding-top: 300px;
+      padding-right: 50px;
+      img:first-child {
+        position: absolute;
+        top: 0;
+        transform: translateX(-50%);
+      }
+    }
+    .contentCol {
+      padding-bottom: 650px;
+    }
+    .head {
+      color: $black;
+      @include Text-Style-49;
+    }
+    p {
+      color: $black;
+      @include Text-Style-27;
+      margin-bottom: 26px;
+    }
+  }
+  .section4 {
+    padding-top: 200px;
+    @include slickCarouselVideo();
+  }
+}
