@@ -15,9 +15,11 @@ get_header();
 get_template_part('template-parts/header/page');
 ?>
 <main class="pageTemplate ceoGreeting">
-  <div class="pageTitle">
-    “독보적인 기술력의<br />
-    첨단소재기업이 되겠습니다.”
+  <div class="container">
+    <div class="pageTitle">
+      “독보적인 기술력의<br />
+      첨단소재기업이 되겠습니다.”
+    </div>
   </div>
   <div class="section section1">
     <div class="container">

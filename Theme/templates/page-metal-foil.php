@@ -15,10 +15,12 @@ get_header();
 get_template_part('template-parts/header/page');
 ?>
 <main class="pageTemplate metalFoil">
-  <div class="pageTitle">
-    봉지 공정에 사용되는 금속박
-    <div class="subTitle">
-      Encapsulation / Metal Foil
+  <div class="container">
+    <div class="pageTitle">
+      봉지 공정에 사용되는 금속박
+      <div class="subTitle">
+        Encapsulation / Metal Foil
+      </div>
     </div>
   </div>
   <div class="section section1">

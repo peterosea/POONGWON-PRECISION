@@ -15,7 +15,9 @@ get_header();
 get_template_part('template-parts/header/page');
 ?>
 <main class="pageTemplate onYourWay">
-  <h1 class="pageTitle">풍원정밀 (주)</h1>
+  <div class="container">
+    <div class="pageTitle">풍원정밀 (주)</div>
+  </div>
   <!-- * 카카오맵 - 지도퍼가기 -->
   <!-- 1. 지도 노드 -->
   <div id="daumRoughmapContainer1612147397908" class="root_daum_roughmap root_daum_roughmap_landing" style="width: 100%"></div>

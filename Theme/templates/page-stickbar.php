@@ -14,9 +14,11 @@ get_header();
 get_template_part('template-parts/header/page');
 ?>
 <main class="pageTemplate sitckbar">
-  <div class="pageTitle">
-    TV에 들어가는 AMOLED용 유기물을 증착하기 위한<br />
-    바(Bar) 형태의 메탈 마스크
+  <div class="container">
+    <div class="pageTitle">
+      TV에 들어가는 AMOLED용 유기물을 증착하기 위한<br />
+      바(Bar) 형태의 메탈 마스크
+    </div>
   </div>
   <div class="section section1">
     <div class="bgCover">

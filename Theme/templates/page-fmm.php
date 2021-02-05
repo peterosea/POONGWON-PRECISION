@@ -16,9 +16,11 @@ get_header();
 get_template_part('template-parts/header/page');
 ?>
 <main class="pageTemplate fmm">
-  <div class="pageTitle">
-    고해상도의 디스플레이를 위한 첨단 소재 파인 메탈 마스크
-    <div class="subTitle">FMM, Fine Metal Mask</div>
+  <div class="container">
+    <div class="pageTitle">
+      고해상도의 디스플레이를 위한 첨단 소재 파인 메탈 마스크
+      <div class="subTitle">FMM, Fine Metal Mask</div>
+    </div>
   </div>
   <div class="section section1">
     <div class="bgCover">

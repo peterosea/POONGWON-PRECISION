@@ -15,9 +15,11 @@ get_header();
 get_template_part('template-parts/header/page');
 ?>
 <main class="pageTemplate introduction">
-  <div class="pageTitle">
-    박막 금속 가공기술의<br />
-    세계 최강자 풍원정밀
+  <div class="container">
+    <div class="pageTitle">
+      박막 금속 가공기술의<br />
+      세계 최강자 풍원정밀
+    </div>
   </div>
   <div class="section section1 max-container">
     <div class="bgCover">

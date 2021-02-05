@@ -6,7 +6,6 @@ main.pageTemplate {
     p {
       color: $black;
       @include Text-Style-40;
-      max-width: 800px;
       text-align: center;
       margin: 0 auto;
       padding-top: 22px;
@@ -29,3 +28,4 @@ main.pageTemplate {
 @import "stickbar";
 @import "FMM";
 @import "OMM";
+@import "benefits";

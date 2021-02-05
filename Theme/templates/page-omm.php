@@ -14,9 +14,11 @@ get_header();
 get_template_part('template-parts/header/page');
 ?>
 <main class="pageTemplate omm">
-  <div class="pageTitle">
-    OLED 제조 공정의 핵심 소재인 오픈 메탈 마스크
-    <div class="subTitle">OMM, Open Metal Mask</div>
+  <div class="container">
+    <div class="pageTitle">
+      OLED 제조 공정의 핵심 소재인 오픈 메탈 마스크
+      <div class="subTitle">OMM, Open Metal Mask</div>
+    </div>
   </div>
   <div class="section section1">
     <div class="bgCover">
