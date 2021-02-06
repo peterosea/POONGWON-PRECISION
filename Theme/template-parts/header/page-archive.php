@@ -4,12 +4,11 @@ $theme_url = get_stylesheet_directory();
 $functions_url = get_stylesheet_directory() . '/functions';
 $img_url = get_home_url() . '/wp-content/uploads';
 $zeplin = get_home_url() . '/wp-content/uploads/zeplin';
-$data = get_field(get_post_type(), 'option');
 ?>
 <header class="default">
   <div class="coverBg">
-    <?php if (!empty($data['header_img'])) :
-      echo wp_get_attachment_image($data['header_img'], 'full');
+    <?php if (!empty(get_field('header_img', 'option'))) :
+      echo wp_get_attachment_image(get_field('header_img', 'option'), 'full');
     else : ?>
       <img src="<?php echo $zeplin ?>/2743.png" srcset="<?php echo $zeplin ?>/2743@2x.png 2x, <?php echo $zeplin ?>/2743@3x.png 3x">
     <?php endif ?>

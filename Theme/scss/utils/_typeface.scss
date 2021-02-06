@@ -420,7 +420,6 @@
 @mixin Text-Style-45 {
   font-family: NotoSansCJKkr;
   font-size: 20px;
-  line-height: 4;
   letter-spacing: -0.2px;
   text-align: left;
 }
@@ -506,6 +505,12 @@
   font-weight: 500;
   line-height: 1.78;
   letter-spacing: -0.18px;
+  text-align: center;
+}
+
+@mixin Text-Style-53 {
+  font-family: NotoSansCJKkr;
+  font-size: 18px;
   text-align: center;
 }
 

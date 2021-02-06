@@ -13,3 +13,10 @@ function get_new_archive_template($archive_template)
   return $archive_template;
 }
 add_filter('archive_template', 'get_new_archive_template');
+
+function get_new_archive_template2($archive_template)
+{
+  $archive_template = get_stylesheet_directory() . '/template-archive/press.php';
+  return $archive_template;
+}
+add_filter('archive_template', 'get_new_archive_template2');
