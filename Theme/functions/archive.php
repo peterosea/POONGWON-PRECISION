@@ -16,6 +16,9 @@ function get_new_archive_template($archive_template)
   if ($post->post_type === 'press') {
     $archive_template = get_stylesheet_directory() . '/template-archive/press.php';
   }
+  if ($post->post_type === 'public_disclosure_in') {
+    $archive_template = get_stylesheet_directory() . '/template-archive/publicDisclosureIn.php';
+  }
   return $archive_template;
 }
 add_filter('archive_template', 'get_new_archive_template');

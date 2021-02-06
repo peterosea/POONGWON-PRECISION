@@ -6,10 +6,10 @@ $img_url = get_home_url() . '/wp-content/uploads';
 get_header();
 get_template_part('template-parts/header/page-archive');
 ?>
-<main class="pageTemplate press">
+<main class="pageTemplate publicDisclosureIn">
   <div class="section section1">
     <div class="container">
-      <?php get_template_part('template-parts/board/default') ?>
+      <?php get_template_part('template-parts/board/publicDisclosureIn') ?>
     </div>
   </div>
 </main>
