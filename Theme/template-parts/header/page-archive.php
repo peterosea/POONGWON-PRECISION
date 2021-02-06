@@ -33,7 +33,14 @@ $zeplin = get_home_url() . '/wp-content/uploads/zeplin';
     <div class="selectorWrap">
       <button type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <p>
-          <?php echo post_type_archive_title('', false); ?>
+          <?php
+          if (!empty(post_type_archive_title('', false))) {
+            echo post_type_archive_title('', false);
+          } else {
+            $post_type_obj = get_post_type_object(get_post_type());
+            echo $post_type_obj->label;
+          }
+          ?>
         </p>
         <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
           <g transform="rotate(90 2348.5 1117.5)">

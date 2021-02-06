@@ -17,12 +17,11 @@ if (is_page()) : ?>
     <div class="container">
       <div class="parent">
         <?php
-        $primaryNav = wp_get_nav_menu_items(2);
-        foreach ($primaryNav as $navItem) {
-          if (!empty($navItem->menu_item_parent) && $navItem->object_id == get_queried_object_id()) {
-            echo '<span>' . get_post($navItem->menu_item_parent)->post_title . '</span>';
-          }
-        } ?>
+        $parentitems = my_menu_parent('menu-1');
+        foreach ($parentitems as $parentitem) {
+          echo $parentitem;
+        }
+        ?>
       </div>
       <div class="downArrow">
         <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.012 512.012" style="enable-background:new 0 0 512.012 512.012;" xml:space="preserve">
