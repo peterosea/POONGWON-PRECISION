@@ -1,9 +1,9 @@
-main.press-single {
+main.recruitment-single {
   .section1 {
     padding-top: 130px;
     padding-bottom: 150px;
     .header {
-      padding: 26px 115px;
+      padding: 26px 59px;
       background-color: $turquoise;
       color: $white;
       @include Text-Style-54;
@@ -14,10 +14,31 @@ main.press-single {
       }
     }
     .content {
-      padding: 100px 115px;
+      padding: 40px 0;
       color: $brownish-grey;
       @include Text-Style-55;
-      border-bottom: 1px solid $very-light-pink-four;
+      table {
+        tr:first-child {
+          td,
+          th {
+            border-top: 1px solid $very-light-pink-four;
+          }
+        }
+        td,
+        th {
+          border-bottom: 1px solid $very-light-pink-four;
+          padding: 26px 46px;
+        }
+        th {
+          background-color: $very-light-pink-two;
+          color: $black;
+          @include Text-Style-56;
+        }
+        td {
+          color: $black;
+          @include Text-Style-45;
+        }
+      }
     }
     .footer {
       padding-top: 50px;

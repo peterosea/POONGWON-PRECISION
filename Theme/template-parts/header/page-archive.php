@@ -17,8 +17,10 @@ $zeplin = get_home_url() . '/wp-content/uploads/zeplin';
     <div class="parent">
       <?php
       $parentitems = my_menu_parent('menu-1');
-      foreach ($parentitems as $parentitem) {
-        echo $parentitem;
+      if (!empty($parentitems)) {
+        foreach ($parentitems as $parentitem) {
+          echo $parentitem;
+        }
       }
       ?>
     </div>

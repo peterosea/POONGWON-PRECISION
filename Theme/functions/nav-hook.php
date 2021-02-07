@@ -14,8 +14,10 @@ function my_wp_nav_menu_objects_sub_menu($sorted_menu_items, $args)
         // set the root id based on whether the current menu item has a parent or not
         $root_id = ($menu_item->menu_item_parent) ? $menu_item->menu_item_parent : $menu_item->ID;
         break;
-      } elseif ($menu_item->object === $post->post_type) {
-        $root_id = (int)$menu_item->menu_item_parent;
+      } elseif (!empty($post)) {
+        if ($menu_item->object === $post->post_type) {
+          $root_id = (int)$menu_item->menu_item_parent;
+        }
       }
     }
 

@@ -8,19 +8,53 @@ $zeplin = get_home_url() . '/wp-content/uploads/zeplin';
 get_header();
 get_template_part('template-parts/header/page-archive');
 ?>
-<main class="pageTemplate press-single">
+<main class="pageTemplate recruitment-single">
   <div class="section section1">
     <div class="container">
       <div class="row header">
         <div class="col">
           <?php the_title() ?>
         </div>
-        <div class="col date">
-          <?php echo get_the_date('Y-m-d') ?>
-        </div>
       </div>
       <div class="row content">
-        <?php the_content() ?>
+        <table width="100%">
+          <colgroup>
+            <col span="1" style="width: 20%;">
+            <col span="1" style="width: 80%;">
+          </colgroup>
+          <tbody>
+            <?php
+            $fields = get_field_objects();
+            foreach ($fields as $field) {
+              $label = $field['label'];
+              $value = $field['value'];
+              if (!is_array($value)) {
+                echo <<<HTML
+                <tr>
+                  <th>$label</th>
+                  <td>$value</td>
+                </tr>
+HTML;
+              } else {
+                echo <<<HTML
+                <tr>
+                  <th>$label</th>
+                  <td>
+HTML;
+                foreach ($value as $k => $v) {
+                  echo <<<HTML
+                  <span class="$k">$v</span>
+HTML;
+                }
+                echo <<<HTML
+                  </td>
+                </tr>
+HTML;
+              }
+            }
+            ?>
+          </tbody>
+        </table>
       </div>
       <div class="row footer">
         <div class="prev-next">

@@ -10,6 +10,7 @@
 function get_new_archive_template($archive_template)
 {
   global $post;
+  if (empty($post)) return;
   if ($post->post_type === 'history') {
     $archive_template = get_stylesheet_directory() . '/template-archive/history.php';
   }
