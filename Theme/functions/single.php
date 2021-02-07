@@ -16,6 +16,9 @@ function get_new_single_template($single_template)
   if ('public_disclosure_in' === $post->post_type) {
     $single_template = get_stylesheet_directory() . '/template-single/publicDisclosureIn.php';
   }
+  if ('news' === $post->post_type) {
+    $single_template = get_stylesheet_directory() . '/template-single/news.php';
+  }
   return $single_template;
 }
 add_filter('single_template', 'get_new_single_template');
