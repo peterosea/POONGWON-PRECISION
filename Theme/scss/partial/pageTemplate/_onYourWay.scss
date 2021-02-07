@@ -2,15 +2,32 @@ main.onYourWay {
   .section1 {
     padding-top: 60px;
     padding-bottom: 166px;
+    margin-bottom: 150px;
+    position: relative;
     .container {
       @include respondTo("hg") {
         max-width: 90%;
       }
     }
+
+    .bgCover.double {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-100%);
+      padding-top: 300px;
+      img:first-child {
+        position: absolute;
+        top: 0;
+        transform: translateX(-50%);
+      }
+    }
+
     .address {
       color: $black;
       @include Text-Style-46;
       text-align: left;
+      margin-bottom: 62px;
     }
     .infoCol {
       display: flex;
@@ -21,25 +38,23 @@ main.onYourWay {
       }
     }
     .iconCol {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 60px;
-      @include respondTo("lg") {
-        margin-bottom: 0px;
-        align-items: center;
-        justify-content: flex-end;
+      padding-left: 150px;
+      .content {
+        max-width: 436px;
+        margin-bottom: 120px;
+        color: $black;
+        @include Text-Style-49;
       }
     }
     ul {
       list-style: unset;
       margin: 0;
       padding: 0;
-      display: flex;
       li {
         display: flex;
         align-items: center;
         &:not(:last-child) {
-          margin-right: 37px;
+          margin-bottom: 17px;
         }
         img {
           margin-right: 16px;
