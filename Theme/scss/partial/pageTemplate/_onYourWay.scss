@@ -1,0 +1,72 @@
+main.onYourWay {
+  .section1 {
+    padding-top: 60px;
+    padding-bottom: 166px;
+    margin-bottom: 150px;
+    position: relative;
+    .container {
+      @include respondTo("hg") {
+        max-width: 90%;
+      }
+    }
+
+    .bgCover.double {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-100%);
+      padding-top: 300px;
+      img:first-child {
+        position: absolute;
+        top: 0;
+        transform: translateX(-50%);
+      }
+    }
+
+    .address {
+      color: $black;
+      @include Text-Style-46;
+      text-align: left;
+      margin-bottom: 62px;
+    }
+    .infoCol {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @include respondTo("lg") {
+        align-items: flex-start;
+      }
+    }
+    .iconCol {
+      padding-left: 150px;
+      .content {
+        max-width: 436px;
+        margin-bottom: 120px;
+        color: $black;
+        @include Text-Style-49;
+      }
+    }
+    ul {
+      list-style: unset;
+      margin: 0;
+      padding: 0;
+      li {
+        display: flex;
+        align-items: center;
+        &:not(:last-child) {
+          margin-bottom: 17px;
+        }
+        img {
+          margin-right: 16px;
+        }
+        p,
+        a {
+          margin: 0;
+          color: $black;
+          @include Text-Style-47;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

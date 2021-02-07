@@ -1,0 +1,96 @@
+.boardTemplate {
+  width: 100%;
+  margin-bottom: 80px;
+  thead {
+    background-color: $turquoise;
+    color: $white;
+    text-align: center;
+    th {
+      padding-top: 23px;
+      padding-bottom: 23px;
+    }
+  }
+  tbody {
+    color: $brownish-grey;
+    @include Text-Style-45;
+    td {
+      padding: 23px;
+      border-bottom: 1px solid $very-light-pink-four;
+      color: $brownish-grey;
+      a {
+        color: $brownish-grey;
+        text-decoration: none;
+        &:hover {
+          color: $black;
+        }
+      }
+      &.date,
+      &.author,
+      &.attachment {
+        text-align: center;
+      }
+    }
+  }
+
+  &.nonTable {
+    .header {
+      background-color: $turquoise;
+      color: $white;
+      > div {
+        @include Text-Style-44;
+        padding: 23px;
+        text-align: center;
+      }
+    }
+    .list {
+      position: relative;
+      border-bottom: 1px solid $very-light-pink-four;
+      > div {
+        padding: 23px;
+        transition: background-color 0.3s;
+        color: $brownish-grey;
+        @include Text-Style-56;
+        text-align: left;
+      }
+      .date,
+      .btnWrap {
+        text-align: center;
+      }
+      .btn {
+        transition: transform 0.3s;
+      }
+      .content p {
+        color: $black;
+        @include Text-Style-55;
+      }
+    }
+    .list.show {
+      > div {
+        background-color: $very-light-pink-two;
+        color: $black;
+      }
+      .content {
+        display: block;
+        background-color: $white;
+      }
+      .btn {
+        transform: rotate(180deg);
+      }
+    }
+    .content {
+      width: 100%;
+      display: none;
+    }
+  }
+}
+.boardTemplate + .paginationWrap {
+  justify-content: center;
+  @include Text-Style-53;
+  a {
+    color: $brown-grey-two;
+    text-decoration: none;
+    &:hover {
+      color: $black;
+    }
+  }
+}

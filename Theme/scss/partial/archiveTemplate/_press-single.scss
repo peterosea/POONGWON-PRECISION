@@ -1,0 +1,48 @@
+main.press-single {
+  .section1 {
+    padding-top: 130px;
+    padding-bottom: 150px;
+    .header {
+      padding: 26px 115px;
+      background-color: $turquoise;
+      color: $white;
+      @include Text-Style-54;
+      text-align: left;
+      .date {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+    .content {
+      padding: 100px 115px;
+      color: $brownish-grey;
+      @include Text-Style-55;
+      border-bottom: 1px solid $very-light-pink-four;
+    }
+    .footer {
+      padding-top: 50px;
+      justify-content: space-between;
+      .btn {
+        padding: 17px 42px;
+        background-color: $dark-blue-grey;
+        color: $white;
+        @include Text-Style-56;
+        text-decoration: none;
+        border-radius: 0;
+        &.list {
+          background-color: $turquoise;
+        }
+        &.disable {
+          color: $brownish-grey;
+          cursor: default;
+        }
+      }
+      .prev-next {
+        display: flex;
+        .prev {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}

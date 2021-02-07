@@ -1,0 +1,38 @@
+main.pageTemplate {
+  .pageTitle {
+    @include Text-Style-26;
+    padding-top: 110px;
+    margin-bottom: 100px;
+    p {
+      color: $black;
+      @include Text-Style-40;
+      text-align: center;
+      margin: 0 auto;
+      padding-top: 22px;
+    }
+    .subTitle {
+      color: $black;
+      @include Text-Style-48;
+      margin-top: 12px;
+    }
+  }
+  &.non-result {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+}
+
+@import "introduction";
+@import "ceoGreeting";
+@import "managementIdeology";
+@import "startUpIdeology";
+@import "facilityPlantIntroduction";
+@import "onYourWay";
+@import "metalFoil";
+@import "stickbar";
+@import "FMM";
+@import "OMM";
+@import "benefits";
+@import "corporateCulture";
+@import "labIntroduction";
+@import "retentionTechnology";

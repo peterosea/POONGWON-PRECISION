@@ -1,0 +1,61 @@
+main.introduction {
+  .pageTitle {
+    margin-bottom: 0;
+  }
+  p {
+    @include Text-Style-27;
+  }
+  .contentCol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .section1 {
+    position: relative;
+    // max-width: 1800px;
+    margin: 0 auto;
+    background-color: $very-light-pink-two;
+    clip-path: polygon(0 0, 100% 270px, 100% 100%, 0 calc(100% - 270px));
+    padding-top: 300px;
+    padding-bottom: 180px;
+    @include respondTo("hg") {
+      clip-path: polygon(0 0, 100% 270px, 100% 100%, 0 calc(100% - 270px));
+    }
+    .bgCover {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      height: 100%;
+      background-image: url(#{$zeplin}/rectangle-645@3x.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 50%;
+      transform: translateX(calc(-100% - 1px));
+    }
+    .contentCol {
+      padding-left: 84px;
+    }
+  }
+  .section2 {
+    position: relative;
+    .contentCol {
+      padding-right: 84px;
+    }
+    .bgCover {
+      position: absolute;
+      top: 120px;
+      left: 50%;
+      width: 50%;
+      img {
+        width: 100%;
+      }
+    }
+    .bgPadding {
+      width: 100%;
+      margin-top: 100px;
+      background-color: $deep-aqua;
+      padding-top: 350px;
+    }
+  }
+}

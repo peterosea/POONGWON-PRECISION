@@ -1,0 +1,137 @@
+main.retentionTechnology {
+  .section1 {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    p {
+      margin-bottom: 0;
+      color: $black;
+      @include Text-Style-27;
+    }
+    .col:first-child p {
+      padding-right: 60px;
+    }
+    .col:last-child p {
+      padding-left: 60px;
+    }
+  }
+  .section2 {
+    margin-bottom: 150px;
+    .titleWrap {
+      margin-bottom: 50px;
+      .sectionTitle {
+        color: $teal-blue;
+        @include Text-Style-32;
+      }
+      .description {
+        color: $black;
+        @include Text-Style-57;
+        margin-bottom: 0;
+      }
+    }
+    .table {
+      .rowTitle {
+        max-width: 160px;
+      }
+      .head {
+        background-color: $turquoise;
+        > div {
+          padding-top: 23px;
+          padding-bottom: 23px;
+          color: $white;
+          @include Text-Style-54;
+        }
+      }
+      .body {
+        color: $black;
+        @include Text-Style-15;
+        > .row,
+        .rowspan > .row:not(:last-child) {
+          border-bottom: 1px solid $very-light-pink-four;
+        }
+        > .row > div:not(.rowspan),
+        .rowspan > .row > div {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 20px 50px;
+        }
+        > .row > .col > .row > div:nth-child(2),
+        > .row > div:nth-child(2n -1) {
+          background-color: $very-light-pink-two;
+        }
+        ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          color: $black;
+          @include Text-Style-59;
+        }
+      }
+    }
+  }
+  .section3n {
+    padding-bottom: 200px;
+    position: relative;
+    .label {
+      display: inline-block;
+      padding: 36px;
+      background-color: $teal-blue;
+      color: $white;
+      @include Text-Style-60;
+      margin-bottom: 50px;
+    }
+    .title {
+      color: $black;
+      @include Text-Style-61;
+      margin-bottom: 10px;
+    }
+    .subTitle {
+      color: $black;
+      @include Text-Style-62;
+      margin-bottom: 30px;
+    }
+    .bgCover {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 50%;
+      overflow: hidden;
+      padding-left: 60px;
+      transform: translateY(40px);
+    }
+    .bgCover.double {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      padding-top: 250px;
+      padding-right: 50px;
+      img:first-child {
+        position: absolute;
+        top: 0;
+        transform: translateX(200px);
+      }
+    }
+    p {
+      color: $black;
+      @include Text-Style-27;
+    }
+  }
+  .section4 {
+    padding-top: 200px;
+    .bgCover {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 50%;
+      overflow: hidden;
+      padding-left: 0px;
+      padding-right: 60px;
+      transform: translateX(-100%);
+    }
+  }
+  .section5 {
+    p:nth-of-type(1) {
+      margin-bottom: 118px;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+main.sitckbar {
+  .section1 {
+    position: relative;
+    padding-top: 180px;
+    padding-bottom: 84px;
+    .bgCover {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-100%);
+    }
+    .contentCol {
+      p {
+        color: $black;
+        @include Text-Style-49;
+        max-width: 900px;
+        padding: 120px 200px 200px 120px;
+        background-color: $white;
+      }
+    }
+  }
+
+  .section2 {
+    padding-top: 90px;
+    position: relative;
+    .bgCover {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(20px);
+    }
+    .head {
+      color: $black;
+      @include Text-Style-49;
+    }
+    p {
+      color: $black;
+      @include Text-Style-27;
+      margin-bottom: 26px;
+    }
+  }
+}

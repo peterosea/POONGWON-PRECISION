@@ -1,0 +1,16 @@
+footer#colophon.site-footer,
+a.skip-link.screen-reader-text,
+#page header.site-header {
+  display: none;
+}
+
+html .container {
+  @include respondTo("hg") {
+    max-width: 1230px;
+  }
+}
+
+// ie11
+body.ie11 img.objectfit {
+  display: none;
+}

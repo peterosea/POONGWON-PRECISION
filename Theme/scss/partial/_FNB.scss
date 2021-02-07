@@ -1,0 +1,56 @@
+footer.FNB {
+  padding: 32px 35px;
+  color: $brownish-grey;
+  @include Text-Style-42;
+  border-top: 1px solid rgba($very-light-pink, 0.6);
+  ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin-bottom: 0;
+    li:not(:last-child) {
+      margin-right: 14px;
+    }
+  }
+  .info {
+    margin-bottom: 14px;
+    a {
+      color: $brownish-grey;
+      @include Text-Style-42;
+      text-decoration: none;
+    }
+    strong {
+      margin-right: 6px;
+    }
+  }
+  .pagelistCol {
+    display: flex;
+    margin-bottom: 40px;
+    @include respondTo("xl") {
+      align-items: center;
+      justify-content: flex-end;
+      margin-bottom: 0;
+    }
+  }
+  .page-list {
+    a {
+      color: $black;
+      @include Text-Style-43;
+      text-decoration: none;
+    }
+    li:not(:last-child) {
+      position: relative;
+      padding-right: 14px;
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 2px;
+        height: 16px;
+        background-color: $brown-grey;
+      }
+    }
+  }
+}
