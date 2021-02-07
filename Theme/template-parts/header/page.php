@@ -11,7 +11,7 @@ if (is_page()) : ?>
       <?php if (!empty(get_field('thumbnail'))) :
         echo wp_get_attachment_image(get_field('thumbnail'), 'full');
       else : ?>
-        <img src="<?php echo $zeplin ?>/2743.png" srcset="<?php echo $zeplin ?>/2743@2x.png 2x, <?php echo $zeplin ?>/2743@3x.png 3x">
+        <img draggable="false" src="<?php echo $zeplin ?>/2743.png" srcset="<?php echo $zeplin ?>/2743@2x.png 2x, <?php echo $zeplin ?>/2743@3x.png 3x">
       <?php endif ?>
     </div>
     <div class="container">

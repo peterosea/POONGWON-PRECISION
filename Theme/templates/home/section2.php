@@ -1,10 +1,10 @@
 <div class="section section2">
-  <img src="<?php echo $zeplin ?>/group-43.svg" class="bgImg">
+  <img draggable="false" src="<?php echo $zeplin ?>/group-43.svg" class="bgImg">
   <div class="container">
     <div class="row">
       <div class="col ">
         <div class="valueWrap">
-          <img src="<?php echo $zeplin ?>/1.svg">
+          <img draggable="false" src="<?php echo $zeplin ?>/1.svg">
           <div class="textPoint">
             <div class="point">33</div>
             <div class="unit">
@@ -19,7 +19,7 @@
       </div>
       <div class="col">
         <div class="valueWrap">
-          <img src="<?php echo $zeplin ?>/2.svg">
+          <img draggable="false" src="<?php echo $zeplin ?>/2.svg">
           <div class="textPoint">
             <div class="point">22</div>
             <div class="unit">
@@ -34,7 +34,7 @@
       </div>
       <div class="col">
         <div class="valueWrap">
-          <img src="<?php echo $zeplin ?>/3.svg">
+          <img draggable="false" src="<?php echo $zeplin ?>/3.svg">
           <div class="textPoint">
             <div class="point">8</div>
             <div class="unit">

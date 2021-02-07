@@ -16,7 +16,7 @@ get_template_part('template-parts/header/page');
 <main class="pageTemplate labIntroduction">
   <div class="section section1">
     <div class="bgCover">
-      <img src="<?php echo $zeplin ?>/dsc-2093.jpg" srcset="<?php echo $zeplin ?>/dsc-2093@2x.jpg 2x, <?php echo $zeplin ?>/dsc-2093@3x.jpg 3x">
+      <img draggable="false" src="<?php echo $zeplin ?>/dsc-2093.jpg" srcset="<?php echo $zeplin ?>/dsc-2093@2x.jpg 2x, <?php echo $zeplin ?>/dsc-2093@3x.jpg 3x">
     </div>
     <div class="container">
       <div class="row">
@@ -31,7 +31,7 @@ get_template_part('template-parts/header/page');
   </div>
   <div class="section section2">
     <div class="bgCover">
-      <img src="<?php echo $zeplin ?>/dam-0213.jpg" srcset="<?php echo $zeplin ?>/dam-0213@2x.jpg 2x, <?php echo $zeplin ?>/dam-0213@3x.jpg 3x">
+      <img draggable="false" src="<?php echo $zeplin ?>/dam-0213.jpg" srcset="<?php echo $zeplin ?>/dam-0213@2x.jpg 2x, <?php echo $zeplin ?>/dam-0213@3x.jpg 3x">
     </div>
     <div class="container">
       <div class="row">

@@ -17,7 +17,7 @@ get_template_part('template-parts/header/page');
 <main class="pageTemplate startUpIdeology">
   <div class="section section1">
     <div class="bgCover">
-      <!-- <img src="<?php echo $zeplin ?>/rectangle-645.jpg" srcset="<?php echo $zeplin ?>/rectangle-645@2x.jpg 2x, <?php echo $zeplin ?>/rectangle-645@3x.jpg 3x" class="custom-position"> -->
+      <!-- <img draggable="false" src="<?php echo $zeplin ?>/rectangle-645.jpg" srcset="<?php echo $zeplin ?>/rectangle-645@2x.jpg 2x, <?php echo $zeplin ?>/rectangle-645@3x.jpg 3x" class="custom-position"> -->
     </div>
     <div class="container">
       <div class="row">
@@ -39,7 +39,7 @@ get_template_part('template-parts/header/page');
     <div class="container">
       <div class="row">
         <div class="col-12 col-lg-6 imgCol">
-          <img src="<?php echo $zeplin ?>/dam-9836.jpg" srcset="<?php echo $zeplin ?>/dam-9836@2x.jpg 2x, <?php echo $zeplin ?>/dam-9836@3x.jpg 3x">
+          <img draggable="false" src="<?php echo $zeplin ?>/dam-9836.jpg" srcset="<?php echo $zeplin ?>/dam-9836@2x.jpg 2x, <?php echo $zeplin ?>/dam-9836@3x.jpg 3x">
         </div>
         <div class="col-12 col-lg-6 contentCol">
           <h2 class="title">풍원정밀과 풍원화학은 협력 시스템을 통해 메탈 마스크(Metal Mask) 제작은 물론 진공증착(Sputtering) 및 기존 고객사가 진행하던 후속 공정도 원스탑(One-Stop)으로 제공하며 함께 성장하고 있습니다.</h2>

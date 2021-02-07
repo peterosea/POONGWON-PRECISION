@@ -25,7 +25,7 @@ get_template_part('template-parts/header/page');
   </div>
   <div class="section section1">
     <div class="bgCover">
-      <img src="<?php echo $zeplin ?>/1104-0524.jpg" srcset="<?php echo $zeplin ?>/1104-0524@2x.jpg 2x, <?php echo $zeplin ?>/1104-0524@3x.jpg 3x">
+      <img draggable="false" src="<?php echo $zeplin ?>/1104-0524.jpg" srcset="<?php echo $zeplin ?>/1104-0524@2x.jpg 2x, <?php echo $zeplin ?>/1104-0524@3x.jpg 3x">
     </div>
     <div class="container">
       <div class="row">
@@ -42,7 +42,7 @@ get_template_part('template-parts/header/page');
   </div>
   <div class="section section2">
     <div class="bgCover">
-      <img src="<?php echo $zeplin ?>/1104-0531.jpg" srcset="<?php echo $zeplin ?>/1104-0531@2x.jpg 2x, <?php echo $zeplin ?>/1104-0531@3x.jpg 3x">
+      <img draggable="false" src="<?php echo $zeplin ?>/1104-0531.jpg" srcset="<?php echo $zeplin ?>/1104-0531@2x.jpg 2x, <?php echo $zeplin ?>/1104-0531@3x.jpg 3x">
     </div>
     <div class="container">
       <div class="row">
@@ -52,7 +52,7 @@ get_template_part('template-parts/header/page');
           <p>증착을 통해 만들어진 OLED 패널이 외부의 영향을 받지 않고 오랫동안 사용될 수 있도록 마감하는 단계이기 때문입니다. OLED 디스플레이에서 빛을 내는 유기물질과 전극은 산소와 수분에 매우 민감하게 반응해 발광 특성을 잃기 때문에, OLED 디스플레이 제조 공정에서 산소와 수분이 유기물에 침투하지 못하도록 확실하게 밀봉하는 봉지공정에 있어서 풍원 정밀의 금속박(Metal Foil)은 큰 역할을 담당하고 있습니다. </p>
         </div>
         <div class="col-7">
-          <img src="<?php echo $zeplin ?>/1104-0531.jpg" style="visibility:hidden">
+          <img draggable="false" src="<?php echo $zeplin ?>/1104-0531.jpg" style="visibility:hidden">
         </div>
       </div>
     </div>
@@ -82,9 +82,9 @@ HTML;
           echo <<<HTML
           <div class="slide">
             <div class="videoWrap $className" id="videoWrap_$p->ID">
-              <img src="$poster" alt="" class="poster">
+              <img draggable="false" src="$poster" alt="" class="poster">
               <div class="controlBtn">
-                <img id="control_$p->ID" src="$zeplin/2796.png" srcset="$zeplin/2796@2x.png 2x, $zeplin/2796@3x.png 3x">
+                <img draggable="false" id="control_$p->ID" src="$zeplin/2796.png" srcset="$zeplin/2796@2x.png 2x, $zeplin/2796@3x.png 3x">
               </div>
               $videoElement
               <div class="bottomCover">
@@ -113,7 +113,7 @@ HTML;
           echo <<<HTML
             <div class="slide">
               <div class="thumbnail">
-                <img src="$thumbnailUrl" alt="">
+                <img draggable="false" src="$thumbnailUrl" alt="">
               </div>
               <div class="title">
                 $p->post_title

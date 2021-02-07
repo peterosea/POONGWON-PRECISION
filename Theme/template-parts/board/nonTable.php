@@ -67,7 +67,7 @@ HTML;
             <div class="col-9">$_title</div>
             <div class="col-2 date">$_date</div>
             <div class="col-1 btnWrap">
-              <img id="control-$ID" class="btn" src="$zeplin/shape-684.png" srcset="$zeplin/shape-684@2x.png 2x, $zeplin/shape-684@3x.png 3x">
+              <img draggable="false" id="control-$ID" class="btn" src="$zeplin/shape-684.png" srcset="$zeplin/shape-684@2x.png 2x, $zeplin/shape-684@3x.png 3x">
             </div>
             <div class="content" id="content-$ID">
               $_content

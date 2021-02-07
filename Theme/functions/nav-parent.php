@@ -1,7 +1,7 @@
 <?php
 
 /**
- * comment
+ * 현재 페이지에서 네비게이션 부모 쿼리 가져오기 함수
  *
  * @author       Hansanghyeon
  * @copyright    Hansanghyeon <999@hyeon.pro>
@@ -21,7 +21,10 @@ function my_menu_parent($theme_location)
       if ($menu_item->current_item_ancestor) {
         $breadcrumbs[] = $menu_item->title;
         break;
-      } elseif (!empty($post)) {
+      }
+    }
+    if (empty($breadcrumbs) && !empty($post)) {
+      foreach ($menu_items as $menu_item) {
         if ($menu_item->object === $post->post_type) {
           $breadcrumbs[] = get_the_title($menu_item->menu_item_parent);
           break;

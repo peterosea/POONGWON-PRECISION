@@ -7,7 +7,7 @@
       <div class="p-0 col-6">
         <div class="coverCard">
           <div class="imgWrap" style="background-image: url(<?php echo $zeplin ?>/oled-77-w-7-k-shr.jpg)">
-            <img class="objectfit" src="<?php echo $zeplin ?>/oled-77-w-7-k-shr.jpg" srcset="<?php echo $zeplin ?>/oled-77-w-7-k-shr@2x.jpg 2x, <?php echo $zeplin ?>/oled-77-w-7-k-shr@3x.jpg 3x">
+            <img draggable="false" class="objectfit" src="<?php echo $zeplin ?>/oled-77-w-7-k-shr.jpg" srcset="<?php echo $zeplin ?>/oled-77-w-7-k-shr@2x.jpg 2x, <?php echo $zeplin ?>/oled-77-w-7-k-shr@3x.jpg 3x">
             <div class="title">Oled TV</div>
           </div>
           <div class="content">
@@ -23,7 +23,7 @@
       <div class="p-0 col-6">
         <div class="coverCard">
           <div class="imgWrap" style="background-image: url(<?php echo $zeplin ?>/rectangle-631.jpg)">
-            <img class="objectfit" src="<?php echo $zeplin ?>/rectangle-631.jpg" srcset="<?php echo $zeplin ?>/rectangle-631@2x.jpg 2x, <?php echo $zeplin ?>/rectangle-631@3x.jpg 3x">
+            <img draggable="false" class="objectfit" src="<?php echo $zeplin ?>/rectangle-631.jpg" srcset="<?php echo $zeplin ?>/rectangle-631@2x.jpg 2x, <?php echo $zeplin ?>/rectangle-631@3x.jpg 3x">
             <div class="title">Rollable TV</div>
           </div>
           <div class="content">
@@ -39,7 +39,7 @@
       <div class="p-0 col-6">
         <div class="coverCard">
           <div class="imgWrap" style="background-image: url(<?php echo $zeplin ?>/rectangle-632.jpg)">
-            <img class="objectfit" src="<?php echo $zeplin ?>/rectangle-632.jpg" srcset="<?php echo $zeplin ?>/rectangle-632@2x.jpg 2x, <?php echo $zeplin ?>/rectangle-632@3x.jpg 3x">
+            <img draggable="false" class="objectfit" src="<?php echo $zeplin ?>/rectangle-632.jpg" srcset="<?php echo $zeplin ?>/rectangle-632@2x.jpg 2x, <?php echo $zeplin ?>/rectangle-632@3x.jpg 3x">
             <div class="title">핸드폰</div>
           </div>
           <div class="content">
@@ -55,7 +55,7 @@
       <div class="p-0 col-6">
         <div class="coverCard">
           <div class="imgWrap" style="background-image: url(<?php echo $zeplin ?>/rectangle-633.jpg)">
-            <img class="objectfit" src="<?php echo $zeplin ?>/rectangle-633.jpg" srcset="<?php echo $zeplin ?>/rectangle-633@2x.jpg 2x, <?php echo $zeplin ?>/rectangle-633@3x.jpg 3x">
+            <img draggable="false" class="objectfit" src="<?php echo $zeplin ?>/rectangle-633.jpg" srcset="<?php echo $zeplin ?>/rectangle-633@2x.jpg 2x, <?php echo $zeplin ?>/rectangle-633@3x.jpg 3x">
             <div class="title">노트북</div>
           </div>
           <div class="content">

@@ -24,7 +24,7 @@ get_template_part('template-parts/header/page');
   </div>
   <div class="section section1">
     <div class="bgCover">
-      <img src="<?php echo $zeplin ?>/dam-9914.jpg" srcset="<?php echo $zeplin ?>/dam-9914@2x.jpg 2x, <?php echo $zeplin ?>/dam-9914@3x.jpg 3x">
+      <img draggable="false" src="<?php echo $zeplin ?>/dam-9914.jpg" srcset="<?php echo $zeplin ?>/dam-9914@2x.jpg 2x, <?php echo $zeplin ?>/dam-9914@3x.jpg 3x">
     </div>
     <div class="container">
       <div class="row">
@@ -39,7 +39,7 @@ get_template_part('template-parts/header/page');
   </div>
   <div class="section section2">
     <div class="bgCover">
-      <img src="<?php echo $zeplin ?>/dam-9782.jpg" srcset="<?php echo $zeplin ?>/dam-9782@2x.jpg 2x, <?php echo $zeplin ?>/dam-9782@3x.jpg 3x">
+      <img draggable="false" src="<?php echo $zeplin ?>/dam-9782.jpg" srcset="<?php echo $zeplin ?>/dam-9782@2x.jpg 2x, <?php echo $zeplin ?>/dam-9782@3x.jpg 3x">
     </div>
     <div class="container">
       <div class="row">
@@ -52,15 +52,15 @@ get_template_part('template-parts/header/page');
           </p>
         </div>
         <div class="col-7">
-          <img src="<?php echo $zeplin ?>/1104-0531.jpg" style="visibility:hidden">
+          <img draggable="false" src="<?php echo $zeplin ?>/1104-0531.jpg" style="visibility:hidden">
         </div>
       </div>
     </div>
   </div>
   <div class="section section3">
     <div class="bgCover double">
-      <img src="<?php echo $zeplin ?>/dsc-1784.jpg" srcset="<?php echo $zeplin ?>/dsc-1784@2x.jpg 2x, <?php echo $zeplin ?>/dsc-1784@3x.jpg 3x">
-      <img src="<?php echo $zeplin ?>/dam-9832.jpg" srcset="<?php echo $zeplin ?>/dam-9832@2x.jpg 2x, <?php echo $zeplin ?>/dam-9832@3x.jpg 3x">
+      <img draggable="false" src="<?php echo $zeplin ?>/dsc-1784.jpg" srcset="<?php echo $zeplin ?>/dsc-1784@2x.jpg 2x, <?php echo $zeplin ?>/dsc-1784@3x.jpg 3x">
+      <img draggable="false" src="<?php echo $zeplin ?>/dam-9832.jpg" srcset="<?php echo $zeplin ?>/dam-9832@2x.jpg 2x, <?php echo $zeplin ?>/dam-9832@3x.jpg 3x">
     </div>
     <div class="container">
       <div class="row">
@@ -101,9 +101,9 @@ HTML;
           echo <<<HTML
           <div class="slide">
             <div class="videoWrap $className" id="videoWrap_$p->ID">
-              <img src="$poster" alt="" class="poster">
+              <img draggable="false" src="$poster" alt="" class="poster">
               <div class="controlBtn">
-                <img id="control_$p->ID" src="$zeplin/2796.png" srcset="$zeplin/2796@2x.png 2x, $zeplin/2796@3x.png 3x">
+                <img draggable="false" id="control_$p->ID" src="$zeplin/2796.png" srcset="$zeplin/2796@2x.png 2x, $zeplin/2796@3x.png 3x">
               </div>
               $videoElement
               <div class="bottomCover">
@@ -132,7 +132,7 @@ HTML;
           echo <<<HTML
             <div class="slide">
               <div class="thumbnail">
-                <img src="$thumbnailUrl" alt="">
+                <img draggable="false" src="$thumbnailUrl" alt="">
               </div>
               <div class="title">
                 $p->post_title

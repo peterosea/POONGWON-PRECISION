@@ -81,7 +81,7 @@ HTML;
       if (!empty($_attachment)) {
         $renderTable .= <<<HTML
                 <a href="$_attachment" download>$_linkname
-                  <img src="$zeplin/2789.svg" alt="" style="margin-left: 16px">
+                  <img draggable="false" src="$zeplin/2789.svg" alt="" style="margin-left: 16px">
                 </a>
 HTML;
       }

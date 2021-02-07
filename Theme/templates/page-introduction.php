@@ -23,7 +23,7 @@ get_template_part('template-parts/header/page');
   </div>
   <div class="section section1 max-container">
     <div class="bgCover">
-      <!-- <img src="<?php echo $zeplin ?>/rectangle-645.jpg" srcset="<?php echo $zeplin ?>/rectangle-645@2x.jpg 2x, <?php echo $zeplin ?>/rectangle-645@3x.jpg 3x" class="custom-position"> -->
+      <!-- <img draggable="false" src="<?php echo $zeplin ?>/rectangle-645.jpg" srcset="<?php echo $zeplin ?>/rectangle-645@2x.jpg 2x, <?php echo $zeplin ?>/rectangle-645@3x.jpg 3x" class="custom-position"> -->
     </div>
     <div class="container">
       <div class="row">
@@ -59,7 +59,7 @@ get_template_part('template-parts/header/page');
     </div>
     <div class="bgPadding"></div>
     <div class="bgCover">
-      <img src="<?php echo $zeplin ?>/dam-9338.jpg" srcset="<?php echo $zeplin ?>/dam-9338@2x.jpg 2x, <?php echo $zeplin ?>/dam-9338@3x.jpg 3x">
+      <img draggable="false" src="<?php echo $zeplin ?>/dam-9338.jpg" srcset="<?php echo $zeplin ?>/dam-9338@2x.jpg 2x, <?php echo $zeplin ?>/dam-9338@3x.jpg 3x">
     </div>
   </div>
 </main>

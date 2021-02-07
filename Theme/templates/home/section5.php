@@ -23,7 +23,7 @@
       <div class="col-12 col-sm-6 col-lg-4">
         <div class="profileWrap">
           <div class="imgWrap">
-            <img src="<?php echo $zeplin ?>/ellipse-532.jpg" srcset="<?php echo $zeplin ?>/ellipse-532@2x.jpg 2x, <?php echo $zeplin ?>/ellipse-532@3x.jpg 3x">
+            <img draggable="false" src="<?php echo $zeplin ?>/ellipse-532.jpg" srcset="<?php echo $zeplin ?>/ellipse-532@2x.jpg 2x, <?php echo $zeplin ?>/ellipse-532@3x.jpg 3x">
           </div>
           <div class="nameWrap">
             <span class="name">김복동</span>
@@ -39,7 +39,7 @@
       <div class="col-12 col-sm-6 col-lg-4">
         <div class="profileWrap">
           <div class="imgWrap">
-            <img src="<?php echo $zeplin ?>/ellipse-5321.jpg" srcset="<?php echo $zeplin ?>/ellipse-5321@2x.jpg 2x, <?php echo $zeplin ?>/ellipse-5321@3x.jpg 3x">
+            <img draggable="false" src="<?php echo $zeplin ?>/ellipse-5321.jpg" srcset="<?php echo $zeplin ?>/ellipse-5321@2x.jpg 2x, <?php echo $zeplin ?>/ellipse-5321@3x.jpg 3x">
           </div>
           <div class="nameWrap">
             <span class="name">박근혜</span>
@@ -57,7 +57,7 @@
       <div class="col-12 col-sm-6 col-lg-4">
         <div class="profileWrap">
           <div class="imgWrap">
-            <img src="<?php echo $zeplin ?>/ellipse-5322.jpg" srcset="<?php echo $zeplin ?>/ellipse-5322@2x.jpg 2x, <?php echo $zeplin ?>/ellipse-5322@3x.jpg 3x">
+            <img draggable="false" src="<?php echo $zeplin ?>/ellipse-5322.jpg" srcset="<?php echo $zeplin ?>/ellipse-5322@2x.jpg 2x, <?php echo $zeplin ?>/ellipse-5322@3x.jpg 3x">
           </div>
           <div class="nameWrap">
             <span class="name">김기춘</span>
@@ -74,7 +74,7 @@
       <div class="col-12 col-sm-6 col-lg-4">
         <div class="profileWrap">
           <div class="imgWrap">
-            <img src="<?php echo $zeplin ?>/ellipse-5323.jpg" srcset="<?php echo $zeplin ?>/ellipse-5323@2x.jpg 2x, <?php echo $zeplin ?>/ellipse-5323@3x.jpg 3x">
+            <img draggable="false" src="<?php echo $zeplin ?>/ellipse-5323.jpg" srcset="<?php echo $zeplin ?>/ellipse-5323@2x.jpg 2x, <?php echo $zeplin ?>/ellipse-5323@3x.jpg 3x">
           </div>
           <div class="nameWrap">
             <span class="name">요린</span>
@@ -91,7 +91,7 @@
       <div class="col-12 col-sm-6 col-lg-4">
         <div class="profileWrap">
           <div class="imgWrap">
-            <img src="<?php echo $zeplin ?>/ellipse-5324.jpg" srcset="<?php echo $zeplin ?>/ellipse-5324@2x.jpg 2x, <?php echo $zeplin ?>/ellipse-5324@3x.jpg 3x">
+            <img draggable="false" src="<?php echo $zeplin ?>/ellipse-5324.jpg" srcset="<?php echo $zeplin ?>/ellipse-5324@2x.jpg 2x, <?php echo $zeplin ?>/ellipse-5324@3x.jpg 3x">
           </div>
           <div class="nameWrap">
             <span class="name">지영신 </span>
@@ -108,7 +108,7 @@
       <div class="col-12 col-sm-6 col-lg-4">
         <div class="profileWrap">
           <div class="imgWrap">
-            <img src="<?php echo $zeplin ?>/ellipse-5325.jpg" srcset="<?php echo $zeplin ?>/ellipse-5325@2x.jpg 2x, <?php echo $zeplin ?>/ellipse-5325@3x.jpg 3x">
+            <img draggable="false" src="<?php echo $zeplin ?>/ellipse-5325.jpg" srcset="<?php echo $zeplin ?>/ellipse-5325@2x.jpg 2x, <?php echo $zeplin ?>/ellipse-5325@3x.jpg 3x">
           </div>
           <div class="nameWrap">
             <span class="name">김희진 </span>

@@ -20,8 +20,8 @@ get_template_part('template-parts/header/page');
   </div>
   <div class="section section1">
     <div class="bgCover double">
-      <img src="<?php echo $zeplin ?>/dsc-2979.jpg" srcset="<?php echo $zeplin ?>/dsc-2979@2x.jpg 2x, <?php echo $zeplin ?>/dsc-2979@3x.jpg 3x">
-      <img src="<?php echo $zeplin ?>/dam-9176.jpg" srcset="<?php echo $zeplin ?>/dam-9176@2x.jpg 2x, <?php echo $zeplin ?>/dam-9176@3x.jpg 3x">
+      <img draggable="false" src="<?php echo $zeplin ?>/dsc-2979.jpg" srcset="<?php echo $zeplin ?>/dsc-2979@2x.jpg 2x, <?php echo $zeplin ?>/dsc-2979@3x.jpg 3x">
+      <img draggable="false" src="<?php echo $zeplin ?>/dam-9176.jpg" srcset="<?php echo $zeplin ?>/dam-9176@2x.jpg 2x, <?php echo $zeplin ?>/dam-9176@3x.jpg 3x">
     </div>
     <div class="container">
       <div class="row">
@@ -31,18 +31,18 @@ get_template_part('template-parts/header/page');
           <p class="content">
             이러한 우수한 제작능력을 바탕으로 풍원정밀에서는 작업이 까다로운 비정형 디스플레이용 OMM까지 생산하고 있으며 이는 비정형의 스마트 고글이나 차량용 디스플레이에 사용되고 있습니다.
           </p>
-          <img src="<?php echo $zeplin ?>/2783-black.svg" alt="풍원정밀">
+          <img draggable="false" src="<?php echo $zeplin ?>/2783-black.svg" alt="풍원정밀">
           <div class="address">경기도 안산시 단원구 산단로 35번길 24</div>
           <ul>
             <li>
-              <img src="<?php echo $zeplin ?>/2762.svg" alt="">
+              <img draggable="false" src="<?php echo $zeplin ?>/2762.svg" alt="">
               <p>
                 원시역(서해선) 2번 출구<br />
                 도보 11분 (587m)
               </p>
             </li>
             <li>
-              <img src="<?php echo $zeplin ?>/2761.svg" alt="">
+              <img draggable="false" src="<?php echo $zeplin ?>/2761.svg" alt="">
               <p>
                 대표전화<br />
                 <a href="tel:031-493-2107">031-493-2107</a>

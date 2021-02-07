@@ -10,7 +10,7 @@ $zeplin = get_home_url() . '/wp-content/uploads/zeplin';
     <?php if (!empty(get_field('header_img', 'option'))) :
       echo wp_get_attachment_image(get_field('header_img', 'option'), 'full');
     else : ?>
-      <img src="<?php echo $zeplin ?>/2743.png" srcset="<?php echo $zeplin ?>/2743@2x.png 2x, <?php echo $zeplin ?>/2743@3x.png 3x">
+      <img draggable="false" src="<?php echo $zeplin ?>/2743.png" srcset="<?php echo $zeplin ?>/2743@2x.png 2x, <?php echo $zeplin ?>/2743@3x.png 3x">
     <?php endif ?>
   </div>
   <div class="container">

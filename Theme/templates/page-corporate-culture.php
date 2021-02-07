@@ -29,7 +29,7 @@ get_template_part('template-parts/header/page');
     <div class="container-md-fluid p-0">
       <div class="row">
         <div class="col-12 col-md-6 imgCol">
-          <img src="<?php echo $zeplin ?>/dam-9557.jpg" srcset="<?php echo $zeplin ?>/dam-9557@2x.jpg 2x, <?php echo $zeplin ?>/dam-9557@3x.jpg 3x">
+          <img draggable="false" src="<?php echo $zeplin ?>/dam-9557.jpg" srcset="<?php echo $zeplin ?>/dam-9557@2x.jpg 2x, <?php echo $zeplin ?>/dam-9557@3x.jpg 3x">
         </div>
         <div class="col-12 col-md-6">
           <div class="contentWrap">
@@ -52,12 +52,12 @@ get_template_part('template-parts/header/page');
           </div>
         </div>
         <div class="col-12 col-md-6 imgCol">
-          <img src="<?php echo $zeplin ?>/dam-0415.jpg" srcset="<?php echo $zeplin ?>/dam-0415@2x.jpg 2x, <?php echo $zeplin ?>/dam-0415@3x.jpg 3x">
+          <img draggable="false" src="<?php echo $zeplin ?>/dam-0415.jpg" srcset="<?php echo $zeplin ?>/dam-0415@2x.jpg 2x, <?php echo $zeplin ?>/dam-0415@3x.jpg 3x">
         </div>
       </div>
       <div class="row">
         <div class="col-12 col-md-6 imgCol">
-          <img src="<?php echo $zeplin ?>/dsc-2108.jpg" srcset="<?php echo $zeplin ?>/dsc-2108@2x.jpg 2x, <?php echo $zeplin ?>/dsc-2108@3x.jpg 3x">
+          <img draggable="false" src="<?php echo $zeplin ?>/dsc-2108.jpg" srcset="<?php echo $zeplin ?>/dsc-2108@2x.jpg 2x, <?php echo $zeplin ?>/dsc-2108@3x.jpg 3x">
         </div>
         <div class="col-12 col-md-6">
           <div class="contentWrap">

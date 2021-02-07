@@ -207,6 +207,14 @@
   text-align: right;
 }
 
+@mixin Text-Style-61 {
+  font-family: NotoSansCJKkr;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: -0.4px;
+  text-align: left;
+}
+
 @mixin Text-Style-11 {
   font-family: NotoSansCJKkr;
   font-size: 40px;
@@ -240,6 +248,14 @@
   line-height: 1.53;
   letter-spacing: -0.36px;
   text-align: center;
+}
+
+@mixin Text-Style-62 {
+  font-family: NotoSansCJKkr;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: -0.3px;
+  text-align: left;
 }
 
 @mixin Text-Style-51 {
@@ -278,11 +294,10 @@
   text-align: center;
 }
 
-@mixin Text-Style-49 {
+@mixin Text-Style-60 {
   font-family: NotoSansCJKkr;
   font-size: 26px;
-  font-weight: 500;
-  line-height: 1.85;
+  font-weight: bold;
   letter-spacing: -0.26px;
   text-align: left;
 }
@@ -292,6 +307,15 @@
   font-size: 26px;
   font-weight: 500;
   line-height: 1.62;
+  letter-spacing: -0.26px;
+  text-align: left;
+}
+
+@mixin Text-Style-49 {
+  font-family: NotoSansCJKkr;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1.85;
   letter-spacing: -0.26px;
   text-align: left;
 }
@@ -314,13 +338,13 @@
   text-align: center;
 }
 
-@mixin Text-Style-19 {
+@mixin Text-Style-57 {
   font-family: NotoSansCJKkr;
   font-size: 22px;
   font-weight: bold;
-  line-height: 1.32;
+  line-height: 2.23;
   letter-spacing: -0.22px;
-  text-align: center;
+  text-align: left;
 }
 
 @mixin Text-Style-3 {
@@ -328,6 +352,15 @@
   font-size: 22px;
   font-weight: bold;
   line-height: 2.09;
+  letter-spacing: -0.22px;
+  text-align: center;
+}
+
+@mixin Text-Style-19 {
+  font-family: NotoSansCJKkr;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.32;
   letter-spacing: -0.22px;
   text-align: center;
 }
@@ -422,6 +455,22 @@
   line-height: 1.4;
   letter-spacing: -0.2px;
   text-align: center;
+}
+
+@mixin Text-Style-59 {
+  font-family: NotoSansCJKkr;
+  font-size: 20px;
+  line-height: 2.4;
+  letter-spacing: -0.2px;
+  text-align: left;
+}
+
+@mixin Text-Style-58 {
+  font-family: NotoSansCJKkr;
+  font-size: 20px;
+  line-height: 1.8;
+  letter-spacing: -0.2px;
+  text-align: left;
 }
 
 @mixin Text-Style-56 {

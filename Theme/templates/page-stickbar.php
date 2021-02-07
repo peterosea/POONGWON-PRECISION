@@ -22,7 +22,7 @@ get_template_part('template-parts/header/page');
   </div>
   <div class="section section1">
     <div class="bgCover">
-      <img src="<?php echo $zeplin ?>/dam-0077.jpg" srcset="<?php echo $zeplin ?>/dam-0077@2x.jpg 2x, <?php echo $zeplin ?>/dam-0077@3x.jpg 3x">
+      <img draggable="false" src="<?php echo $zeplin ?>/dam-0077.jpg" srcset="<?php echo $zeplin ?>/dam-0077@2x.jpg 2x, <?php echo $zeplin ?>/dam-0077@3x.jpg 3x">
     </div>
     <div class="container">
       <div class="row">
@@ -37,7 +37,7 @@ get_template_part('template-parts/header/page');
   </div>
   <div class="section section2">
     <div class="bgCover">
-      <img src="<?php echo $zeplin ?>/dam-0100.jpg" srcset="<?php echo $zeplin ?>/dam-0100@2x.jpg 2x, <?php echo $zeplin ?>/dam-0100@3x.jpg 3x">
+      <img draggable="false" src="<?php echo $zeplin ?>/dam-0100.jpg" srcset="<?php echo $zeplin ?>/dam-0100@2x.jpg 2x, <?php echo $zeplin ?>/dam-0100@3x.jpg 3x">
     </div>
     <div class="container">
       <div class="row">
@@ -50,7 +50,7 @@ get_template_part('template-parts/header/page');
           </p>
         </div>
         <div class="col-7">
-          <img src="<?php echo $zeplin ?>/1104-0531.jpg" style="visibility:hidden">
+          <img draggable="false" src="<?php echo $zeplin ?>/1104-0531.jpg" style="visibility:hidden">
         </div>
       </div>
     </div>

@@ -17,7 +17,7 @@ get_template_part('template-parts/header/page');
 <main class="pageTemplate managementIdeology">
   <div class="section section1">
     <div class="bgCover">
-      <img src="<?php echo $zeplin ?>/rectangle-645.png" srcset="<?php echo $zeplin ?>/rectangle-645@2x.png 2x, <?php echo $zeplin ?>/rectangle-645@3x.png 3x">
+      <img draggable="false" src="<?php echo $zeplin ?>/rectangle-645.png" srcset="<?php echo $zeplin ?>/rectangle-645@2x.png 2x, <?php echo $zeplin ?>/rectangle-645@3x.png 3x">
     </div>
     <div class="container">
       <div class="row">
@@ -120,7 +120,7 @@ get_template_part('template-parts/header/page');
   </div>
   <div class="section section3">
     <div class="bgCover">
-      <img src="<?php echo $zeplin ?>/2807.png" srcset="<?php echo $zeplin ?>/2807@2x.png 2x, <?php echo $zeplin ?>/2807@3x.png 3x">
+      <img draggable="false" src="<?php echo $zeplin ?>/2807.png" srcset="<?php echo $zeplin ?>/2807@2x.png 2x, <?php echo $zeplin ?>/2807@3x.png 3x">
     </div>
     <div class="container">
       <h1 class="labelTitle">

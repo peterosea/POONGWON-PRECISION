@@ -1,5 +1,5 @@
 <div class="section section1" style="background-image: url(<?php echo $zeplin ?>/rectangle-620.jpg);">
-  <img src="<?php echo $zeplin ?>/rectangle-620.jpg" srcset="<?php echo $zeplin ?>/rectangle-620@2x.jpg 2x, <?php echo $zeplin ?>/rectangle-620@3x.jpg 3x" class="bgImg objectfit">
+  <img draggable="false" src="<?php echo $zeplin ?>/rectangle-620.jpg" srcset="<?php echo $zeplin ?>/rectangle-620@2x.jpg 2x, <?php echo $zeplin ?>/rectangle-620@3x.jpg 3x" class="bgImg objectfit">
   <div class="container">
     <h1>
       풍원정밀이 만들어가는 미래의 반도체, 모바일,<br />

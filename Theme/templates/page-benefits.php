@@ -29,7 +29,7 @@ get_template_part('template-parts/header/page');
         <div class="row">
           <div class="col-12 col-md-6 col-lg-4 mb-5">
             <div class="imgWrap">
-              <img src="<?php echo $zeplin ?>/2851.jpg" srcset="<?php echo $zeplin ?>/2851@2x.jpg 2x, <?php echo $zeplin ?>/2851@3x.jpg 3x">
+              <img draggable="false" src="<?php echo $zeplin ?>/2851.jpg" srcset="<?php echo $zeplin ?>/2851@2x.jpg 2x, <?php echo $zeplin ?>/2851@3x.jpg 3x">
               <div class="content">
                 <svg>
                   <use xlink:href="#642"></use>
@@ -45,7 +45,7 @@ get_template_part('template-parts/header/page');
           </div>
           <div class="col-12 col-md-6 col-lg-4 mb-5">
             <div class="imgWrap">
-              <img src="<?php echo $zeplin ?>/2852.jpg" srcset="<?php echo $zeplin ?>/2852@2x.jpg 2x, <?php echo $zeplin ?>/2852@3x.jpg 3x">
+              <img draggable="false" src="<?php echo $zeplin ?>/2852.jpg" srcset="<?php echo $zeplin ?>/2852@2x.jpg 2x, <?php echo $zeplin ?>/2852@3x.jpg 3x">
               <div class="content">
                 <svg>
                   <use xlink:href="#2819"></use>
@@ -63,7 +63,7 @@ get_template_part('template-parts/header/page');
           </div>
           <div class="col-12 col-md-6 col-lg-4 mb-5">
             <div class="imgWrap">
-              <img src="<?php echo $zeplin ?>/2853.jpg" srcset="<?php echo $zeplin ?>/2853@2x.jpg 2x, <?php echo $zeplin ?>/2853@3x.jpg 3x">
+              <img draggable="false" src="<?php echo $zeplin ?>/2853.jpg" srcset="<?php echo $zeplin ?>/2853@2x.jpg 2x, <?php echo $zeplin ?>/2853@3x.jpg 3x">
               <div class="content">
                 <svg>
                   <use xlink:href="#647"></use>
