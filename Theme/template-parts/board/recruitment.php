@@ -39,12 +39,14 @@ if (!empty($postType)) {
     $renderTable = <<<HTML
         <table class="boardTemplate">
           <colgroup>
-            <col span="1" style="width: 70%;">
+            <col span="1" style="width: 60%;">
+            <col span="1" style="width: 15%;">
             <col span="1" style="width: 15%;">
           </colgroup>
           <thead>
-            <th>제목</th>
-            <th>등록일</th>
+            <th>공고명</th>
+            <th>시작일자</th>
+            <th>마감일자</th>
           </thead>
           <tbody>
 HTML;
@@ -60,13 +62,15 @@ HTML;
        */
       $_title = get_the_title();
       $_permalink = get_the_permalink();
-      $_date = get_the_date('Y-m-d');
+      $start_date = get_field('start_date');
+      $end_date = get_field('end_date');
       $renderTable .= <<<HTML
           <tr>
             <td class="title">
               <a href="$_permalink">$_title</a>
             </td>
-            <td class="date">$_date</td>
+            <td class="date">$start_date</td>
+            <td class="date">$end_date</td>
           </tr>
 HTML;
     endwhile;
