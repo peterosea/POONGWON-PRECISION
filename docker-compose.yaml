@@ -6,21 +6,23 @@ services:
     image: wordpress:php7.4
     restart: always
     ports:
-      - 40005:80
+      - 40003:80
+    env_file:
+      - ./.env
     environment:
-      WORDPRESS_DB_HOST: db:3306
-      WORDPRESS_DB_USER: root
-      WORDPRESS_DB_PASSWORD: 1
-      WORDPRESS_DB_NAME: poongwon
+      WORDPRESS_DB_HOST: workdb:3306
+      WORDPRESS_DB_USER: ${WORDPRESS_DB_USER}
+      WORDPRESS_DB_PASSWORD: ${WORDPRESS_DB_PASSWORD}
+      WORDPRESS_DB_NAME: ${WORDPRESS_DB_NAME}
     volumes:
       - ./.wordpress:/var/www/html
       - ./zeplin:/var/www/html/wp-content/uploads/zeplin
       - ./Theme:/var/www/html/wp-content/themes/base
       - ./backup:/var/www/html/wp-content/ai1wm-backups
     external_links:
-      - DB__wordpress:mariadb
+      - DB__workwp:mariadb
   
 networks:
   default:
     external:
-      name: db_net
+      name: db_work
