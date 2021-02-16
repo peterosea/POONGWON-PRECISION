@@ -41,11 +41,39 @@ main.home {
   }
   .section2 {
     position: relative;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    margin-top: calc(-100px - 3vw);
+    padding-top: 120px;
+    // padding-bottom: 200px;
+    margin-top: calc(-100px - 10vw);
+    height: 857px;
+    display: flex;
+    align-items: center;
+    z-index: 3;
+    // background-image: url(/wp-content/uploads/zeplin/group-43.svg);
+    // background-position: center center;
+    // background-repeat: no-repeat;
     @media screen and (min-width: 1900px) {
-      margin-bottom: 200px;
+      margin-top: calc(-100px - 5vw);
+    }
+    .bg_green {
+      background-color: #77c7c7;
+      height: 700px;
+      width: 100%;
+      position: absolute;
+      top: calc(50% - 290px);
+      left: 0px;
+      z-index: 5;
+      clip-path: polygon(0% 0%, 100% 25%, 100% 100%, 0% 75%);
+      mix-blend-mode: hard-light;
+    }
+    .bg_navy {
+      background-color: #1e2848;
+      height: 700px;
+      width: 100%;
+      position: absolute;
+      top: calc(50% - 290px);
+      left: 0px;
+      z-index: 4;
+      clip-path: polygon(0% 25%, 100% 0%, 100% 75%, 0% 100%);
     }
     .container {
       z-index: 200;
@@ -88,7 +116,7 @@ main.home {
     }
   }
   .section3 {
-    padding-top: 90px;
+    padding-top: 100px;
     padding-bottom: 232px;
     position: relative;
     z-index: 2;

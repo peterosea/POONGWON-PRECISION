@@ -1,5 +1,5 @@
 <div class="section section2">
-  <img draggable="false" src="<?php echo $zeplin ?>/group-43.svg" class="bgImg">
+  <!-- <img draggable="false" src="<?php echo $zeplin ?>/group-43.svg" class="bgImg"> -->
   <div class="container">
     <div class="row">
       <div class="col ">
@@ -49,4 +49,6 @@
       </div>
     </div>
   </div>
+  <div class="bg_green"></div>
+  <div class="bg_navy"></div>
 </div>
