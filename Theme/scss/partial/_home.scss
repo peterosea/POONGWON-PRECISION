@@ -29,6 +29,24 @@ main.home {
       @include Text-Style-2;
       color: $white;
     }
+    @include respondTo("mhg") {
+      height: 800px;
+      h1 {
+        font-size: 46px;
+      }
+      p {
+        font-size: 20px;
+      }
+    }
+    @include respondTo("mlg") {
+      height: 640px;
+      h1 {
+        font-size: 34px;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
     .bgImg {
       position: absolute;
       height: 100%;
@@ -51,8 +69,12 @@ main.home {
     // background-image: url(/wp-content/uploads/zeplin/group-43.svg);
     // background-position: center center;
     // background-repeat: no-repeat;
-    @media screen and (min-width: 1900px) {
-      margin-top: calc(-100px - 5vw);
+    @include respondTo("mhg") {
+      margin-top: calc(-100px - 13vw);
+    }
+    @include respondTo("mlg") {
+      height: 780px;
+      margin-top: calc(-100px - 18vw);
     }
     .bg_green {
       background-color: #77c7c7;
@@ -95,6 +117,9 @@ main.home {
       align-items: center;
       img {
         margin-bottom: 42px;
+        @include respondTo("mlg") {
+          display:none;
+        }
       }
       .textPoint {
         display: flex;
@@ -112,6 +137,48 @@ main.home {
       p {
         @include Text-Style-6;
         color: $white;
+      }
+    }
+    .sld_sect2 {
+      .slick-dots li button {
+        background: rgba(0,0,0,0.2);
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:before {
+          content:'';
+          background-color:#fff;
+          width:6px;
+          height:6px;
+          border-radius: 100px;
+        }
+      }
+      .slick-prev {
+        background-image:url('/wp-content/themes/base/assets/img/arrow.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 20px;
+        height: 12px;
+        transform: rotate(90deg);
+        display:flex;
+        &:before {
+          content:none;
+        }
+      }
+      .slick-next {
+        background-image:url('/wp-content/themes/base/assets/img/arrow.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 20px;
+        height: 12px;
+        transform: rotate(-90deg);
+        display:flex;
+        &:before {
+          content:none;
+        }
       }
     }
   }

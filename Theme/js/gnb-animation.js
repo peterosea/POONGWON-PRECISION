@@ -18,4 +18,11 @@
   function getCurrentScroll() {
     return window.pageYOffset || document.documentElement.scrollTop;
   }
+  
+  // GNB Border Hover에러 처리
+  $(".gnb_border").hover(
+    function(){$("nav.GNB").addClass("_active");},
+    function(){$("nav.GNB").removeClass("_active");}
+  );
+
 })(jQuery);

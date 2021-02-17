@@ -41,7 +41,7 @@ nav.GNB {
     }
   }
 
-  &:hover {
+  &:hover, &._active {
     background-color: $dark-blue-grey;
   }
   .logo {
@@ -58,16 +58,25 @@ nav.GNB {
   .menu-gnb-container {
     display: flex;
     justify-content: center;
-    &::after {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 77px;
-      height: 1px;
-      width: 100%;
-      background-color: rgba($white, 0.1);
-      z-index: 200;
-    }
+    // &::after {
+    //   content: "";
+    //   display: block;
+    //   position: absolute;
+    //   top: 77px;
+    //   height: 1px;
+    //   width: 100%;
+    //   background-color: rgba($white, 0.1);
+    //   z-index: 200;
+    // }
+  }
+  .gnb_border {
+    display: block;
+    position: absolute;
+    top: 77px;
+    height: 1px;
+    width: 100%;
+    background-color: rgba($white, 0.1);
+    z-index: 200;
   }
   .menu {
     display: flex;
@@ -96,6 +105,10 @@ nav.GNB {
       z-index: 2;
       @include Text-Style-22;
       color: $white;
+      @include respondTo("mhg") {
+        padding: 27px 30px;
+        font-size: 20px;
+      }
     }
     .sub-menu {
       display: none;
@@ -111,7 +124,7 @@ nav.GNB {
       margin-top: -77px;
       a {
         display: block;
-        padding: 0 28px;
+        padding: 0 23px;
         text-decoration: none;
         opacity: 0.6;
         @include Text-Style-23;
@@ -120,6 +133,46 @@ nav.GNB {
         &:hover {
           color: $turquoise;
         }
+        @include respondTo("mhg") {
+          font-size: 16px;
+        }
+      }
+    }
+
+  }
+  // 언어 메뉴
+  .side_menu {
+    position: absolute;
+    top: 23px;
+    right: 54px;
+    .menu_lang {
+      padding: 0;
+      display: flex;
+      margin: 0;
+      li.menu-item {
+        padding-left: 15px;
+        list-style: none;
+      }
+      a {
+        color: $white;
+        font-size: 14px;
+        opacity: 0.6;
+      }
+      li.current-menu-item a {
+        opacity: 1;
+        font-weight: bold;
+      }
+    }
+  }
+  // GNB Border 처리
+  &._active {
+    .menu .sub-menu {
+      opacity: 1;
+      display: block;
+    }
+    .menu > .menu-item .sub-menu {
+      a {
+        opacity: 1;
       }
     }
   }

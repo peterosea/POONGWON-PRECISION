@@ -14,3 +14,7 @@ html .container {
 body.ie11 img.objectfit {
   display: none;
 }
+
+.slick-slide:focus {
+  outline: none;
+}

@@ -1,7 +1,7 @@
 <div class="section section2">
   <!-- <img draggable="false" src="<?php echo $zeplin ?>/group-43.svg" class="bgImg"> -->
   <div class="container">
-    <div class="row">
+    <div class="row sld_sect2">
       <div class="col ">
         <div class="valueWrap">
           <img draggable="false" src="<?php echo $zeplin ?>/1.svg">
@@ -49,6 +49,7 @@
       </div>
     </div>
   </div>
+  <!-- 사선 배경 CSS처리 -->
   <div class="bg_green"></div>
   <div class="bg_navy"></div>
 </div>
