@@ -23,7 +23,8 @@ get_template_part('template-parts/header/page');
         <div class="col-4"></div>
         <div class="col-8 contentCol">
           <p>
-            2014년 기술연구소를 설립하고 00명의 석박사 출신의 연구 인력이 스마트폰 및 TV 디스플레이 관련 첨단 과학 기술을 연구중입니다.
+          2010년 기술연구소를 설립하고 우수한 석박사 출신의 연구 인력이 스마트폰 및 TV 디스플레이 
+관련 첨단 기술 개발에 집중하고 있습니다. 
           </p>
         </div>
       </div>
@@ -37,10 +38,8 @@ get_template_part('template-parts/header/page');
       <div class="row">
         <div class="col-5">
           <p>
-            정교함이 생명인 디스플레이 시장에서 풍원정밀의 wet etching 기술은 단연 독보적이며 이에 2019년 중소벤처기업부 소재부품장비 강소기업 100에 선정되기도 하였습니다.
-            <br />
-            <br />
-            2020년에는 연구소 설비를 대폭 늘려 총 000평 부지의 연구시설을 증축하였으며 000 등의 최첨단 장비를 갖추고 있습니다.
+          정교함이 생명인 디스플레이 시장에서 풍원정밀의 
+포토 에칭(Photo-Etching) 기술은 단연 독보적이며 이에 2019년 중소벤처기업부 소재부품장비 강소기업 100에 선정되기도 하였습니다.
           </p>
         </div>
         <div class="col-7">

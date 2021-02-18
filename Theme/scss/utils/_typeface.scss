@@ -119,9 +119,18 @@
   font-stretch: normal;
 }
 
+
+// 폰트스타일
+@mixin TextTitle-M {
+  font-size: 34px;
+}
+@mixin TextP-M {
+  font-size: 16px;
+}
+
 @mixin Text-Style-4 {
   font-family: NotoSansCJKkr;
-  font-size: 120px;
+  font-size: 100px;
   font-weight: bold;
   line-height: 0.8;
   text-align: left;
@@ -154,11 +163,13 @@
   text-align: left;
 }
 
+// sectionTitle
 @mixin Text-Style-7 {
   font-family: NotoSansCJKkr;
   font-size: 62px;
   font-weight: 900;
-  line-height: 0.43;
+  line-height: 1;
+  // line-height: 0.43;
   letter-spacing: -0.62px;
   text-align: center;
 }
@@ -192,7 +203,7 @@
 
 @mixin Text-Style-9 {
   font-family: NotoSansCJKkr;
-  font-size: 50px;
+  font-size: 56px;
   font-weight: bold;
   line-height: 0.9;
   letter-spacing: -0.5px;
@@ -219,9 +230,9 @@
   font-family: NotoSansCJKkr;
   font-size: 40px;
   font-weight: bold;
-  line-height: 0.73;
+  line-height: 1;
   letter-spacing: -0.4px;
-  text-align: left;
+  text-align: center;
 }
 
 @mixin Text-Style-5 {

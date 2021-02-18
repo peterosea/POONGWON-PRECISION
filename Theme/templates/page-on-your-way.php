@@ -15,9 +15,6 @@ get_header();
 get_template_part('template-parts/header/page');
 ?>
 <main class="pageTemplate onYourWay">
-  <div class="container">
-    <div class="pageTitle">풍원정밀 (주)</div>
-  </div>
   <div class="section section1">
     <div class="bgCover double">
       <img draggable="false" src="<?php echo $zeplin ?>/dsc-2979.jpg" srcset="<?php echo $zeplin ?>/dsc-2979@2x.jpg 2x, <?php echo $zeplin ?>/dsc-2979@3x.jpg 3x">
@@ -28,9 +25,6 @@ get_template_part('template-parts/header/page');
         <div class="col-12 col-lg-6">
         </div>
         <div class="col-12 col-lg-6 iconCol">
-          <p class="content">
-            이러한 우수한 제작능력을 바탕으로 풍원정밀에서는 작업이 까다로운 비정형 디스플레이용 OMM까지 생산하고 있으며 이는 비정형의 스마트 고글이나 차량용 디스플레이에 사용되고 있습니다.
-          </p>
           <img draggable="false" src="<?php echo $zeplin ?>/2783-black.svg" alt="풍원정밀">
           <div class="address">경기도 안산시 단원구 산단로 35번길 24</div>
           <ul>

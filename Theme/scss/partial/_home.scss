@@ -3,10 +3,19 @@ main.home {
     @include Text-Style-7;
     color: $black;
     margin-bottom: 18px;
+    @include respondTo("mhg") {
+      font-size: 46px;
+    }
+    @include respondTo("mlg") {
+      @include TextTitle-M;
+    }
   }
   .excerpt {
     @include Text-Style-8;
     color: $greyish-brown;
+    @include respondTo("mmd") {
+      @include TextP-M;
+    }
   }
   .section1 {
     height: 1000px;
@@ -24,10 +33,14 @@ main.home {
     h1 {
       @include Text-Style;
       color: $white;
+      margin-bottom: 30px;
     }
     p {
       @include Text-Style-2;
       color: $white;
+      strong {
+        font-weight: 700;
+      }
     }
     @include respondTo("mhg") {
       height: 800px;
@@ -41,10 +54,11 @@ main.home {
     @include respondTo("mlg") {
       height: 640px;
       h1 {
-        font-size: 34px;
+        @include TextTitle-M;
       }
       p {
         font-size: 18px;
+        line-height: 1.8;
       }
     }
     .bgImg {
@@ -73,8 +87,9 @@ main.home {
       margin-top: calc(-100px - 13vw);
     }
     @include respondTo("mlg") {
-      height: 780px;
-      margin-top: calc(-100px - 18vw);
+      height: 620px;
+      padding-top: 20px;
+      margin-top: calc(-100px - 6vw);
     }
     .bg_green {
       background-color: #77c7c7;
@@ -96,6 +111,14 @@ main.home {
       left: 0px;
       z-index: 4;
       clip-path: polygon(0% 25%, 100% 0%, 100% 75%, 0% 100%);
+    }
+    @include respondTo("mlg") {
+      .bg_green {
+        height: 560px;
+      }
+      .bg_navy {
+        height: 560px;
+      }
     }
     .container {
       z-index: 200;
@@ -133,27 +156,50 @@ main.home {
           @include Text-Style-5;
           color: $white;
         }
+        @include respondTo("mlg") {
+          margin-bottom: 30px;
+          .point {
+            font-size: 80px;
+          }
+          .unit {
+            font-size: 18px;
+          }
+        }
       }
       p {
         @include Text-Style-6;
         color: $white;
+        @include respondTo("mlg") {
+          margin-bottom: 3rem;
+        }
       }
     }
     .sld_sect2 {
-      .slick-dots li button {
-        background: rgba(0,0,0,0.2);
-        border-radius: 100px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        &:before {
-          content:'';
-          background-color:#fff;
-          width:6px;
-          height:6px;
+      .slick-dots li {
+        button {
+          background: rgba(255,255,255,0);
           border-radius: 100px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border:1px solid #fff;
+          width: 14px;
+          height: 14px;
+          &:before {
+            content:none;
+            // background-color:#fff;
+            // width:6px;
+            // height:6px;
+            // border-radius: 100px;
+          }
+        }
+        &.slick-active {
+          button {
+            background: rgba(255,255,255,1);
+          }
         }
       }
+      
       .slick-prev {
         background-image:url('/wp-content/themes/base/assets/img/arrow.svg');
         background-position: center;
@@ -163,6 +209,7 @@ main.home {
         height: 12px;
         transform: rotate(90deg);
         display:flex;
+        left: 10px;
         &:before {
           content:none;
         }
@@ -176,6 +223,7 @@ main.home {
         height: 12px;
         transform: rotate(-90deg);
         display:flex;
+        right: 10px;
         &:before {
           content:none;
         }
@@ -188,14 +236,26 @@ main.home {
     position: relative;
     z-index: 2;
     background-color: $white;
+    @include respondTo("mlg") {
+      padding-top: 20px;
+      padding-bottom: 130px;
+    }
+    @include respondTo("mmd") {
+      padding-top: 0;
+      padding-bottom: 20px;
+    }
     .excerpt {
       margin-bottom: 76px;
+      @include respondTo("mlg") {
+        font-size: 18px;
+        margin-bottom: 55px;
+      }
     }
     .coverCard {
       position: relative;
       overflow: hidden;
       .imgWrap {
-        padding-top: 100%;
+        padding-top: 52%;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -221,18 +281,16 @@ main.home {
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
+        width: 530px;
         height: 100%;
+        z-index: 1;
         display: flex;
         align-items: center;
         justify-content: center;
-        opacity: 0.9;
         background-color: $turquoise;
-        opacity: 0;
-        bottom: -100%;
         transition: bottom 0.4s ease-in-out, opacity 0.4s ease-in-out;
         .innerWrap {
-          max-width: 235px;
+          max-width: 370px;
         }
         .title {
           @include Text-Style-9;
@@ -244,10 +302,57 @@ main.home {
           @include Text-Style-10;
           color: $white;
         }
+        @include respondTo("mxl") {
+          width: 50%;
+          padding: 60px;
+        }
+        @include respondTo("mlg") {
+          .title {
+            font-size: 28px;
+          }
+          p {
+            @include TextP-M;
+          }
+        }
+      }
+      @include respondTo("mmd") {
+        .content {
+          position: relative;
+          padding: 40px;
+          opacity: 1;
+          width: 100%;
+          .title {
+            font-size: 28px;
+            line-height: 1;
+          }
+          p {
+            @include TextP-M;
+            margin-bottom: 0;
+          }
+        }
+        .imgWrap {
+          padding-top: 70%;
+          .title {
+            opacity: 0;
+            visibility: hidden;
+          }
+        }
       }
       &:hover .content {
         opacity: 1;
         bottom: 0;
+      }
+    }
+    .col-12:nth-child(2) {
+      .content {
+        right: 0;
+        left: auto;
+      }
+    }
+    .col-6 {
+      @include respondTo("mmd") {
+        flex: 0 0 100%;
+        max-width: 100%;
       }
     }
   }
@@ -259,6 +364,12 @@ main.home {
       background-repeat: no-repeat;
       background-size: cover;
       position: relative;
+      @include respondTo("mlg") {
+        padding-top: 70%;
+      }
+      @include respondTo("msm") {
+        padding-top: 120%;
+      }
       .container {
         position: absolute;
         width: 100%;
@@ -272,6 +383,12 @@ main.home {
         align-items: flex-end;
         justify-content: flex-end;
         z-index: 300;
+        @include respondTo("mxl") {
+          align-items: center;
+        }
+        @include respondTo("msm") {
+          justify-content: start;
+        }
         h1 {
           @include Text-Style-12;
           color: $pale-grey-two;
@@ -281,10 +398,32 @@ main.home {
           @include Text-Style-13;
           color: $white;
         }
+        @include respondTo("mhg") {
+          h1 {
+            font-size: 46px;
+          }
+          p {
+            font-size: 20px;
+          }
+        }
+        @include respondTo("mlg") {
+          padding-top: 0;
+          padding-bottom: 0;
+          h1 {
+            @include TextTitle-M;
+          }
+          p {
+            @include TextP-M;
+            line-height: 1.7;
+          }
+        }
       }
       &:nth-child(2) .container {
         justify-content: flex-start;
         padding-bottom: 190px;
+        @include respondTo("mxl") {
+          padding-bottom: 0px;
+        }
       }
       &:nth-child(1)::after,
       &:nth-child(2)::after {
@@ -319,6 +458,14 @@ main.home {
     padding-top: 250px;
     padding-bottom: 240px;
     color: $white;
+    @include respondTo("mxl") {
+      padding-top: 160px;
+      padding-bottom: 100px;
+    }
+    @include respondTo("mmd") {
+      padding-top: 80px;
+      padding-bottom: 20px;
+    }
     .sectionTitle {
       color: $white;
       margin-bottom: 26px;
@@ -352,6 +499,10 @@ main.home {
       align-items: center;
       padding-top: 60px;
       padding-bottom: 60px;
+      @include respondTo("mmd") {
+        padding-top: 0px;
+        padding-bottom: 30px;
+      }
       .imgWrap {
         border-radius: 999px;
         width: 190px;
@@ -359,6 +510,9 @@ main.home {
         margin-bottom: 100px;
         overflow: hidden;
         position: relative;
+        @include respondTo("mmd") {
+          margin-bottom: 30px;
+        }
         img {
           width: 100%;
           position: absolute;
@@ -392,6 +546,8 @@ main.home {
       }
       p {
         opacity: 0.4;
+        max-width: 280px;
+        word-break: keep-all;
         @include Text-Style-20;
       }
     }

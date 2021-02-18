@@ -78,6 +78,7 @@
           }
         }
         .title {
+          display: none;
           color: $white;
           opacity: 1;
         }
@@ -109,6 +110,7 @@
         }
       }
       .title {
+        display: none;
         padding-top: 15px;
         opacity: 0.5;
         color: $white;

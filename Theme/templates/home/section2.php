@@ -6,7 +6,7 @@
         <div class="valueWrap">
           <img draggable="false" src="<?php echo $zeplin ?>/1.svg">
           <div class="textPoint">
-            <div class="point">33</div>
+            <div class="point">26</div>
             <div class="unit">
               년
             </div>
@@ -27,8 +27,8 @@
             </div>
           </div>
           <p>
-            최근 3년 연평균 매출액 증가율<br />
-            23%의 고속성장 중입니다.
+          박막 금속 가공 기술을 이용해 총<br>
+          180여 기업에 공급해 왔습니다.
           </p>
         </div>
       </div>
@@ -36,14 +36,14 @@
         <div class="valueWrap">
           <img draggable="false" src="<?php echo $zeplin ?>/3.svg">
           <div class="textPoint">
-            <div class="point">8</div>
+            <div class="point">14,000</div>
             <div class="unit">
-              억
+              개
             </div>
           </div>
           <p>
-            풍원정밀의 부품소재 기술로 만들어진 <br />
-            TV와 핸드폰의 갯수입니다.
+          풍원정밀의 박막 금속 가공 기술을 이용해<br>
+          개발, 생산한 제품의 갯수입니다.
           </p>
         </div>
       </div>

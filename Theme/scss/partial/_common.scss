@@ -8,6 +8,10 @@ html .container {
   @include respondTo("hg") {
     max-width: 1230px;
   }
+  @include respondTo("mlg") {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
 }
 
 // ie11

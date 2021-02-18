@@ -33,14 +33,14 @@ main.press-single {
           background-color: $turquoise;
         }
         &.disable {
-          color: $brownish-grey;
+          color: rgba(255,255,255,0.5);
           cursor: default;
         }
       }
       .prev-next {
         display: flex;
         .prev {
-          margin-right: 5px;
+          margin-left: 5px;
         }
       }
     }

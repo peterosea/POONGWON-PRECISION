@@ -1,4 +1,10 @@
 main.startUpIdeology {
+  .top_image {
+    margin-top: -110px;
+    img {
+      width: 100%;
+    }
+  }
   .section1 {
     position: relative;
     // max-width: 1800px;
@@ -6,10 +12,11 @@ main.startUpIdeology {
     background-color: $very-light-pink-two;
     padding-top: 300px;
     padding-bottom: 180px;
-    clip-path: polygon(0 270px, 100% 0%, 100% calc(100% - 270px), 0 100%);
+    clip-path: polygon(0 215px, 100% 0%, 100% calc(100% - 215px), 0 100%);
+    margin-top: -180px;
     .bgCover {
       position: absolute;
-      top: 0;
+      top: -20px;
       left: 50%;
       height: 100%;
       background-image: url(#{$zeplin}/rectangle-646@3x.png);
@@ -20,7 +27,7 @@ main.startUpIdeology {
     }
     .contentCol {
       @include respondTo("lg") {
-        padding-left: 100px;
+        padding-right: 100px;
       }
       color: $black;
       @include Text-Style-27;

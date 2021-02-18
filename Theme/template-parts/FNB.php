@@ -10,7 +10,7 @@ $zeplin = get_home_url() . '/wp-content/uploads/zeplin';
           <li><strong>주소</strong><span>경기도 안산시 단원구 원시동 740-3 풍원정밀</span></li>
           <li><strong>대표전화번호</strong><a href="tel:031-493-2107">031-493-2107</a></li>
         </ul>
-        <p class="copyright">Copyright © 2013 POONGWON. All Rights Reserved. </p>
+        <p class="copyright">© 2021 POONGWON. All Rights Reserved. </p>
       </div>
       <div class="col-12 col-xl-4 order-0 order-xl-0 pagelistCol">
         <?php

@@ -8,7 +8,7 @@ $zeplin = get_home_url() . '/wp-content/uploads/zeplin';
     </a>
   </div>
   <div class="gnb_border"></div>
-  <div class="container">
+  <div class="container pc_menu">
     <?php wp_nav_menu(array('menu' => 'GNB')) ?>
   </div>
   <div class="side_menu">
@@ -16,5 +16,19 @@ $zeplin = get_home_url() . '/wp-content/uploads/zeplin';
       'menu' => 'Lang',
       'menu_class' => 'menu_lang'
       )) ?>
+  </div>
+  <div class="mobile_menu">
+    <div class="hamberger">
+      <span class="bar1"></span>
+      <span class="bar2"></span>
+      <span class="bar3"></span>
+    </div>
+    <div class="container">
+      <?php wp_nav_menu(array('menu' => 'GNB')) ?>
+      <?php wp_nav_menu(array(
+      'menu' => 'Lang',
+      'menu_class' => 'menu_lang'
+      )) ?>
+    </div>
   </div>
 </nav>
