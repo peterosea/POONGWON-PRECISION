@@ -1,8 +1,23 @@
 main.startUpIdeology {
   .top_image {
-    margin-top: -110px;
-    img {
-      width: 100%;
+    margin-top: -70px;
+    clip-path: polygon(0 215px, 100% 0%, 100% calc(100% - 215px), 0 100%);
+    background-image: url(#{$zeplin}/ideology-image01.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 38rem;
+    // img {
+    //   width: 100%;
+    // }
+    @include respondTo("mhg") {
+      clip-path: polygon(0 150px, 100% 0%, 100% calc(100% - 150px), 0 100%);
+      height: 34rem;
+    }
+    @include respondTo("msm") {
+      clip-path: polygon(0 60px, 100% 0%, 100% calc(100% - 60px), 0 100%);
+      height: 18rem;
     }
   }
   .section1 {
@@ -14,16 +29,65 @@ main.startUpIdeology {
     padding-bottom: 180px;
     clip-path: polygon(0 215px, 100% 0%, 100% calc(100% - 215px), 0 100%);
     margin-top: -180px;
+    @include respondTo("mhg") {
+      padding-top: 220px;
+      padding-bottom: 140px;
+      clip-path: polygon(0 150px, 100% 0%, 100% calc(100% - 150px), 0 100%);
+      margin-top: -110px;
+    }
+    @include respondTo("mlg") {
+      padding-top: 180px;
+      padding-bottom: 60px;
+    }
+    @include respondTo("mmd") {
+      padding-top: 0;
+    }
+    @include respondTo("msm") {
+      margin-top: -40px;
+      clip-path: polygon(0 60px, 100% 0%, 100% calc(100% - 60px), 0 100%);
+    }
     .bgCover {
       position: absolute;
       top: -20px;
       left: 50%;
       height: 100%;
-      background-image: url(#{$zeplin}/rectangle-646@3x.png);
+      background-image: url(#{$zeplin}/ideology-image03.jpg);
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
       width: 50%;
+      @include respondTo("mmd") {
+        position: relative;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 540px;
+        transform: none;
+        clip-path: polygon(0 150px, 100% 0%, 100% calc(100% - 150px), 0 100%);
+      }
+      @include respondTo("msm") {
+        height: 400px;
+        clip-path: polygon(0 60px, 100% 0%, 100% calc(100% - 60px), 0 100%);
+      }
+    }
+    .container {
+      @include respondTo("mlg") {
+        .row {
+          padding: 40px 15px;
+        }
+        .col-lg-6 {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+        .contentCol {
+          padding-left: 0;
+        }
+      }
+      @include respondTo("msm") {
+        .row {
+          padding: 20px 15px 40px;
+        }
+      }
     }
     .contentCol {
       @include respondTo("lg") {
@@ -39,8 +103,19 @@ main.startUpIdeology {
       @include respondTo("lg") {
         padding-top: 126px;
       }
+      @include respondTo("mhg") {
+        img {
+          width:100%;
+        }
+      }
     }
     .contentCol {
+      @include respondTo("mlg") {
+        margin-bottom: 40px;
+      }
+      @include respondTo("mmd") {
+        margin-top: 40px;
+      }
       @include respondTo("lg") {
         padding-left: 100px;
       }

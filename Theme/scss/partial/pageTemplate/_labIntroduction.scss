@@ -1,23 +1,58 @@
 main.labIntroduction {
   padding-top: 200px;
   padding-bottom: 200px;
+  @include respondTo("mgg") {
+    padding-top: 120px;
+  }
+  @include respondTo("mhg") {
+    padding-bottom: 0px;
+  }
+  @include respondTo("msm") {
+    padding-top: 60px;
+  }
   .section1 {
     position: relative;
     padding-top: 180px;
     padding-bottom: 200px;
+    @include respondTo("mhg") {
+      padding-bottom: 100px;
+    }
+    @include respondTo("mlg") {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
     .bgCover {
       position: absolute;
       top: 0;
       left: 50%;
       transform: translateX(-100%);
+      @include respondTo("mlg") {
+        position: relative;
+        left: 0;
+        width: 100%;
+        padding: 0 30px;
+        transform: none;
+        img {
+          width: 100%;
+        }
+      }
     }
     .contentCol {
+      @include respondTo("mlg") {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
       p {
         color: $black;
         @include Text-Style-49;
         max-width: 750px;
         padding: 120px 83px 120px 141px;
         background-color: $white;
+        @include respondTo("mlg") {
+          padding: 60px;
+          max-width: unset;
+          @include TextP-L;
+        }
       }
     }
   }
@@ -25,16 +60,58 @@ main.labIntroduction {
   .section2 {
     padding-top: 90px;
     position: relative;
+    padding-bottom: 180px;
+    @include respondTo("mhg") {
+      padding-bottom: 180px;
+    }
+    @include respondTo("mxl") {
+      padding-bottom: 40px;
+    }
+    @include respondTo("mlg") {
+      padding-top: 0;
+    }
+    @include respondTo("msm") {
+      padding-bottom: 0;
+    }
     .bgCover {
       position: absolute;
       top: 0;
       left: 50%;
       transform: translateX(20px);
+      @include respondTo("mgg") {
+        transform: none;
+        img {
+          width: 100%;
+        }
+      }
+      @include respondTo("mlg") {
+        position: relative;
+        left: 0;
+        width: 100%;
+        padding: 0 30px;
+        transform: none;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .contentCol {
+      @include respondTo("mlg") {
+        @include TextP-L;
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 60px;
+      }
     }
     p {
       color: $black;
       @include Text-Style-49;
+      @include respondTo("mlg") {
+        max-width: unset;
+        @include TextP-L;
+      }
     }
+    
   }
   .section3 {
     @include slickCarouselVideo();

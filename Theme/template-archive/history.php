@@ -23,7 +23,8 @@ get_template_part('template-parts/header/page-archive');
           <?php
           $historyPosts = get_posts(array(
             'post_type' => 'history',
-            'post_status' => 'publish'
+            'post_status' => 'publish',
+            'numberposts' => 999,
           ));
 
           foreach ($historyPosts as $hp) {

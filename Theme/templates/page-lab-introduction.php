@@ -36,7 +36,7 @@ get_template_part('template-parts/header/page');
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-5">
+        <div class="col-5 contentCol">
           <p>
           정교함이 생명인 디스플레이 시장에서 풍원정밀의 
 포토 에칭(Photo-Etching) 기술은 단연 독보적이며 이에 2019년 중소벤처기업부 소재부품장비 강소기업 100에 선정되기도 하였습니다.

@@ -62,7 +62,7 @@ get_template_part('template-parts/header/page');
     new daum.roughmap.Lander({
       "timestamp": "1612147397908",
       "key": "247py",
-      "mapHeight": "400",
+      "mapHeight": "600",
     }).render();
   </script>
 </main>

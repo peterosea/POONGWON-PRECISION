@@ -31,6 +31,9 @@
         background-color: $black-two;
         bottom: 0;
         z-index: 3;
+        @include respondTo("mmd") {
+          height: 90px;
+        }
       }
       .controlBtn {
         display: flex;
@@ -67,6 +70,9 @@
       bottom: 40px;
       left: 50%;
       transform: translateX(-50%);
+      @include respondTo("mmd") {
+        bottom: 20px;
+      }
       .slick-slide {
         cursor: pointer;
       }
@@ -107,6 +113,10 @@
           filter: grayscale(80%);
           transition: filter 0.3s ease-in-out;
           will-change: filter;
+        }
+        @include respondTo("mhg") {
+          width: 150px;
+          height: auto;
         }
       }
       .title {

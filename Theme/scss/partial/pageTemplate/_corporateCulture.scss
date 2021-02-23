@@ -1,6 +1,15 @@
 main.corporateCulture {
+  .pageTitle {
+    @include respondTo("mhg") {
+      padding-top: 70px;
+      margin-bottom: 70px;
+    }
+  }
   .section1 {
     padding-bottom: 100px;
+    @include respondTo("msm") {
+      padding-bottom: 40px;
+    }
     .row {
       position: relative;
       margin: 0;
@@ -9,6 +18,9 @@ main.corporateCulture {
       }
       &:not(:last-child) {
         margin-bottom: 70px;
+        @include respondTo("mhg") {
+          margin-bottom: 30px;
+        }
       }
       img {
         width: 100%;
@@ -40,12 +52,39 @@ main.corporateCulture {
           }
         }
       }
+      @include respondTo("mhg") {
+        > div:nth-child(1) {
+          justify-content: center;
+          .contentWrap {
+            padding-right: 40px;
+            padding-left: 40px;
+          }
+        }
+        > div:nth-child(2) {
+          justify-content: center;
+          .contentWrap {
+            padding-right: 40px;
+            padding-left: 40px;
+          }
+        }
+        .contentWrap {
+          .title {
+            @include TextTitle-S;
+          }
+          .content {
+            @include TextP-M;
+          }
+        }
+      }
     }
     .contentWrap {
       max-width: 620px;
       padding: 0;
       width: 90%;
       margin: 0 auto;
+      @include respondTo("mlg") {
+        padding: 40px;
+      }
       @include respondTo("md") {
         width: 100%;
         margin: 0;
@@ -58,6 +97,16 @@ main.corporateCulture {
       .content {
         color: $black;
         @include Text-Style-27;
+      }
+    }
+    @include respondTo("mlg") {
+      .imgCol {
+        overflow: hidden;
+        height: 300px;
+        img {
+          width: auto;
+          height: 100%;
+        }
       }
     }
   }

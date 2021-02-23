@@ -1,0 +1,144 @@
+body.ie {
+    header.default {
+        &.ie11 {
+            height:437px;
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include respondTo("gg") {
+              height:480px;
+            }
+            @include respondTo("mxl") {
+              height: 280px;
+            }
+            .container {
+                position: relative;
+                top:auto;
+                left:auto;
+                transform:none;
+                max-width: none;
+            }
+        }
+    }
+    main.home {
+        .section1 {
+            .container {
+                padding-top: 80px;
+            }
+        }
+        .section2 {
+            padding: 120px 0;
+            margin-top: 0;
+            height:auto;
+            background-color: #77c7c7;
+            @include respondTo("mlg") {
+                padding: 60px 0;
+                margin-top: 0;
+                height:auto;
+            }
+        }
+        .bg_green, .bg_navy {
+            display:none;
+        }
+        .section3 {
+            @include respondTo("mlg") {
+                padding-top: 120px;
+                padding-bottom: 130px;
+            }
+        }
+        .section4 {
+            .fullBg {
+                &:nth-child(1)::after {
+                    transform: translate(50%, 50%) rotate(45deg);
+                }
+            }
+        }
+    }
+    // 소개
+    main.introduction {
+        .pageTitle {
+            margin-bottom: 100px;
+        }
+        .section1 {
+            padding-top:120px;
+            padding-bottom: 100px;
+            @include respondTo("mlg") {
+                padding-top:60px;
+                padding-bottom: 20px;
+            }
+            .bgCover {
+                transform: translateX(-100%);
+                background-size: contain;
+                max-width: 900px;
+                @include respondTo("mlg") {
+                    transform: none;
+                }
+            }
+        }
+        .section2 {
+            margin-top: 80px;
+            @include respondTo("mlg") {
+                margin-top: 20px;
+            }
+        }
+    }
+    // CEO 인사말
+    main.ceoGreeting {
+        .section2 {
+            height:auto;
+            overflow: hidden;
+            .ceo {
+                height:auto;
+            }
+            @include respondTo("mlg") {
+                height:auto;
+            }
+        }
+    }
+    main.startUpIdeology {
+        .top_image {
+            background-image:none;
+            height:auto;
+            img {
+                width: 100%;
+            }
+        }
+        .section1 {
+            background-color: transparent;
+            margin-top: -140px;
+            overflow: hidden;
+            @include respondTo("mlg") {
+                margin-top: -80px;
+                padding-bottom: 0;
+            }
+            .bgCover {
+                background-image: none;
+                @include respondTo("mlg") {
+                    padding:0 40px;
+                    height:auto;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    main.managementIdeology {
+        .section1 {
+            .bgCover {
+                left:auto;
+                transform:none;
+            }
+            .container {
+                > .row {
+                    justify-content:center;
+                }
+                .col-12:first-child {
+                    display:none;
+                }
+            }
+        }
+    }
+}

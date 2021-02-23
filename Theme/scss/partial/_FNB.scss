@@ -3,6 +3,9 @@ footer.FNB {
   color: $brownish-grey;
   @include Text-Style-42;
   border-top: 1px solid rgba($very-light-pink, 0.6);
+  @include respondTo("mmd") {
+    padding: 30px 15px;
+  }
   ul {
     list-style: none;
     display: flex;

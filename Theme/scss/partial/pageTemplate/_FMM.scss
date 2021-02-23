@@ -1,33 +1,94 @@
 main.fmm {
+  .pageTitle {
+    @include respondTo("msm") {
+      padding-top: 60px;
+    }
+  }
   .section1 {
     position: relative;
     padding-top: 180px;
     padding-bottom: 84px;
+    @include respondTo("mhg") {
+      padding-bottom: 0;
+    }
+    @include respondTo("mlg") {
+      padding-bottom: 52px;
+    }
+    @include respondTo("mmd") {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
     .bgCover {
       position: absolute;
       top: 0;
       left: 50%;
       transform: translateX(-100%);
+      @include respondTo("mmd") {
+        position: relative;
+        left: 0;
+        width: 100%;
+        padding: 0 30px;
+        transform: none;
+        img {
+          width: 100%;
+        }
+      }
     }
     .contentCol {
+      @include respondTo("mmd") {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
       p {
         color: $black;
         @include Text-Style-49;
         max-width: 900px;
-        padding: 120px 200px 200px 120px;
+        padding: 120px 200px 120px 120px;
         background-color: $white;
+        @include respondTo("mhg") {
+          padding: 80px 120px;
+        }
+        @include respondTo("mlg") {
+          @include TextP-L;
+          padding: 80px;
+        }
+        @include respondTo("mmd") {
+          padding: 40px;
+        }
       }
     }
   }
 
   .section2 {
     padding-top: 90px;
+    padding-bottom: 40px;
     position: relative;
+    @include respondTo("mxl") {
+      padding-bottom: 0;
+    }
+    @include respondTo("mmd") {
+      padding-top: 40px;
+    }
     .bgCover {
       position: absolute;
       top: 0;
       left: 50%;
-      transform: translateX(20px);
+      img {
+        width: 100%;
+      }
+      @include respondTo("mlg") {
+        position: relative;
+        left: 0;
+        width: 100%;
+        padding: 0 30px;
+      }
+    }
+    .contentCol {
+      @include respondTo("mlg") {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 60px;
+      }
     }
     .head {
       color: $black;
@@ -39,38 +100,99 @@ main.fmm {
       margin-bottom: 26px;
     }
   }
-
   .section3 {
     padding-top: 90px;
     position: relative;
+    @include respondTo("mxl") {
+      padding-top: 60px;
+    }
+    @include respondTo("mlg") {
+      padding-top: 0;
+    }
     .bgCover.double {
       position: absolute;
       top: 0;
       left: 50%;
       transform: translateX(-100%);
       padding-top: 300px;
-      padding-right: 50px;
+      padding-right: 0;
       img:first-child {
         position: absolute;
         top: 0;
-        transform: translateX(-50%);
+        transform: translateX(-20%);
+      }
+      @include respondTo("mxl") {
+        position: relative;
+        width: 100%;
+        top: 0;
+        left: 0;
+        transform: none;
+        padding: 200px 40px 0;
+        img:first-child {
+          transform: none;
+          left: 40px;
+          z-index: 2;
+        }
+        img:nth-child(2) {
+          transform: translateX(180px);
+        }
+      }
+      @include respondTo("mlg") {
+        text-align: right;
+        img:nth-child(2) {
+          transform: none;
+        }
+      }
+      @include respondTo("mmd") {
+        padding: 30px;
+        img {
+          &:first-child {
+            position: relative;
+            left: 0;
+            width: 100%;
+          }
+          &:nth-child(2){
+            position: relative;
+            left: 0;
+            width: 100%;
+            margin-top: 20px;
+          }
+        }
       }
     }
     .contentCol {
       padding-bottom: 370px;
+      @include respondTo("mxl") {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-top: 60px;
+        padding-bottom: 60px;
+      }
+      @include respondTo("mmd") {
+        padding: 40px;
+      }
     }
     .head {
       color: $black;
       @include Text-Style-49;
+      @include respondTo("mlg") {
+        font-size: 20px;
+      }
     }
     p {
       color: $black;
       @include Text-Style-27;
       margin-bottom: 26px;
+      @include respondTo("mlg") {
+        line-height: 1.6;
+      }
     }
   }
   .section4 {
     padding-top: 200px;
     @include slickCarouselVideo();
+    @include respondTo("mxl") {
+      padding-top: 0px;
+    }
   }
 }

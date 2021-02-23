@@ -3,17 +3,43 @@ main.omm {
     position: relative;
     padding-top: 100px;
     padding-bottom: 84px;
+    @include respondTo("mhg") {
+      padding-bottom: 0;
+    }
+    @include respondTo("mmd") {
+      padding-top: 0;
+    }
     .bgCover {
       position: absolute;
       top: 0;
       left: 50%;
       transform: translateX(-100%);
+      @include respondTo("mmd") {
+        position: relative;
+        left: 0;
+        width: 100%;
+        padding: 0 30px;
+        transform: none;
+        img {
+          width: 100%;
+        }
+      }
     }
     .contentCol {
+      @include respondTo("mmd") {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
       .wrap {
         max-width: 900px;
         padding: 120px 200px 140px 120px;
         background-color: $white;
+        @include respondTo("mhg") {
+          padding: 80px;
+        }
+        @include respondTo("mmd") {
+          padding: 60px;
+        }
       }
       .head {
         color: $black;
@@ -24,6 +50,9 @@ main.omm {
         color: $black;
         @include Text-Style-27;
         margin-bottom: 26px;
+        @include respondTo("mmd") {
+          padding: 0;
+        }
       }
     }
   }
@@ -31,11 +60,27 @@ main.omm {
     padding-top: 90px;
     padding-bottom: 150px;
     position: relative;
+    @include respondTo("mhg") {
+      padding-bottom: 70px;
+    }
+    @include respondTo("mlg") {
+      padding-top: 0px;
+      padding-bottom: 40px;
+    }
     .bgCover {
       position: absolute;
       top: 0;
       left: 50%;
-      transform: translateX(20px);
+      @media screen and (max-width: 1600px) {
+        img {
+          width: 100%;
+        }
+      }
+      @include respondTo("mlg") {
+        position: relative;
+        left: 0;
+        padding: 0 30px;
+      }
     }
     .head {
       color: $black;
@@ -46,11 +91,21 @@ main.omm {
       @include Text-Style-27;
       margin-bottom: 26px;
     }
+    @include respondTo("mlg") {
+      .col-5 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-top: 40px;
+      }
+    }
   }
 
   .section3 {
     padding-top: 90px;
     position: relative;
+    @include respondTo("mlg") {
+      padding-top: 0px;
+    }
     .bgCover.double {
       position: absolute;
       top: 0;
@@ -63,13 +118,71 @@ main.omm {
         top: 0;
         transform: translateX(-50%);
       }
+      @include respondTo("mhg") {
+        transform: translateX(-50%);
+        padding-right: 0;
+      }
+      @include respondTo("mxl") {
+        position: relative;
+        width: 100%;
+        top: 0;
+        left: 0;
+        transform: none;
+        padding: 200px 30px 0;
+        img:first-child {
+          transform: none;
+          left: 30px;
+          z-index: 2;
+        }
+        img:nth-child(2) {
+          transform: translateX(180px);
+        }
+      }
+      @include respondTo("mlg") {
+        text-align: right;
+        img:nth-child(2) {
+          transform: none;
+        }
+      }
+      @include respondTo("mmd") {
+        padding: 0 30px;
+        img {
+          &:first-child {
+            position: relative;
+            left: 0;
+            width: 100%;
+          }
+          &:nth-child(2){
+            position: relative;
+            left: 0;
+            width: 100%;
+            margin-top: 20px;
+          }
+        }
+      }
     }
     .contentCol {
       padding-bottom: 650px;
+      @include respondTo("mxl") {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-top: 60px;
+        padding-bottom: 60px;
+      }
+      @include respondTo("mlg") {
+        @include TextP-L;
+      }
+      @include respondTo("mmd") {
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
     }
     .head {
       color: $black;
       @include Text-Style-49;
+      @include respondTo("mmd") {
+        @include TextP-L;
+      }
     }
     p {
       color: $black;
@@ -80,5 +193,11 @@ main.omm {
   .section4 {
     padding-top: 200px;
     @include slickCarouselVideo();
+    @include respondTo("mhg") {
+      padding-top: 60px;
+    }
+    @include respondTo("mlg") {
+      padding-top: 0;
+    }
   }
 }

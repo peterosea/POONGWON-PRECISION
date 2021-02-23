@@ -2,6 +2,10 @@ main.retentionTechnology {
   .section1 {
     padding-top: 120px;
     padding-bottom: 120px;
+    @include respondTo("mhg") {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
     p {
       margin-bottom: 0;
       color: $black;
@@ -9,18 +13,30 @@ main.retentionTechnology {
     }
     .col:first-child p {
       padding-right: 60px;
+      @include respondTo("mlg") {
+        padding-right: 20px;
+      }
     }
     .col:last-child p {
       padding-left: 60px;
+      @include respondTo("mlg") {
+        padding-left: 20px;
+      }
     }
   }
   .section2 {
     margin-bottom: 150px;
     .titleWrap {
       margin-bottom: 50px;
+      @include respondTo("mmd") {
+        margin-bottom: 20px;
+      }
       .sectionTitle {
         color: $teal-blue;
         @include Text-Style-32;
+        @include respondTo("mhg") {
+          font-size: 40px;
+        }
       }
       .description {
         color: $black;
@@ -31,6 +47,18 @@ main.retentionTechnology {
     .table {
       .rowTitle {
         max-width: 160px;
+      }
+      .row {
+        margin:0;
+      }
+      @include respondTo("mlg") {
+        .col, .col-2 {
+          @include TextP-M;
+          padding: 0;
+        }
+        ul li {
+          @include TextP-M;
+        }
       }
       .head {
         background-color: $turquoise;
@@ -54,6 +82,9 @@ main.retentionTechnology {
           align-items: center;
           justify-content: center;
           padding: 20px 50px;
+          @include respondTo("mmd") {
+            padding: 20px;
+          }
         }
         > .row > .col > .row > div:nth-child(2),
         > .row > div:nth-child(2n -1) {
@@ -72,6 +103,9 @@ main.retentionTechnology {
   .section3n {
     padding-bottom: 200px;
     position: relative;
+    @include respondTo("mhg") {
+      padding-bottom: 140px;
+    }
     .label {
       display: inline-block;
       padding: 36px;
@@ -79,11 +113,19 @@ main.retentionTechnology {
       color: $white;
       @include Text-Style-60;
       margin-bottom: 50px;
+      @include respondTo("mmd") {
+        padding: 26px;
+        @include TextP-L;
+        margin-bottom: 30px;
+      }
     }
     .title {
       color: $black;
       @include Text-Style-61;
       margin-bottom: 10px;
+      @include respondTo("mmd") {
+        @include TextTitle-M;
+      }
     }
     .subTitle {
       color: $black;
@@ -98,6 +140,9 @@ main.retentionTechnology {
       overflow: hidden;
       padding-left: 60px;
       transform: translateY(40px);
+      @include respondTo("mhg") {
+        padding-left: 0;
+      }
     }
     .bgCover.double {
       position: absolute;
@@ -118,6 +163,9 @@ main.retentionTechnology {
   }
   .section4 {
     padding-top: 200px;
+    @include respondTo("mhg") {
+      padding-bottom: 100px;
+    }
     .bgCover {
       position: absolute;
       top: 0;
@@ -130,8 +178,110 @@ main.retentionTechnology {
     }
   }
   .section5 {
+    @include respondTo("mlg") {
+      padding-bottom: 60px;
+    }
     p:nth-of-type(1) {
       margin-bottom: 118px;
+    }
+    .bgCover.double {
+      img:first-child {
+        transform: translateX(150px);
+        width: 100%;
+      }
+      @include respondTo("mlg") {
+        padding-top: 0;
+        img:first-child {
+          transform: none;
+          position: relative;
+        }
+        img:nth-child(2) {
+          width: 100%;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+  @include respondTo("mmd") {
+    .section2 {
+      margin-bottom: 80px;
+      .titleWrap .sectionTitle {
+        @include TextTitle-M;
+      }
+    }
+    .section3n .bgCover, .section3n.section5 .bgCover.double {
+      position: relative;
+      left: 0;
+      transform: none;
+      padding: 0 30px;
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    .section3n {
+      padding-bottom: 0;
+      &.section5 {
+        padding-bottom: 60px;
+      }
+    }
+    .section {
+      .container {
+        margin-top: 40px;
+        .col-5 {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+      }
+      &.section1, &.section2 {
+        .container {
+          margin-top: 0;
+        }
+      }
+      &.section4, &.section5 {
+        padding-top: 60px;
+      }
+      &.section5 p:nth-of-type(1) {
+        margin-bottom: 40px;
+      }
+    }
+  }
+  @include respondTo("msm") {
+    .section1 {
+      .col {
+        flex-basis: auto;
+        p {
+          padding: 0;
+        }
+        &:last-child {
+          margin-top: 20px;
+        }
+      }
+      .col:last-child p {
+        padding-left:0;
+      }
+    }
+    .titleWrap .sectionTitle {
+      @include TextTitle-M;
+    }
+    .section2 .titleWrap .description {
+      @include TextP-L;
+    }
+    .section3n {
+      .title {
+        @include TextTitle-S;
+      }
+      .subTitle {
+        @include TextP-L;
+      }
+    }
+    .table {
+      .head > div, .col, .col-2, ul li {
+        font-size: 14px;
+      }
+      .body > .row > div:not(.rowspan), .body .rowspan > .row > div, .head > div.col-2 {
+        padding: 10px;
+      }
     }
   }
 }

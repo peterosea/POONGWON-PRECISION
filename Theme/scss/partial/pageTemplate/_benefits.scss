@@ -1,7 +1,20 @@
 main.benefits {
+  .pageTitle {
+    @include respondTo("mlg") {
+      padding-top: 70px;
+      margin-bottom: 70px;
+    }
+    @include respondTo("mmd") {
+      padding-top: 40px;
+      margin-bottom: 50px;
+    }
+  }
   .section1 {
     padding-bottom: 38px;
     padding-bottom: 130px;
+    @include respondTo("mlg") {
+      padding-bottom: 60px;
+    }
     .imgWrap {
       position: relative;
       margin-bottom: 41px;
@@ -16,6 +29,11 @@ main.benefits {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        @include respondTo("mlg") {
+          span {
+            @include TextTitle-S;
+          }
+        }
         svg {
           height: 60px;
           margin-bottom: 30px;
@@ -23,10 +41,103 @@ main.benefits {
         }
       }
     }
+    .col-md-6.mb-5 {
+      @include respondTo("mlg") {
+        padding-right: 50px;
+        padding-left: 50px;
+        margin-bottom: 40px !important;
+        .imgWrap {
+          margin-bottom: 20px;
+        }
+      }
+      @include respondTo("mmd") {
+        padding-right: 120px;
+        padding-left: 120px;
+      }
+      @include respondTo("mmd") {
+        padding-right: 30px;
+        padding-left: 30px;
+      }
+    }
     .contentWrap {
       padding: 10px;
       color: $black;
       @include Text-Style-27;
+      @include respondTo("mmd") {
+        @include TextP-M;
+      }
+    }
+  }
+  .section2 {
+    padding-bottom: 150px;
+    @include respondTo("mlg") {
+      padding-bottom: 80px;
+    }
+    .titleWrap {
+      .sectionTitle {
+        text-align: center;
+        font-family: NotoSansCJKkr;
+        font-size: 40px;
+        font-weight: bold;
+        @include respondTo("mmd") {
+          @include TextTitle-M;
+        }
+      }
+      .description {
+        text-align: center;
+        font-family: NotoSansCJKkr;
+        font-size: 20px;
+        font-weight: 300;
+      }
+    }
+    .postWrap {
+      margin-top: 140px;
+      @include respondTo("mlg") {
+        margin-top: 60px;
+        padding-right: 60px;
+        padding-left: 60px;
+      }
+      @include respondTo("mmd") {
+        margin-top: 40px;
+      }
+      @include respondTo("msm") {
+        padding-right: 30px;
+        padding-left: 30px;
+      }
+      .row {
+        background-image: url('/wp-content/uploads/zeplin/people-pattern.png');
+        background-position: bottom right;
+        background-repeat: repeat;
+      }
+      .col-12 {
+        padding:0;
+        background-color:#fff;
+      }
+      .col-12:nth-child(2n-1) {
+        background-color: #f2f2f2;
+      }
+    }
+    .thumbnail img {
+      width: 100%;
+      @include respondTo("mhg") {
+        height: auto;
+      }
+    }
+    .contentWrap {
+      padding:50px 40px 90px;
+      @include respondTo("msm") {
+        padding:50px 40px 60px;
+      }
+      > p {
+        font-size: 20px;
+        font-weight: normal;
+      }
+      .name > span {
+        font-size: 18px;
+        font-weight: 500;
+        box-shadow: inset 0px -13px 0 #96dedd;
+        border-bottom: 6px solid #96dedd;
+      }
     }
   }
 }

@@ -1,15 +1,24 @@
 main.onYourWay {
   .section1 {
-    padding-top: 60px;
-    padding-bottom: 166px;
-    margin-bottom: 0;
+    padding-top: 200px;
+    padding-bottom: 120px;
+    margin-bottom: 150px;
+    margin-top: 115px;
     position: relative;
+    @include respondTo("mlg") {
+      padding-top: 0;
+      padding-bottom: 60px;
+      margin-bottom: 0;
+      margin-top: 60px;
+    }
     .container {
       @include respondTo("hg") {
         max-width: 90%;
       }
+      @include respondTo("mlg") {
+        padding-top: 80px;
+      }
     }
-
     .bgCover.double {
       position: absolute;
       top: 0;
@@ -19,15 +28,39 @@ main.onYourWay {
       img:first-child {
         position: absolute;
         top: 0;
-        transform: translateX(-50%);
+        transform: translateX(-30%);
+      }
+      @include respondTo("mlg") {
+        position: relative;
+        width: 100%;
+        top: 0;
+        left: 0;
+        transform: none;
+        text-align: right;
+        padding-right: 40px;
+        img:first-child {
+          transform: none;
+          left: 40px;
+          z-index: 2;
+          max-width: 70%;
+        }
+        img:nth-child(2) {
+          max-width: 70%;
+        }
       }
     }
-
     .address {
       color: $black;
       @include Text-Style-46;
       text-align: left;
+      margin-top: 20px;
       margin-bottom: 62px;
+      @include respondTo("mlg") {
+        margin-bottom: 40px;
+      }
+      @include respondTo("mmd") {
+        font-size: 20px;
+      }
     }
     .infoCol {
       display: flex;
@@ -44,6 +77,13 @@ main.onYourWay {
         margin-bottom: 120px;
         color: $black;
         @include Text-Style-49;
+      }
+      @include respondTo("mhg") {
+        padding-left: 80px;
+      }
+      @include respondTo("msm") {
+        padding-left: 25px;
+        padding-right: 25px;
       }
     }
     ul {
@@ -65,8 +105,16 @@ main.onYourWay {
           color: $black;
           @include Text-Style-47;
           text-decoration: none;
+          @include respondTo("mmd") {
+            @include TextP-M;
+          }
         }
       }
+    }
+  }
+  .wrap_map {
+    @include respondTo("mmd") {
+      height: 300px !important;
     }
   }
 }

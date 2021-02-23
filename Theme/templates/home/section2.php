@@ -21,9 +21,9 @@
         <div class="valueWrap">
           <img draggable="false" src="<?php echo $zeplin ?>/2.svg">
           <div class="textPoint">
-            <div class="point">22</div>
+            <div class="point">180</div>
             <div class="unit">
-              %
+              기업
             </div>
           </div>
           <p>

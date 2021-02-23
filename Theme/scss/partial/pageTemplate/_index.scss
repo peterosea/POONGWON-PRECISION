@@ -9,11 +9,28 @@ main.pageTemplate {
       text-align: center;
       margin: 0 auto;
       padding-top: 22px;
+      max-width: 800px;
+      word-break:keep-all;
     }
     .subTitle {
       color: $black;
       @include Text-Style-48;
       margin-top: 12px;
+    }
+    @include respondTo("mlg") {
+      @include TextTitle-M;
+      p {
+        @include TextP-M;
+      }
+    }
+    @include respondTo("mmd") {
+      @include TextTitle-S;
+      padding-top: 70px;
+      margin-bottom: 70px;
+    }
+    @include respondTo("msm") {
+      padding-top: 0;
+      margin-bottom: 60px;
     }
   }
   &.non-result {

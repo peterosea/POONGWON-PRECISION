@@ -6,22 +6,36 @@ main.facilityPlantIntroduction {
     &:nth-child(2n -1) {
       background-color: $very-light-pink-two;
     }
+    .col {
+      padding: 20px 0;
+      display: flex;
+    }
   }
   .label {
     margin-right: 20px;
-    min-width: 100px;
+    min-width: 120px;
     display: inline-block;
     color: $black;
+    padding-left: 10px;
     @include Text-Style-44;
+    @include respondTo("mmd") {
+      @include TextP-M;
+    }
   }
   .value {
     color: $brownish-grey;
     @include Text-Style-45;
+    @include respondTo("mmd") {
+      @include TextP-M;
+    }
   }
   .section1 {
     margin-bottom: 50px;
+  }
+  .section2 {
     .eg-washington-element-3 {
-      font-size: 40px;
+      font-size: 28px;
+      font-weight: 400;
     }
   }
 }

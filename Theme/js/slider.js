@@ -14,3 +14,10 @@ $('.sld_sect2').slick({
         }
     ]
 });
+$('.slider_goal').slick({
+    slidesToShow: 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    dots: true,
+    arrows: false,
+});

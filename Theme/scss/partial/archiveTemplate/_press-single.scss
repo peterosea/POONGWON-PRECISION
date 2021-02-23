@@ -2,6 +2,16 @@ main.press-single {
   .section1 {
     padding-top: 130px;
     padding-bottom: 150px;
+    @include respondTo("mhg") {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+    .container {
+      @include respondTo("mlg") {
+        padding-right: 45px;
+        padding-left: 45px;
+      }
+    }
     .header {
       padding: 26px 115px;
       background-color: $turquoise;
@@ -12,16 +22,41 @@ main.press-single {
         display: flex;
         justify-content: flex-end;
       }
+      @include respondTo("mlg") {
+        padding: 26px 30px;
+      }
+      @include respondTo("mmd") {
+        padding: 15px;
+        @include TextP-M;
+      }
     }
     .content {
       padding: 100px 115px;
       color: $brownish-grey;
       @include Text-Style-55;
       border-bottom: 1px solid $very-light-pink-four;
+      @include respondTo("mhg") {
+        padding: 40px 60px;
+      }
+      @include respondTo("mlg") {
+        padding: 60px 80px;
+        p {
+          @include TextP-M;
+        }
+      }
+      @include respondTo("mmd") {
+        padding: 40px;
+      }
+      @include respondTo("msm") {
+        padding: 20px 0;
+      }
     }
     .footer {
       padding-top: 50px;
       justify-content: space-between;
+      @include respondTo("mmd") {
+        padding-top: 30px;
+      }
       .btn {
         padding: 17px 42px;
         background-color: $dark-blue-grey;
@@ -29,11 +64,18 @@ main.press-single {
         @include Text-Style-56;
         text-decoration: none;
         border-radius: 0;
+        @include respondTo("mlg") {
+          @include TextP-M;
+        }
+        @include respondTo("msm") {
+          padding: 12px 28px;
+        }
         &.list {
           background-color: $turquoise;
         }
         &.disable {
-          color: rgba(255,255,255,0.5);
+          opacity: 0.5;
+          color: rgba(255, 255, 255, 0.5);
           cursor: default;
         }
       }
