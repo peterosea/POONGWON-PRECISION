@@ -37,59 +37,61 @@ get_template_part('template-parts/header/page');
         <p class="description">OLED 증착용 Metal Mask 제조기술</p>
       </div>
       <div class="table">
-        <div class="row head">
-          <div class="col-2 rowTitle">구분</div>
-          <div class="col">핵심기술명</div>
-          <div class="col">설명</div>
-          <div class="col">지적재산권</div>
-        </div>
-        <div class="body">
-          <div class="row">
-            <div class="col-2 rowTitle">설계</div>
-            <div class="col">Edge Define Technology</div>
-            <div class="col content">
-              직사각형에 가까운 Pixel을 구현하기 위해 Photomask를 설계하는 기술
-            </div>
-            <div class="col">
-              <ul>
-                <li>10-2004-0016982(등록)</li>
-              </ul>
-            </div>
+        <div class="inner">
+          <div class="row head">
+            <div class="col-2 rowTitle">구분</div>
+            <div class="col">핵심기술명</div>
+            <div class="col">설명</div>
+            <div class="col">지적재산권</div>
           </div>
-          <div class="row">
-            <div class="col-2 rowTitle">소재</div>
-            <div class="col">Etching Resist For FMM </div>
-            <div class="col">FMM 제작공정에서 2차 Etching공정시 1차 Etching면을 보호하면서 소재의 변형을 방지할 수 있는 독자개발 소재</div>
-            <div class="col">
-              <ul>
-                <li>10-2010-0001986(등록)</li>
-              </ul>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-2 rowTitle">공정</div>
-            <div class="col rowspan">
-              <div class="row">
-                <div class="col">H-PR Technology</div>
-                <div class="col">두꺼운 DFR대신 얇은 액상PR을 적용하여 고해상도를 구현하는 기술</div>
-                <div class="col">
-                  <ul>
-                    <li>10-2020-0090704(출원)</li>
-                    <li>10-2020-0090705(출원)</li>
-                    <li>10-2020-0090706(출원)</li>
-                  </ul>
-                </div>
+          <div class="body">
+            <div class="row">
+              <div class="col-2 rowTitle">설계</div>
+              <div class="col">Edge Define Technology</div>
+              <div class="col content">
+                직사각형에 가까운 Pixel을 구현하기 위해 Photomask를 설계하는 기술
               </div>
-              <div class="row">
-                <div class="col">Fine Etching Technology</div>
-                <div class="col">공정조건을 조율하여 수 ㎛단위의 미세패턴을 정확하게 구현하는 기술</div>
-                <div class="col">
-                  <ul>
-                    <li>10-2004-0016982(등록)</li>
-                    <li>10-2012-0102915(등록)</li>
-                    <li>10-2012-0102916(등록)</li>
-                    <li>10-2012-0115864(등록)</li>
-                  </ul>
+              <div class="col">
+                <ul>
+                  <li>10-2004-0016982(등록)</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-2 rowTitle">소재</div>
+              <div class="col">Etching Resist For FMM </div>
+              <div class="col">FMM 제작공정에서 2차 Etching공정시 1차 Etching면을 보호하면서 소재의 변형을 방지할 수 있는 독자개발 소재</div>
+              <div class="col">
+                <ul>
+                  <li>10-2010-0001986(등록)</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-2 rowTitle">공정</div>
+              <div class="col rowspan">
+                <div class="row">
+                  <div class="col">H-PR Technology</div>
+                  <div class="col">두꺼운 DFR대신 얇은 액상 PR을 적용하여 고해상도를 구현하는 기술</div>
+                  <div class="col">
+                    <ul>
+                      <li>10-2020-0090704(출원)</li>
+                      <li>10-2020-0090705(출원)</li>
+                      <li>10-2020-0090706(출원)</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">Fine Etching Technology</div>
+                  <div class="col">공정조건을 조율하여 수 ㎛단위의 미세패턴을 정확하게 구현하는 기술</div>
+                  <div class="col">
+                    <ul>
+                      <li>10-2004-0016982(등록)</li>
+                      <li>10-2012-0102915(등록)</li>
+                      <li>10-2012-0102916(등록)</li>
+                      <li>10-2012-0115864(등록)</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
@@ -156,7 +158,7 @@ get_template_part('template-parts/header/page');
           <h2 class="subTitle">(액상 PR 기술)</h2>
           <p>
           PR(Photo Resist) 선정은 공정설계 및 기술개발의 시작점이 되는 중요한 재료입니다. 액상 PR은 필름 형태의 PR보다 코팅기판에 대한 접착력이 우수한데, 표면 조도가 높아 접착이 어려운 금속 표면에 코팅했을 때 더욱 효과가 뛰어납니다. 
-또한 액상PR은 도포되는 두께가 얇아(2~3㎛) 필름형태의 PR(7~10 ㎛ )에 비해 고해상도 제품을 제작하는데 있어 
+또한 액상 PR은 도포되는 두께가 얇아(2~3㎛) 필름형태의 PR(7~10 ㎛ )에 비해 고해상도 제품을 제작하는데 있어 
 유리합니다. 풍원정밀은 액상 PR로 금속을 코팅하기 전 금속표면의 거칠기를 조절할 수있는 약품을 자회사인 풍원화학과 공동 개발하여 액상 PR의 장점을 극대화하였습니다. 
           </p>
           <h1 class="title">Fine Etching Technology</h1>

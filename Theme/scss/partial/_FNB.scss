@@ -6,6 +6,9 @@ footer.FNB {
   @include respondTo("mmd") {
     padding: 30px 15px;
   }
+  @include respondTo("msm") {
+    padding: 30px 5px;
+  }
   ul {
     list-style: none;
     display: flex;
@@ -13,6 +16,9 @@ footer.FNB {
     margin-bottom: 0;
     li:not(:last-child) {
       margin-right: 14px;
+      @include respondTo("msm") {
+        margin-right: 10px;
+      }
     }
   }
   .info {
@@ -27,6 +33,9 @@ footer.FNB {
     }
     strong {
       margin-right: 6px;
+    }
+    li:nth-child(2){
+      line-height: 1.4em;
     }
   }
   .pagelistCol {
@@ -45,12 +54,18 @@ footer.FNB {
     @include respondTo("mmd") {
       margin-bottom: 0;
     }
+    @include respondTo("msm") {
+      font-size: 14px;
+    }
   }
   .page-list {
     a {
       color: $black;
       @include Text-Style-43;
       text-decoration: none;
+      @include respondTo("msm") {
+        @include TextP-M;
+      }
     }
     li:not(:last-child) {
       position: relative;
@@ -64,6 +79,9 @@ footer.FNB {
         width: 2px;
         height: 16px;
         background-color: $brown-grey;
+      }
+      @include respondTo("msm") {
+        padding-right: 12px;
       }
     }
   }

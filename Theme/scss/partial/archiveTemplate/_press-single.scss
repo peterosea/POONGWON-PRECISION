@@ -6,6 +6,9 @@ main.press-single {
       padding-top: 80px;
       padding-bottom: 80px;
     }
+    @include respondTo("msm") {
+      padding-top: 40px;
+    }
     .container {
       @include respondTo("mlg") {
         padding-right: 45px;
@@ -21,6 +24,9 @@ main.press-single {
       .date {
         display: flex;
         justify-content: flex-end;
+        @include respondTo("msm") {
+          margin-top: 10px;
+        }
       }
       @include respondTo("mlg") {
         padding: 26px 30px;
@@ -28,6 +34,17 @@ main.press-single {
       @include respondTo("mmd") {
         padding: 15px;
         @include TextP-M;
+      }
+      @include respondTo("msm") {
+        flex-direction: column;
+        .col {
+          justify-content: flex-start;
+          margin-top: 10px;
+          padding:0;
+          &:first-child {
+            margin-top: 0;
+          }
+        }
       }
     }
     .content {

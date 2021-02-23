@@ -23,6 +23,7 @@ function mv_browser_body_class($classes)
       $classes[] = 'ie' . $browser_version[1];
   } else $classes[] = 'unknown';
   if ($is_iphone) $classes[] = 'iphone';
+  if (wp_is_mobile()) $classes[] = 'mobile';
   if (stristr($_SERVER['HTTP_USER_AGENT'], "mac")) {
     $classes[] = 'osx';
   } elseif (stristr($_SERVER['HTTP_USER_AGENT'], "linux")) {

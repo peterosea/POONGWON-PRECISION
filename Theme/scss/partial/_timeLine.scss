@@ -1,6 +1,9 @@
 .pageTemplate.history {
   .pageTitle {
     margin-bottom: 50px;
+    @include respondTo("msm") {
+      padding-top: 60px;
+    }
   }
 }
 

@@ -1,4 +1,9 @@
 main.ceoGreeting {
+  .pageTitle {
+    @include respondTo("msm") {
+      padding-top: 60px;
+    }
+  }
   .section1 {
     p {
       @include Text-Style-27;

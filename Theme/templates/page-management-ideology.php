@@ -16,12 +16,14 @@ get_template_part('template-parts/header/page');
 ?>
 <main class="pageTemplate managementIdeology">
   <div class="section section1">
-    <div class="bgCover">
+    <!-- <div class="bgCover">
       <img draggable="false" src="<?php echo $zeplin ?>/management-01.png" srcset="<?php echo $zeplin ?>/management-01@2x.png 2x, <?php echo $zeplin ?>/management-01@3x.png 3x">
-    </div>
+    </div> -->
     <div class="container">
       <div class="row">
-        <div class="col-12 col-md-5"></div>
+        <div class="col-12 col-md-5 imgCol">
+          <img draggable="false" src="<?php echo $zeplin ?>/management-01.png" srcset="<?php echo $zeplin ?>/management-01@2x.png 2x, <?php echo $zeplin ?>/management-01@3x.png 3x">
+        </div>
         <div class="col-12 col-md-7 contentCol">
           <p class="labelContent">
           새로운 차원의 기술로<br>
@@ -216,9 +218,9 @@ get_template_part('template-parts/header/page');
     </div>
   </div>
   <div class="section section3">
-    <div class="bgCover">
+    <!-- <div class="bgCover">
       <img draggable="false" src="<?php echo $zeplin ?>/2807.png" srcset="<?php echo $zeplin ?>/2807@2x.png 2x, <?php echo $zeplin ?>/2807@3x.png 3x">
-    </div>
+    </div> -->
     <div class="container">
       <h1 class="labelTitle">
         비전
@@ -230,5 +232,15 @@ get_template_part('template-parts/header/page');
     </div>
   </div>
 </main>
+<script type="text/javascript">
+  $('.slider_goal').slick({
+    slidesToShow: 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    dots: true,
+    arrows: false,
+    infinite: true,
+  });
+</script>
 <?php
 get_footer();

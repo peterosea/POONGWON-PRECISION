@@ -53,6 +53,10 @@ main.labIntroduction {
           max-width: unset;
           @include TextP-L;
         }
+        @include respondTo("msm") {
+          padding: 40px 10px;
+          @include TextP-G;
+        }
       }
     }
   }
@@ -109,6 +113,10 @@ main.labIntroduction {
       @include respondTo("mlg") {
         max-width: unset;
         @include TextP-L;
+      }
+      @include respondTo("msm") {
+        padding: 40px 10px;
+        @include TextP-G;
       }
     }
     

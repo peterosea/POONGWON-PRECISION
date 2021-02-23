@@ -16,6 +16,9 @@ main.retentionTechnology {
       @include respondTo("mlg") {
         padding-right: 20px;
       }
+      @include respondTo("msm") {
+        @include TextP-G;
+      }
     }
     .col:last-child p {
       padding-left: 60px;
@@ -45,6 +48,13 @@ main.retentionTechnology {
       }
     }
     .table {
+      @include respondTo("msm") {
+        overflow-y: auto;
+        box-shadow: inset -3px 0px 8px rgba(0,0,0,0.2);
+      }
+      .inner {
+        min-width: 540px;
+      }
       .rowTitle {
         max-width: 160px;
       }
@@ -67,11 +77,20 @@ main.retentionTechnology {
           padding-bottom: 23px;
           color: $white;
           @include Text-Style-54;
+          @include respondTo("msm") {
+            @include TextP-M;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+          }
         }
       }
       .body {
         color: $black;
         @include Text-Style-15;
+        .col.rowspan {
+          padding:0;
+        }
         > .row,
         .rowspan > .row:not(:last-child) {
           border-bottom: 1px solid $very-light-pink-four;
@@ -224,10 +243,15 @@ main.retentionTechnology {
       &.section5 {
         padding-bottom: 60px;
       }
+      p {
+        @include TextP-G;
+      }
     }
     .section {
       .container {
         margin-top: 40px;
+        padding-right: 30px;
+        padding-left: 30px;
         .col-5 {
           flex: 0 0 100%;
           max-width: 100%;
@@ -243,6 +267,7 @@ main.retentionTechnology {
       }
       &.section5 p:nth-of-type(1) {
         margin-bottom: 40px;
+        @include TextP-G;
       }
     }
   }
@@ -266,6 +291,7 @@ main.retentionTechnology {
     }
     .section2 .titleWrap .description {
       @include TextP-L;
+      line-height: 1.4em;
     }
     .section3n {
       .title {

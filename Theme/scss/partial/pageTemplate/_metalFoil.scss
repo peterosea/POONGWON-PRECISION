@@ -60,6 +60,11 @@ main.metalFoil {
         @include respondTo("mmd") {
           padding: 40px;
         }
+        @include respondTo("msm") {
+          padding: 40px 10px;
+          @include TextP-G;
+          line-height: 1.8;
+        }
       }
     }
   }
@@ -105,6 +110,11 @@ main.metalFoil {
       @include respondTo("mmd") {
         padding: 40px;
       }
+      @include respondTo("msm") {
+        padding: 40px 10px;
+        @include TextP-G;
+        line-height: 1.8;
+      }
     }
     p {
       color: $black;
@@ -112,6 +122,10 @@ main.metalFoil {
     }
   }
   .section3 {
+    margin-top: 160px;
     @include slickCarouselVideo();
+    @include respondTo("msm") {
+      margin-top: 0px;
+    }
   }
 }

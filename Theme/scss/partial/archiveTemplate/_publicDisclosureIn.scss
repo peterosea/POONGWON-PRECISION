@@ -50,6 +50,9 @@ main.publicDisclosureIn {
       padding-bottom: 40px;
     }
     @include respondTo("msm") {
+      .container {
+        overflow-y: auto;
+      }
       .boardTemplate {
         .col-9 {
           flex: 0 0 63%;

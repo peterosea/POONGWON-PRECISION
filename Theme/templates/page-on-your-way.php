@@ -16,15 +16,16 @@ get_template_part('template-parts/header/page');
 ?>
 <main class="pageTemplate onYourWay">
   <div class="section section1">
-    <div class="bgCover double">
+    <!-- <div class="bgCover double">
       <img draggable="false" src="<?php echo $zeplin ?>/dsc-2979.jpg" srcset="<?php echo $zeplin ?>/dsc-2979@2x.jpg 2x, <?php echo $zeplin ?>/dsc-2979@3x.jpg 3x">
       <img draggable="false" src="<?php echo $zeplin ?>/dam-9176.jpg" srcset="<?php echo $zeplin ?>/dam-9176@2x.jpg 2x, <?php echo $zeplin ?>/dam-9176@3x.jpg 3x">
-    </div>
+    </div> -->
     <div class="container">
       <div class="row">
-        <div class="col-12 col-lg-6">
+        <div class="col-12 col-md-6 imgCol">
+          <img draggable="false" src="<?php echo $zeplin ?>/dsc-2979.jpg" srcset="<?php echo $zeplin ?>/dsc-2979@2x.jpg 2x, <?php echo $zeplin ?>/dsc-2979@3x.jpg 3x">
         </div>
-        <div class="col-12 col-lg-6 iconCol">
+        <div class="col-12 col-md-6 iconCol">
           <img draggable="false" src="<?php echo $zeplin ?>/2783-black.svg" alt="풍원정밀">
           <div class="address">경기도 안산시 단원구 산단로 35번길 24</div>
           <ul>

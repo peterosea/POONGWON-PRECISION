@@ -1,4 +1,9 @@
 main.omm {
+  .pageTitle {
+    @include respondTo("msm") {
+      padding-top: 60px;
+    }
+  }
   .section1 {
     position: relative;
     padding-top: 100px;
@@ -39,6 +44,10 @@ main.omm {
         }
         @include respondTo("mmd") {
           padding: 60px;
+        }
+        @include respondTo("msm") {
+          padding: 40px 10px;
+          @include TextP-G;
         }
       }
       .head {
@@ -182,6 +191,9 @@ main.omm {
       @include Text-Style-49;
       @include respondTo("mmd") {
         @include TextP-L;
+      }
+      @include respondTo("msm") {
+        padding: 0 10px;
       }
     }
     p {

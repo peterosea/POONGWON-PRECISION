@@ -32,3 +32,17 @@ $zeplin = get_home_url() . '/wp-content/uploads/zeplin';
     </div>
   </div>
 </nav>
+<script type="text/javascript">
+  (function($) {
+    $(".mobile_menu ul.menu > li.menu-item > a").click(function(e){
+      e.preventDefault();
+      if($(this).hasClass("_active")){
+        $(this).removeClass("_active");
+        $(this).closest('ul.sub-menu').removeClass('_active');
+      } else {
+        $(this).addClass("_active");
+        $(this).closest('ul.sub-menu').addClass('_active');
+      }
+    });
+  })(jQuery);
+</script>

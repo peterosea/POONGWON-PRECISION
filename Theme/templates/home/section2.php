@@ -1,7 +1,7 @@
 <div class="section section2">
   <!-- <img draggable="false" src="<?php echo $zeplin ?>/group-43.svg" class="bgImg"> -->
   <div class="container">
-    <div class="row sld_sect2">
+    <div class="row">
       <div class="col ">
         <div class="valueWrap">
           <img draggable="false" src="<?php echo $zeplin ?>/1.svg">
@@ -12,7 +12,7 @@
             </div>
           </div>
           <p>
-            1996년 금속가공핵심기술을 가진 <br />
+            1996년 금속가공핵심기술을 가진
             기술집약형 기업으로 설립되었습니다.
           </p>
         </div>
@@ -27,7 +27,7 @@
             </div>
           </div>
           <p>
-          박막 금속 가공 기술을 이용해 총<br>
+          박막 금속 가공 기술을 이용해 총
           180여 기업에 공급해 왔습니다.
           </p>
         </div>
@@ -42,7 +42,7 @@
             </div>
           </div>
           <p>
-          풍원정밀의 박막 금속 가공 기술을 이용해<br>
+          풍원정밀의 박막 금속 가공 기술을 이용해
           개발, 생산한 제품의 갯수입니다.
           </p>
         </div>
@@ -53,3 +53,22 @@
   <div class="bg_green"></div>
   <div class="bg_navy"></div>
 </div>
+
+<script type="text/javascript">
+// 홈페이지 섹션2
+// $('.sld_sect2').slick({
+//     slidesToShow: 3,
+//     autoplay: false,
+//     responsive: [
+//         {
+//             breakpoint: 992,
+//             settings: {
+//                 dots: true,
+//                 arrows: true,
+//                 slidesToShow: 1,
+//                 autoplay: false,
+//             }
+//         }
+//     ]
+// });
+</script>

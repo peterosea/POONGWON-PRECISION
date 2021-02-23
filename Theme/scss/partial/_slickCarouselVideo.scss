@@ -102,8 +102,8 @@
         }
       }
       .thumbnail {
-        width: 240px;
-        height: 150px;
+        // width: 240px;
+        // height: 150px;
         overflow: hidden;
         border: 3px solid transparent;
         transition: border 0.3s ease-in-out;
@@ -115,8 +115,8 @@
           will-change: filter;
         }
         @include respondTo("mhg") {
-          width: 150px;
-          height: auto;
+          // width: 150px;
+          // height: auto;
         }
       }
       .title {
@@ -128,6 +128,39 @@
         text-align: center;
         transition: opacity 0.3s ease-in-out, color 0.3s ease-in-out;
       }
+    }
+    .slick-dots {
+      bottom: 10px;
+      li {
+        button {
+          background: rgba(255,255,255,0);
+          border-radius: 100px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border:1px solid #fff;
+          width: 14px;
+          height: 14px;
+          &:before {
+            content:none;
+          }
+        }
+        &.slick-active {
+          button {
+            background: rgba(255,255,255,1);
+          }
+        }
+      }
+    }
+  }
+  @include respondTo("mmd") {
+    .slick-list{
+      .bottomCover {
+        display: none;
+      }
+    }
+    .slick-slider.slickSlideSmall {
+      display: none;
     }
   }
 }

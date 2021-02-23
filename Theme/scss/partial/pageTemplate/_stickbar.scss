@@ -45,6 +45,10 @@ main.sitckbar {
           padding: 60px;
           @include TextP-L;
         }
+        @include respondTo("msm") {
+          padding: 40px 10px;
+          @include TextP-G;
+        }
       }
     }
   }
@@ -80,6 +84,9 @@ main.sitckbar {
       @include respondTo("mmd") {
         padding: 60px;
       }
+      @include respondTo("msm") {
+        padding: 40px 25px;
+      }
     }
     .head {
       color: $black;
@@ -92,6 +99,9 @@ main.sitckbar {
       color: $black;
       @include Text-Style-27;
       margin-bottom: 26px;
+      @include respondTo("msm") {
+        @include TextP-G;
+      }
     }
   }
 }

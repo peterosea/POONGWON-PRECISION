@@ -6,9 +6,6 @@ main.home {
     min-width: 100%; 
     min-height: 100%;
   }
-  .visual_mobile {
-    display: none;
-  }
   .sectionTitle {
     @include Text-Style-7;
     color: $black;
@@ -35,6 +32,7 @@ main.home {
     justify-content: center;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     position: relative;
     overflow: hidden;
     &:after {
@@ -57,6 +55,8 @@ main.home {
     p {
       @include Text-Style-2;
       color: $white;
+      max-width: 940px;
+      margin: 0 auto;
       strong {
         font-weight: 700;
       }
@@ -71,13 +71,33 @@ main.home {
       }
     }
     @include respondTo("mlg") {
-      height: 640px;
+      height: 600px;
       h1 {
         @include TextTitle-M;
       }
       p {
         font-size: 18px;
         line-height: 1.8;
+        max-width: 80%;
+      }
+    }
+    @include respondTo("msm") {
+      h1 {
+        font-size: 25px;
+        letter-spacing: -0.05em;
+        line-height: 1.6em;
+        span {
+          display: flex;
+          justify-content: center;
+          font-weight: 300;
+          line-height: 1.2em;
+          font-size: 32px;
+        }
+      }
+      p {
+        font-size: 16px;
+        line-height: 1.6;
+        max-width: 100%;
       }
     }
     .bgImg {
@@ -92,30 +112,47 @@ main.home {
   }
   .section2 {
     position: relative;
-    padding-top: 120px;
-    // padding-bottom: 200px;
-    margin-top: calc(-100px - 10vw);
-    height: 857px;
+    padding-top: 0;
+    margin-top: -100px;
+    height: 700px;
     display: flex;
     align-items: center;
     z-index: 3;
     // background-image: url(/wp-content/uploads/zeplin/group-43.svg);
     // background-position: center center;
     // background-repeat: no-repeat;
-    @include respondTo("mhg") {
-      margin-top: calc(-100px - 13vw);
+    @include respondTo("mxl") {
+      height: 560px;
     }
     @include respondTo("mlg") {
-      height: 620px;
-      padding-top: 20px;
-      margin-top: calc(-100px - 6vw);
+      height: 480px;
+    }
+    @include respondTo("msm") {
+      height: 900px;
+    }
+    > .container {
+      z-index: 200;
+      .row {
+        @include respondTo("msm") {
+          flex-direction: column;
+        }
+      }
+      .col {
+        @include respondTo("msm") {
+          margin-bottom: 40px;
+          &:last-child {
+            margin-bottom:0;
+          }
+        }
+      }
     }
     .bg_green {
       background-color: #77c7c7;
       height: 700px;
       width: 100%;
       position: absolute;
-      top: calc(50% - 290px);
+      top: 0;
+      // top: calc(50% - 290px);
       left: 0px;
       z-index: 5;
       clip-path: polygon(0% 0%, 100% 25%, 100% 100%, 0% 75%);
@@ -126,12 +163,13 @@ main.home {
       height: 700px;
       width: 100%;
       position: absolute;
-      top: calc(50% - 290px);
+      top: 0;
+      // top: calc(50% - 290px);
       left: 0px;
       z-index: 4;
       clip-path: polygon(0% 25%, 100% 0%, 100% 75%, 0% 100%);
     }
-    @include respondTo("mlg") {
+    @include respondTo("mxl") {
       .bg_green {
         height: 560px;
       }
@@ -139,8 +177,23 @@ main.home {
         height: 560px;
       }
     }
-    .container {
-      z-index: 200;
+    @include respondTo("mlg") {
+      .bg_green {
+        height: 480px;
+      }
+      .bg_navy {
+        height: 480px;
+      }
+    }
+    @include respondTo("msm") {
+      .bg_green {
+        height: 900px;
+        clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 90%);
+      }
+      .bg_navy {
+        height: 900px;
+        clip-path: polygon(0% 10%, 100% 0%, 100% 90%, 0% 100%);
+      }
     }
     .bgImg {
       position: absolute;
@@ -159,8 +212,13 @@ main.home {
       align-items: center;
       img {
         margin-bottom: 42px;
+        @include respondTo("mxl") {
+          margin-bottom: 24px;
+          max-width: 70px;
+        }
         @include respondTo("mlg") {
-          display:none;
+          margin-bottom: 15px;
+          max-width: 60px;
         }
       }
       .textPoint {
@@ -175,24 +233,51 @@ main.home {
           @include Text-Style-5;
           color: $white;
         }
-        @include respondTo("mlg") {
+        @include respondTo("mxl") {
           margin-bottom: 30px;
           .point {
-            font-size: 80px;
+            font-size: 70px;
+          }
+        }
+        @include respondTo("mlg") {
+          margin-bottom: 20px;
+          .point {
+            font-size: 60px;
           }
           .unit {
             font-size: 18px;
+          }
+        }
+        @include respondTo("mmd") {
+          .point {
+            font-size: 50px;
+          }
+        }
+        @include respondTo("msm") {
+          .point {
+            font-size: 64px;
           }
         }
       }
       p {
         @include Text-Style-6;
         color: $white;
+        max-width: 310px;
+        word-break: keep-all;
         @include respondTo("mlg") {
-          margin-bottom: 3rem;
+          margin-bottom: 0;
+          font-size: 15px;
+          line-height: 1.6em;
+        }
+        @include respondTo("mmd") {
+          font-size: 15px;
+        }
+        @include respondTo("msm") {
+          max-width: 270px;
         }
       }
     }
+    // 슬라이더 제거
     .sld_sect2 {
       .slick-list {
         padding:0 20px;
@@ -272,6 +357,9 @@ main.home {
         font-size: 18px;
         margin-bottom: 55px;
       }
+    }
+    @include respondTo("mmd") {
+      padding-top: 60px;
     }
     .coverCard {
       position: relative;
@@ -386,11 +474,15 @@ main.home {
       background-repeat: no-repeat;
       background-size: cover;
       position: relative;
+      background-attachment: fixed;
       @include respondTo("mlg") {
         padding-top: 70%;
       }
       @include respondTo("msm") {
-        padding-top: 120%;
+        padding: 180px 10px;
+        &:nth-child(2) {
+          padding: 120px 10px;
+        }
       }
       .container {
         position: absolute;
@@ -410,6 +502,14 @@ main.home {
         }
         @include respondTo("msm") {
           justify-content: start;
+          position:relative;
+          height:auto;
+          top:auto;
+          left:auto;
+          transform: none;
+          .wrap {
+            z-index: 3;
+          }
         }
         h1 {
           @include Text-Style-12;
@@ -431,6 +531,8 @@ main.home {
         @include respondTo("mlg") {
           padding-top: 0;
           padding-bottom: 0;
+        }
+        @include respondTo("mmd") {
           h1 {
             @include TextTitle-M;
           }
@@ -456,14 +558,28 @@ main.home {
         max-height: 120%;
         height: 1800px;
         position: absolute;
-        z-index: 200;
+        z-index: 1;
         transform-origin: center;
+        @include respondTo("mmd") {
+          width: 100%;
+          max-width: 100%;
+          height: 600px;
+        }
       }
       &:nth-child(1)::after {
         background-color: $turquoise;
         right: 0;
         bottom: 0;
         transform: translate(50%, calc(50% - 100px)) rotate(45deg);
+        @include respondTo("mlg") {
+          transform: translate(70%, 40%) rotate(45deg);
+        }
+        @include respondTo("mmd") {
+          transform: translate(70%, 10%) rotate(45deg);
+        }
+        @include respondTo("msm") {
+          transform: translate(90%, 10%) rotate(45deg);
+        }
       }
       &:nth-child(2)::after {
         background-color: $dark-cyan;
@@ -472,6 +588,24 @@ main.home {
         max-width: 80%;
         max-height: 160%;
         transform: translate(-50%, 50%) rotate(45deg);
+        @include respondTo("mlg") {
+          transform: translate(-70%, 50%) rotate(45deg);
+        }
+        @include respondTo("mmd") {
+          max-width: 100%;
+          transform: translate(-80%, 50%) rotate(45deg);
+        }
+        @include respondTo("mmd") {
+          transform: translate(-90%, 40%) rotate(45deg);
+        }
+      }
+      &:nth-child(2) .wrap {
+        @include respondTo("mmd") {
+          padding-left: 20px;
+        }
+        @include respondTo("msm") {
+          padding-left: 0;
+        }
       }
     }
   }
@@ -571,6 +705,29 @@ main.home {
         max-width: 280px;
         word-break: keep-all;
         @include Text-Style-20;
+      }
+    }
+    .slick-dots {
+      bottom: 0;
+      li {
+        button {
+          background: rgba(255,255,255,0);
+          border-radius: 100px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border:1px solid #fff;
+          width: 14px;
+          height: 14px;
+          &:before {
+            content:none;
+          }
+        }
+        &.slick-active {
+          button {
+            background: rgba(255,255,255,1);
+          }
+        }
       }
     }
   }

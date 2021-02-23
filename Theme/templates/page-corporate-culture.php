@@ -34,7 +34,7 @@ get_template_part('template-parts/header/page');
           <div class="contentWrap">
             <div class="title">성과에 걸맞는 인정과 보상</div>
             <div class="content">
-            근속연수를 채워서 승진하는 것이 아닌 능력과 성과에 의한 발탁인사제도 및 대표이사와 함께 하는 런치데이트, 그리고  풍원 비타민제도 등 성취감을 고취하기 위한 다양한 제도가 있습니다.
+            근속연수를 채워서 승진하는 것이 아닌 능력과 성과에 의한 발탁인사제도 및 대표이사와 함께 하는 런치데이트, 그리고 풍원 비타민제도 등 성취감을 고취하기 위한 다양한 제도가 있습니다.
             </div>
           </div>
         </div>
@@ -44,9 +44,7 @@ get_template_part('template-parts/header/page');
           <div class="contentWrap">
             <div class="title">화합과 친목</div>
             <div class="content">
-            체육대회, 송년회, 야유회 등을 통한 구성원들간의  화합을 
-도모합니다. 사내 동아리 지원을 통한 친목을 기르는데도 
-앞장서고 있습니다.
+            체육대회, 송년회, 야유회 등을 통한 구성원들간의 화합을 도모합니다. 사내 동아리 지원을 통한 친목을 기르는데도 앞장서고 있습니다.
             </div>
           </div>
         </div>

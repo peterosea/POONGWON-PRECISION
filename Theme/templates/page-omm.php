@@ -148,10 +148,20 @@ HTML;
           dots: false,
           fade: true,
           asNavFor: '#slickSlideSmall',
-          draggable: false
+          draggable: false,
+          responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                  draggable: true,
+                  dots: true,
+                  asNavFor: '',
+                }
+            }
+          ]
         });
         $('#slickSlideSmall').slick({
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
           arrows: false,
           asNavFor: '#slickSlideBg',

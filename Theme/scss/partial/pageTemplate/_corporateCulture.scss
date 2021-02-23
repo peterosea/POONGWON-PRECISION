@@ -1,14 +1,23 @@
 main.corporateCulture {
   .pageTitle {
     @include respondTo("mhg") {
-      padding-top: 70px;
-      margin-bottom: 70px;
+      padding-top: 80px;
+      margin-bottom: 80px;
+    }
+    @include respondTo("msm") {
+      padding-top: 60px;
+      margin-bottom: 60px;
     }
   }
   .section1 {
     padding-bottom: 100px;
     @include respondTo("msm") {
       padding-bottom: 40px;
+    }
+    .container-md-fluid {
+      @include respondTo("msm") {
+        padding: 0 20px !important;
+      }
     }
     .row {
       position: relative;
@@ -73,6 +82,14 @@ main.corporateCulture {
           }
           .content {
             @include TextP-M;
+          }
+        }
+      }
+      @include respondTo("msm") {
+        > div:nth-child(1), > div:nth-child(2) {
+          .contentWrap {
+            width: 100%;
+            padding: 10px 0;
           }
         }
       }

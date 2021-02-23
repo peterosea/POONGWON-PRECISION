@@ -108,10 +108,16 @@ main.benefits {
         background-image: url('/wp-content/uploads/zeplin/people-pattern.png');
         background-position: bottom right;
         background-repeat: repeat;
+        @include respondTo("msm") {
+          background-image:none;
+        }
       }
       .col-12 {
         padding:0;
         background-color:#fff;
+        @include respondTo("msm") {
+          margin-bottom: 20px;
+        }
       }
       .col-12:nth-child(2n-1) {
         background-color: #f2f2f2;

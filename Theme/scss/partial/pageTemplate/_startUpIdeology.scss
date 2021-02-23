@@ -1,4 +1,9 @@
 main.startUpIdeology {
+  .pageTitle {
+    @include respondTo("msm") {
+      padding-top: 60px;
+    }
+  }
   .top_image {
     margin-top: -70px;
     clip-path: polygon(0 215px, 100% 0%, 100% calc(100% - 215px), 0 100%);
@@ -18,6 +23,7 @@ main.startUpIdeology {
     @include respondTo("msm") {
       clip-path: polygon(0 60px, 100% 0%, 100% calc(100% - 60px), 0 100%);
       height: 18rem;
+      margin-top: -10px;
     }
   }
   .section1 {

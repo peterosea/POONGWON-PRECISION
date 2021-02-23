@@ -12,6 +12,12 @@ header.default {
         padding-top: 50px;
       }
     }
+    @include respondTo("mmd") {
+      clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
+    }
+    @include respondTo("mxl") {
+      clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+    }
   }
   .container {
     z-index: 200;
@@ -59,7 +65,7 @@ header.default {
           @include TextTitle-M;
         }
         @include respondTo("msm") {
-          @include TextTitle-S;
+          font-size: 24px;
         }
       }
       circle {

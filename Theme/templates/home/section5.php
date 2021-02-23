@@ -19,7 +19,7 @@
         </div>
       </a>
     </div>
-    <div class="row">
+    <div class="row sld_people">
       <div class="col-12 col-sm-6 col-lg-4">
         <div class="profileWrap">
           <div class="imgWrap">
@@ -112,3 +112,55 @@
     </div>
   </div>
 </div>
+
+<script type="text/javascript">
+  // 홈페이지 섹션2
+  // $('.sld_people').slick({
+  //   mobileFirst: true,
+  //   slidesToShow: 1,
+  //   autoplay: true,
+  //   autoplaySpeed: 4000,
+  //   infinite: true,
+  //   dots: true,
+  //   arrows: false,
+  //   responsive: [
+  //       {
+  //           breakpoint: 768,
+  //           settings:"unslick",
+  //       }
+  //   ]
+  // });
+  (function($) {
+    slick_slider();
+    var width = $(window).width();
+    $(window).resize(function() {
+      if ($(window).width()==width) return;
+      slick_slider();
+      width = $(window).width();
+    });
+
+    function slick_slider() {
+      var wrapper = $(".sld_people");
+      if ($(".slick-initialized").length) {
+          wrapper.slick('unslick');
+      }
+      wrapper.slick({
+        slidesToShow: 1,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        infinite: true,
+        dots: true,
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 5000,
+                settings: "unslick"
+            },
+            {
+                breakpoint: 768,
+            }
+        ]
+      });
+    };
+  })(jQuery);
+</script>

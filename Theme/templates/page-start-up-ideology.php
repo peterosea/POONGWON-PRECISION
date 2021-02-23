@@ -18,7 +18,7 @@ get_template_part('template-parts/header/page');
   <div class="container">
     <div class="pageTitle">
     50여년 넘게 첨단 정밀,전자,기계 부품<br>
-    한우물을 파온 풍원
+    한 우물을 파온 풍원
     </div>
   </div>
   <div class="top_image">

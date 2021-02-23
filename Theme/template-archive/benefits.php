@@ -29,7 +29,7 @@ get_template_part('template-parts/header/page-archive');
               <span>의료비 지원</span>
             </div>
           </div>
-          <p class="contentWrap">직원들이 개인적으로 감당하기 어려운 큰 의료비를 내야 할 상황이 생겼을 때 자신의 가족처럼 지원하고 있습니다. 직원들이 아픈 경우뿐만 아니라 직원의 부모님이나 가족이 아팠을 때도 적용됩니다.</p>
+          <p class="contentWrap">직원들이 개인적으로 감당하기 어려운 큰 의료비를 내야 할 상황이 생겼을 때 회사의 가족처럼 지원하고 있습니다. 직원들이 아픈 경우뿐만 아니라 직원의 가족이 아팠을 때도 적용됩니다.</p>
         </div>
         <div class="col-12 col-md-6 col-lg-4 mb-5">
           <div class="imgWrap">
