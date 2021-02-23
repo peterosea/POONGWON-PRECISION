@@ -34,7 +34,7 @@ get_template_part('template-parts/header/page');
     <div class="container">
       <div class="titleWrap">
         <h1 class="sectionTitle">풍원정밀의 핵심기술</h1>
-        <p class="description">OLED 증착용 Metal Mask 제조기술</p>
+        <!-- <p class="description">OLED 증착용 Metal Mask 제조기술</p> -->
       </div>
       <div class="table">
         <div class="inner">

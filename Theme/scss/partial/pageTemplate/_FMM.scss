@@ -55,6 +55,12 @@ main.fmm {
         @include respondTo("mmd") {
           padding: 40px;
         }
+        @include respondTo("msm") {
+          padding: 40px 10px;
+        }
+        @include respondTo("msm") {
+          @include TextP-G;
+        }
       }
     }
   }
@@ -63,11 +69,15 @@ main.fmm {
     padding-top: 90px;
     padding-bottom: 40px;
     position: relative;
+    @include respondTo("mxl") {
+      padding-bottom: 0;
+    }
     @include respondTo("mmd") {
       margin-top: 100px;
     }
-    @include respondTo("mxl") {
-      padding-bottom: 0;
+    @include respondTo("msm") {
+      margin-top: 0px;
+      padding-top: 0px;
     }
     .bgCover {
       position: absolute;
@@ -89,6 +99,9 @@ main.fmm {
         max-width: 100%;
         padding: 60px;
       }
+      @include respondTo("msm") {
+        padding: 40px 25px;
+      }
     }
     .head {
       color: $black;
@@ -98,6 +111,9 @@ main.fmm {
       color: $black;
       @include Text-Style-27;
       margin-bottom: 26px;
+      @include respondTo("msm") {
+        @include TextP-G;
+      }
     }
   }
   .section3 {
@@ -177,6 +193,9 @@ main.fmm {
       @include respondTo("mmd") {
         padding: 40px;
       }
+      @include respondTo("mmd") {
+        padding: 40px 15px;
+      }
     }
     .head {
       color: $black;
@@ -192,6 +211,9 @@ main.fmm {
       @include respondTo("mlg") {
         line-height: 1.6;
       }
+      @include respondTo("msm") {
+        @include TextP-G;
+      }
     }
   }
   .section4 {
@@ -199,6 +221,9 @@ main.fmm {
     @include slickCarouselVideo();
     @include respondTo("mxl") {
       padding-top: 40px;
+    }
+    @include respondTo("msm") {
+      padding-top: 0px;
     }
   }
 }

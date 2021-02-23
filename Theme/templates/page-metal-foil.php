@@ -31,10 +31,7 @@ get_template_part('template-parts/header/page');
       <div class="row">
         <div class="col-md-4 col-xs-12"></div>
         <div class="col-md-8 col-xs-12 contentCol">
-          <p>유기물인 OLED 소재는 수분과 산소에 약하기 때문에 
-투습을 방지하여 수명을 확보하기 위한 박막봉지가 
-반드시 필요합니다.  
-풍원정밀이 생산하는 금속박(Metal Foil)은 유기박막과 무기박막을 3~5겹 정도 감아서 OLED 층을 완전히 덮어 씌우는, 봉지 공정(Encapsulation)의 재료가 됩니다.
+          <p>유기물인 OLED 소재는 수분과 산소에 약하기 때문에 투습을 방지하여 수명을 확보하기 위한 박막봉지가 반드시 필요합니다.
           </p>
         </div>
       </div>
@@ -47,7 +44,7 @@ get_template_part('template-parts/header/page');
     <div class="container">
       <div class="row">
         <div class="col-md-5 col-xs-12">
-          <h1>이러한 봉지 공정은 증착을 통해 만들어진 OLED 패널이 외부의 영향을 받지 않고 오랫동안 사용될 수 있도록 마감하는 단계로서, OLED 패널의 수명을 좌우합니다. 
+          <h1>이러한 봉지공정은 증착을 통해 만들어진 OLED 패널이 외부의 영향을 받지 않고 오랫동안 사용될 수 있도록 마감하는 단계로서, OLED 패널의 수명을 좌우합니다. 
 <br><br>
 풍원정밀이 생산하는 금속박막(Metal Foil)은 유기박막과 무기박막이 겹쳐진 봉지 필름과 함께 OLED 기판을 덮어서 수분과 산소의 유입을 차단하는 봉지 공정(Encapsulation)의 재료가 됩니다.</h1>
         </div>
