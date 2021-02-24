@@ -9,6 +9,12 @@ main.ceoGreeting {
       @include Text-Style-27;
     }
     margin-bottom: 160px;
+    @include respondTo("mmd") {
+      margin-bottom: 60px;
+    }
+    @include respondTo("msm") {
+      margin-bottom: 40px;
+    }
   }
   .section2 {
     text-align: center;
@@ -27,15 +33,27 @@ main.ceoGreeting {
       background-size: cover;
       background-position: top center;
     }
+    @include respondTo("msm") {
+      height: 600px;
+    }
     .ceo {
       object-fit: cover;
       width: 100%;
       height: 100%;
+      &.mobile {
+        display:none;
+      }
       @include respondTo("mmd") {
         object-fit: contain;
         width: 100%;
         height: initial;
         vertical-align: bottom;
+      }
+      @include respondTo("msm") {
+        display:none;
+        &.mobile {
+          display:block;
+        }
       }
     }
     .container {
@@ -46,6 +64,11 @@ main.ceoGreeting {
       color: $white;
       @include respondTo("mmd") {
         top: 40%;
+      }
+      @include respondTo("msm") {
+        top: 50px;
+        left:0;
+        transform: none;
       }
     }
     .name {

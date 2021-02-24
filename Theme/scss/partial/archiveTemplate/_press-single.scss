@@ -37,6 +37,7 @@ main.press-single {
       }
       @include respondTo("msm") {
         flex-direction: column;
+        padding: 20px 10px;
         .col {
           justify-content: flex-start;
           margin-top: 10px;
@@ -85,7 +86,7 @@ main.press-single {
           @include TextP-M;
         }
         @include respondTo("msm") {
-          padding: 12px 28px;
+          padding: 12px 30px;
         }
         &.list {
           background-color: $turquoise;

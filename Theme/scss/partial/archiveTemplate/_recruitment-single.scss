@@ -18,6 +18,9 @@ main.recruitment-single {
       color: $white;
       @include Text-Style-54;
       text-align: left;
+      @include respondTo("msm") {
+        padding: 20px 10px;
+      }
       .date {
         display: flex;
         justify-content: flex-end;
@@ -76,6 +79,9 @@ main.recruitment-single {
         border-radius: 0;
         @include respondTo("mmd") {
           @include TextP-M;
+        }
+        @include respondTo("msm") {
+          padding: 12px 30px;
         }
         &.list {
           background-color: $turquoise;

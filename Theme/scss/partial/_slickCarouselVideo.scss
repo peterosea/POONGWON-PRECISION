@@ -70,6 +70,7 @@
       bottom: 40px;
       left: 50%;
       transform: translateX(-50%);
+      z-index: 9;
       @include respondTo("mmd") {
         bottom: 20px;
       }
@@ -102,8 +103,8 @@
         }
       }
       .thumbnail {
-        // width: 240px;
-        // height: 150px;
+        width: 240px;
+        height: 150px;
         overflow: hidden;
         border: 3px solid transparent;
         transition: border 0.3s ease-in-out;
@@ -114,10 +115,10 @@
           transition: filter 0.3s ease-in-out;
           will-change: filter;
         }
-        @include respondTo("mhg") {
-          // width: 150px;
-          // height: auto;
-        }
+        // @include respondTo("mhg") {
+        //   width: 150px;
+        //   height: auto;
+        // }
       }
       .title {
         display: none;
@@ -160,7 +161,7 @@
       }
     }
     .slick-slider.slickSlideSmall {
-      display: none;
+      z-index: -1;
     }
   }
 }

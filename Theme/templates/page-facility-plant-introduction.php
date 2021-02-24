@@ -24,7 +24,7 @@ get_template_part('template-parts/header/page');
     </div>
   </div>
   <div class="section section1">
-    <div class="container px-0 sprite">
+    <div class="container sprite">
       <div class="row m-0">
         <div class="container">
           <div class="row">

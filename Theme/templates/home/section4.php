@@ -15,7 +15,7 @@
       </div>
     </div>
   </div>
-  <div class="fullBg" style="background-image:url(<?php echo $zeplin ?>/2800.jpg)">
+  <div class="fullBg" >
     <div class="container">
       <div class="wrap">
         <h1>

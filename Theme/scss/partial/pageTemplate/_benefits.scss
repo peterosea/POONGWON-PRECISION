@@ -105,9 +105,9 @@ main.benefits {
         padding-left: 30px;
       }
       .row {
-        background-image: url('/wp-content/uploads/zeplin/people-pattern.png');
-        background-position: bottom right;
-        background-repeat: repeat;
+        // background-image: url('/wp-content/uploads/zeplin/people-pattern.png');
+        // background-position: bottom right;
+        // background-repeat: repeat;
         @include respondTo("msm") {
           background-image:none;
         }

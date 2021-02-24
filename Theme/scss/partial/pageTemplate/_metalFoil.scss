@@ -10,17 +10,19 @@ main.metalFoil {
   }
   .section1 {
     position: relative;
-    padding-top: 180px;
-    padding-bottom: 84px;
+    padding-top: 100px;
+    padding-bottom: 130px;
     @include respondTo("mxl") {
-      padding-top: 150px;
+      padding-top: 100px;
+      padding-bottom: 100px;
     }
     @include respondTo("mlg") {
-      padding-top: 100px;
-      padding-bottom: 0px;
+      padding-top: 70px;
+      padding-bottom: 70px;
     }
     @include respondTo("mmd") {
       padding-top: 0;
+      padding-bottom: 20px;
     }
     .bgCover {
       position: absolute;
@@ -48,14 +50,17 @@ main.metalFoil {
         color: $black;
         @include Text-Style-49;
         max-width: 900px;
-        padding: 80px 200px 80px 120px;
+        padding: 180px 200px 240px 120px;
         background-color: $white;
         @include respondTo("mhg") {
-          padding: 80px 120px;
+          padding: 160px 120px;
+        }
+        @include respondTo("mxl") {
+          padding: 110px 120px;
         }
         @include respondTo("mlg") {
           @include TextP-L;
-          padding: 80px;
+          padding: 110px 80px;
         }
         @include respondTo("mmd") {
           padding: 40px;
@@ -70,9 +75,17 @@ main.metalFoil {
   }
 
   .section2 {
-    padding-top: 90px;
+    padding-top: 120px;
     position: relative;
     padding-bottom: 120px;
+    @include respondTo("mhg") {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+    @include respondTo("mhg") {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
     @include respondTo("mlg") {
       padding-top: 60px;
       padding-bottom: 60px;
@@ -124,7 +137,13 @@ main.metalFoil {
   .section3 {
     margin-top: 160px;
     @include slickCarouselVideo();
-    @include respondTo("msm") {
+    @include respondTo("mhg") {
+      margin-top: 60px;
+    }
+    @include respondTo("mxl") {
+      margin-top: 30px;
+    }
+    @include respondTo("mmd") {
       margin-top: 0px;
     }
   }
