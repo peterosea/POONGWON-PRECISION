@@ -1,180 +1,197 @@
-@font-face {
-  font-family: NotoSansCJKkr;
-  src: local(NotoSansCJKkr-DemiLight-),
-    url(/assets/fonts/NotoSansCJKkr-DemiLight-.woff2) format("woff2"),
-    url(/assets/fonts/NotoSansCJKkr-DemiLight-.woff) format("woff"),
-    url(/assets/fonts/NotoSansCJKkr-DemiLight-.ttf) format("truetype");
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-}
+// @font-face {
+//   font-family: NotoSansCJKkr;
+//   src: url(/wp-content/themes/base/assets/fonts/NotoSansCJKkr-DemiLight.eot);  /* IE 9 - 11 */
+//   src: local(NotoSansCJKkr-DemiLight),
+//     url(/wp-content/themes/base/assets/fonts/NotoSansCJKkr-DemiLight.woff2) format("woff2"),
+//     url(/wp-content/themes/base/assets/fonts/NotoSansCJKkr-DemiLight.woff) format("woff"),
+//     url(/wp-content/themes/base/assets/fonts/NotoSansCJKkr-DemiLight.eot) format('embedded-opentype'),
+//     url(/wp-content/themes/base/assets/fonts/NotoSansCJKkr-DemiLight.ttf) format("truetype");
+//   font-weight: 300;
+//   font-style: normal;
+//   font-stretch: normal;
+// }
 
-@font-face {
-  font-family: NotoSansCJKkr;
-  src: local(NotoSansCJKkr-Light-),
-    url(/assets/fonts/NotoSansCJKkr-Light-.woff2) format("woff2"),
-    url(/assets/fonts/NotoSansCJKkr-Light-.woff) format("woff"),
-    url(/assets/fonts/NotoSansCJKkr-Light-.ttf) format("truetype");
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-}
+// // @font-face {
+// //   font-family: NotoSansCJKkr;
+// //   src: local(NotoSansCJKkr-Light-),
+// //     url(/wp-content/themes/base/assets/fonts/NotoSansCJKkr-Light-.woff2) format("woff2"),
+// //     url(/wp-content/themes/base/assets/fonts/NotoSansCJKkr-Light-.woff) format("woff"),
+// //     url(/wp-content/themes/base/assets/fonts/NotoSansCJKkr-Light-.ttf) format("truetype");
+// //   font-weight: 300;
+// //   font-style: normal;
+// //   font-stretch: normal;
+// // }
 
-@font-face {
-  font-family: NotoSansCJKkr;
-  src: local(NotoSansCJKkr-Light),
-    url(/assets/fonts/NotoSansCJKkr-Light.woff2) format("woff2"),
-    url(/assets/fonts/NotoSansCJKkr-Light.woff) format("woff"),
-    url(/assets/fonts/NotoSansCJKkr-Light.ttf) format("truetype");
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-}
+// @font-face {
+//   font-family: NotoSansCJKkr;
+//   src: url(/wp-content/themes/base/assets/fonts/NotoSansCJKkr-Light.eot);  /* IE 9 - 11 */
+//   src: local(NotoSansCJKkr-Light),
+//     url(/wp-content/themes/base/assets/fonts/NotoSansCJKkr-Light.woff2) format("woff2"),
+//     url(/wp-content/themes/base/assets/fonts/NotoSansCJKkr-Light.woff) format("woff"),
+//     url(/wp-content/themes/base/assets/fonts/NotoSansCJKkr-Light.eot) format('embedded-opentype'),
+//     url(/wp-content/themes/base/assets/fonts/NotoSansCJKkr-Light.ttf) format("truetype");
+//   font-weight: 200;
+//   font-style: normal;
+//   font-stretch: normal;
+// }
 
-@font-face {
-  font-family: NotoSansCJKkr;
-  src: local(NotoSansCJKkr-Regular-),
-    url(/assets/fonts/NotoSansCJKkr-Regular-.woff2) format("woff2"),
-    url(/assets/fonts/NotoSansCJKkr-Regular-.woff) format("woff"),
-    url(/assets/fonts/NotoSansCJKkr-Regular-.ttf) format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-}
+// // @font-face {
+// //   font-family: NotoSansCJKkr;
+// //   src: local(NotoSansCJKkr-Regular-),
+// //     url(/wp-content/themes/base/assets/fonts/NotoSansCJKkr-Regular-.woff2) format("woff2"),
+// //     url(/wp-content/themes/base/assets/fonts/NotoSansCJKkr-Regular-.woff) format("woff"),
+// //     url(/wp-content/themes/base/assets/fonts/NotoSansCJKkr-Regular-.ttf) format("truetype");
+// //   font-weight: normal;
+// //   font-style: normal;
+// //   font-stretch: normal;
+// // }
 
-@font-face {
-  font-family: NotoSansCJKkr;
-  src: local(NotoSansCJKkr-Regular),
-    url(/assets/fonts/NotoSansCJKkr-Regular.woff2) format("woff2"),
-    url(/assets/fonts/NotoSansCJKkr-Regular.woff) format("woff"),
-    url(/assets/fonts/NotoSansCJKkr-Regular.ttf) format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-}
+// @font-face {
+//   font-family: NotoSansCJKkr;
+//   src: url(/wp-content/themes/base/assets/fonts/NotoSansCJKkr-Regular.eot);  /* IE 9 - 11 */
+//   src: local(NotoSansCJKkr-Regular),
+//     url(/wp-content/themes/base/assets/fonts/NotoSansCJKkr-Regular.woff2) format("woff2"),
+//     url(/wp-content/themes/base/assets/fonts/NotoSansCJKkr-Regular.woff) format("woff"),
+//     url(/wp-content/themes/base/assets/fonts/NotoSansCJKkr-Regular.eot) format('embedded-opentype'),
+//     url(/wp-content/themes/base/assets/fonts/NotoSansCJKkr-Regular.ttf) format("truetype");
+//   font-weight: normal;
+//   font-style: normal;
+//   font-stretch: normal;
+// }
 
-@font-face {
-  font-family: NotoSansCJKkr;
-  src: local(NotoSansCJKkr-Medium-),
-    url(/assets/fonts/NotoSansCJKkr-Medium-.woff2) format("woff2"),
-    url(/assets/fonts/NotoSansCJKkr-Medium-.woff) format("woff"),
-    url(/assets/fonts/NotoSansCJKkr-Medium-.ttf) format("truetype");
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-}
+// // @font-face {
+// //   font-family: NotoSansCJKkr;
+// //   src: local(NotoSansCJKkr-Medium-),
+// //     url(/wp-content/themes/base/assets/fonts/NotoSansCJKkr-Medium-.woff2) format("woff2"),
+// //     url(/wp-content/themes/base/assets/fonts/NotoSansCJKkr-Medium-.woff) format("woff"),
+// //     url(/wp-content/themes/base/assets/fonts/NotoSansCJKkr-Medium-.ttf) format("truetype");
+// //   font-weight: 500;
+// //   font-style: normal;
+// //   font-stretch: normal;
+// // }
 
-@font-face {
-  font-family: NotoSansCJKkr;
-  src: local(NotoSansCJKkr-Medium),
-    url(/assets/fonts/NotoSansCJKkr-Medium.woff2) format("woff2"),
-    url(/assets/fonts/NotoSansCJKkr-Medium.woff) format("woff"),
-    url(/assets/fonts/NotoSansCJKkr-Medium.ttf) format("truetype");
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-}
+// @font-face {
+//   font-family: NotoSansCJKkr;
+//   src: url(/wp-content/themes/base/assets/fonts/NotoSansCJKkr-Medium.eot);  /* IE 9 - 11 */
+//   src: local(NotoSansCJKkr-Medium),
+//     url(/wp-content/themes/base/assets/fonts/NotoSansCJKkr-Medium.woff2) format("woff2"),
+//     url(/wp-content/themes/base/assets/fonts/NotoSansCJKkr-Medium.woff) format("woff"),
+//     url(/wp-content/themes/base/assets/fonts/NotoSansCJKkr-Medium.eot) format('embedded-opentype'),
+//     url(/wp-content/themes/base/assets/fonts/NotoSansCJKkr-Medium.ttf) format("truetype");
+//   font-weight: 500;
+//   font-style: normal;
+//   font-stretch: normal;
+// }
 
-@font-face {
-  font-family: NotoSansCJKkr;
-  src: local(NotoSansCJKkr-Bold-),
-    url(/assets/fonts/NotoSansCJKkr-Bold-.woff2) format("woff2"),
-    url(/assets/fonts/NotoSansCJKkr-Bold-.woff) format("woff"),
-    url(/assets/fonts/NotoSansCJKkr-Bold-.ttf) format("truetype");
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-}
+// // @font-face {
+// //   font-family: NotoSansCJKkr;
+// //   src: local(NotoSansCJKkr-Bold-),
+// //     url(/wp-content/themes/base/assets/fonts/NotoSansCJKkr-Bold-.woff2) format("woff2"),
+// //     url(/wp-content/themes/base/assets/fonts/NotoSansCJKkr-Bold-.woff) format("woff"),
+// //     url(/wp-content/themes/base/assets/fonts/NotoSansCJKkr-Bold-.ttf) format("truetype");
+// //   font-weight: bold;
+// //   font-style: normal;
+// //   font-stretch: normal;
+// // }
 
-@font-face {
-  font-family: NotoSansCJKkr;
-  src: local(NotoSansCJKkr-Bold),
-    url(/assets/fonts/NotoSansCJKkr-Bold.woff2) format("woff2"),
-    url(/assets/fonts/NotoSansCJKkr-Bold.woff) format("woff"),
-    url(/assets/fonts/NotoSansCJKkr-Bold.ttf) format("truetype");
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-}
+// @font-face {
+//   font-family: NotoSansCJKkr;
+//   src: url(/wp-content/themes/base/assets/fonts/NotoSansCJKkr-Bold.eot);  /* IE 9 - 11 */
+//   src: local(NotoSansCJKkr-Bold),
+//     url(/wp-content/themes/base/assets/fonts/NotoSansCJKkr-Bold.woff2) format("woff2"),
+//     url(/wp-content/themes/base/assets/fonts/NotoSansCJKkr-Bold.woff) format("woff"),
+//     url(/wp-content/themes/base/assets/fonts/NotoSansCJKkr-Bold.eot) format('embedded-opentype'),
+//     url(/wp-content/themes/base/assets/fonts/NotoSansCJKkr-Bold.ttf) format("truetype");
+//   font-weight: bold;
+//   font-style: normal;
+//   font-stretch: normal;
+// }
 
-@font-face {
-  font-family: NotoSansCJKkr;
-  src: local(NotoSansCJKkr-Black-),
-    url(/assets/fonts/NotoSansCJKkr-Black-.woff2) format("woff2"),
-    url(/assets/fonts/NotoSansCJKkr-Black-.woff) format("woff"),
-    url(/assets/fonts/NotoSansCJKkr-Black-.ttf) format("truetype");
-  font-weight: 900;
-  font-style: normal;
-  font-stretch: normal;
-}
+// @font-face {
+//   font-family: NotoSansCJKkr;
+//   src: url(/wp-content/themes/base/assets/fonts/NotoSansCJKkr-Black.eot);  /* IE 9 - 11 */
+//   src: local(NotoSansCJKkr-Black),
+//     url(/wp-content/themes/base/assets/fonts/NotoSansCJKkr-Black.woff2) format("woff2"),
+//     url(/wp-content/themes/base/assets/fonts/NotoSansCJKkr-Black.woff) format("woff"),
+//     url(/wp-content/themes/base/assets/fonts/NotoSansCJKkr-Black.eot) format('embedded-opentype'),
+//     url(/wp-content/themes/base/assets/fonts/NotoSansCJKkr-Black.ttf) format("truetype");
+//   font-weight: 900;
+//   font-style: normal;
+//   font-stretch: normal;
+// }
 
-@font-face {
-  font-family: NotoSansKR;
-  src: local(NotoSansKR-Regular),
-    url(/assets/fonts/NotoSansKR-Regular.woff2) format("woff2"),
-    url(/assets/fonts/NotoSansKR-Regular.woff) format("woff"),
-    url(/assets/fonts/NotoSansKR-Regular.ttf) format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-}
+// @font-face {
+//   font-family: NotoSansKR;
+//   src: url(/wp-content/themes/base/assets/fonts/NotoSansKR-Regular.eot);  /* IE 9 - 11 */
+//   src: local(NotoSansKR-Regular),
+//     url(/wp-content/themes/base/assets/fonts/NotoSansKR-Regular.woff2) format("woff2"),
+//     url(/wp-content/themes/base/assets/fonts/NotoSansKR-Regular.woff) format("woff"),
+//     url(/wp-content/themes/base/assets/fonts/NotoSansKR-Regular.eot) format('embedded-opentype'),
+//     url(/wp-content/themes/base/assets/fonts/NotoSansKR-Regular.ttf) format("truetype");
+//   font-weight: normal;
+//   font-style: normal;
+//   font-stretch: normal;
+// }
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700;900&display=swap');
 
 @mixin Text-Style-4 {
-  font-family: NotoSansCJKkr;
-  font-size: 160px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 90px;
   font-weight: bold;
-  line-height: 0.41;
+  line-height: 0.8;
   text-align: left;
 }
 
 @mixin Text-Style-16 {
-  font-family: NotoSansCJKkr;
-  font-size: 62px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 46px;
   font-weight: 900;
   line-height: 0.95;
-  letter-spacing: -0.62px;
+  letter-spacing: -0.5px;
   text-align: center;
 }
 
 @mixin Text-Style-14 {
-  font-family: NotoSansCJKkr;
-  font-size: 62px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 46px;
   font-weight: 900;
   line-height: 1.1;
-  letter-spacing: -0.62px;
+  letter-spacing: -0.5px;
   text-align: left;
 }
 
 @mixin Text-Style-12 {
-  font-family: NotoSansCJKkr;
-  font-size: 62px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 46px;
   font-weight: 900;
   line-height: 1.13;
-  letter-spacing: -0.62px;
+  letter-spacing: -0.5px;
   text-align: left;
 }
 
+// sectionTitle
 @mixin Text-Style-7 {
-  font-family: NotoSansCJKkr;
-  font-size: 62px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 46px;
   font-weight: 900;
-  line-height: 0.43;
-  letter-spacing: -0.62px;
+  line-height: 1;
+  // line-height: 0.43;
+  letter-spacing: -0.5px;
   text-align: center;
 }
 
 @mixin Text-Style {
-  font-family: NotoSansCJKkr;
-  font-size: 62px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 46px;
   font-weight: 900;
-  line-height: 1.29;
-  letter-spacing: -0.62px;
+  line-height: 1.6;
+  letter-spacing: -0.5px;
   text-align: center;
 }
 
 @mixin Text-Style-32 {
-  font-family: NotoSansCJKkr;
-  font-size: 50px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 40px;
   font-weight: bold;
   line-height: 1.28;
   letter-spacing: -0.5px;
@@ -182,8 +199,8 @@
 }
 
 @mixin Text-Style-26 {
-  font-family: NotoSansCJKkr;
-  font-size: 50px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 36px;
   font-weight: bold;
   line-height: 1.28;
   letter-spacing: -0.5px;
@@ -191,8 +208,8 @@
 }
 
 @mixin Text-Style-9 {
-  font-family: NotoSansCJKkr;
-  font-size: 50px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 46px;
   font-weight: bold;
   line-height: 0.9;
   letter-spacing: -0.5px;
@@ -200,40 +217,40 @@
 }
 
 @mixin Text-Style-25 {
-  font-family: NotoSansCJKkr;
-  font-size: 40px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 36px;
   font-weight: bold;
   line-height: 1.08;
   text-align: right;
 }
 
 @mixin Text-Style-61 {
-  font-family: NotoSansCJKkr;
-  font-size: 40px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 36px;
   font-weight: bold;
   letter-spacing: -0.4px;
   text-align: left;
 }
 
 @mixin Text-Style-11 {
-  font-family: NotoSansCJKkr;
-  font-size: 40px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 36px;
   font-weight: bold;
-  line-height: 0.73;
+  line-height: 1;
   letter-spacing: -0.4px;
-  text-align: left;
+  text-align: center;
 }
 
 @mixin Text-Style-5 {
-  font-family: NotoSansCJKkr;
-  font-size: 40px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 36px;
   font-weight: 500;
-  line-height: 1.33;
+  line-height: 1;
   text-align: left;
 }
 
 @mixin Text-Style-52 {
-  font-family: NotoSansCJKkr;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 38px;
   font-weight: bold;
   line-height: 1.26;
@@ -242,7 +259,7 @@
 }
 
 @mixin Text-Style-34 {
-  font-family: NotoSansCJKkr;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 36px;
   font-weight: bold;
   line-height: 1.53;
@@ -251,7 +268,7 @@
 }
 
 @mixin Text-Style-62 {
-  font-family: NotoSansCJKkr;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 30px;
   font-weight: bold;
   letter-spacing: -0.3px;
@@ -259,7 +276,7 @@
 }
 
 @mixin Text-Style-51 {
-  font-family: NotoSansCJKkr;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 30px;
   font-weight: bold;
   line-height: 1.27;
@@ -268,7 +285,7 @@
 }
 
 @mixin Text-Style-36 {
-  font-family: NotoSansCJKkr;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 28px;
   font-weight: 500;
   line-height: 1.64;
@@ -277,7 +294,7 @@
 }
 
 @mixin Text-Style-30 {
-  font-family: NotoSansCJKkr;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 28px;
   font-weight: 500;
   line-height: 1.64;
@@ -286,8 +303,8 @@
 }
 
 @mixin Text-Style-48 {
-  font-family: NotoSansCJKkr;
-  font-size: 26px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 22px;
   font-weight: bold;
   line-height: 1.27;
   letter-spacing: -0.26px;
@@ -295,16 +312,16 @@
 }
 
 @mixin Text-Style-60 {
-  font-family: NotoSansCJKkr;
-  font-size: 26px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 22px;
   font-weight: bold;
   letter-spacing: -0.26px;
   text-align: left;
 }
 
 @mixin Text-Style-39 {
-  font-family: NotoSansCJKkr;
-  font-size: 26px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 22px;
   font-weight: 500;
   line-height: 1.62;
   letter-spacing: -0.26px;
@@ -312,16 +329,16 @@
 }
 
 @mixin Text-Style-49 {
-  font-family: NotoSansCJKkr;
-  font-size: 26px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 22px;
   font-weight: 500;
-  line-height: 1.85;
+  line-height: 1.6;
   letter-spacing: -0.26px;
   text-align: left;
 }
 
 @mixin Text-Style-33 {
-  font-family: NotoSansCJKkr;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 24px;
   font-weight: bold;
   line-height: 1.75;
@@ -330,16 +347,16 @@
 }
 
 @mixin Text-Style-46 {
-  font-family: NotoSansCJKkr;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 24px;
   font-weight: 500;
-  line-height: 3.33;
+  line-height: 1.6;
   letter-spacing: -0.24px;
   text-align: center;
 }
 
 @mixin Text-Style-57 {
-  font-family: NotoSansCJKkr;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 22px;
   font-weight: bold;
   line-height: 2.23;
@@ -348,7 +365,7 @@
 }
 
 @mixin Text-Style-3 {
-  font-family: NotoSansCJKkr;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 22px;
   font-weight: bold;
   line-height: 2.09;
@@ -357,7 +374,7 @@
 }
 
 @mixin Text-Style-19 {
-  font-family: NotoSansCJKkr;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 22px;
   font-weight: bold;
   line-height: 1.32;
@@ -366,15 +383,15 @@
 }
 
 @mixin Text-Style-8 {
-  font-family: NotoSansCJKkr;
-  font-size: 22px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 18px;
   line-height: 1.55;
   letter-spacing: -0.22px;
   text-align: center;
 }
 
 @mixin Text-Style-17 {
-  font-family: NotoSansCJKkr;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 22px;
   font-weight: 300;
   line-height: 1.55;
@@ -383,7 +400,7 @@
 }
 
 @mixin Text-Style-18 {
-  font-family: NotoSansCJKkr;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 22px;
   font-weight: 300;
   line-height: 1.32;
@@ -392,16 +409,16 @@
 }
 
 @mixin Text-Style-2 {
-  font-family: NotoSansCJKkr;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 22px;
   font-weight: 300;
-  line-height: 2.09;
+  line-height: 1.6;
   letter-spacing: -0.22px;
   text-align: center;
 }
 
 @mixin Text-Style-28 {
-  font-family: NotoSansCJKkr;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 22px;
   font-weight: bold;
   line-height: 1.09;
@@ -409,22 +426,22 @@
 }
 
 @mixin Text-Style-22 {
-  font-family: NotoSansCJKkr;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 22px;
   font-weight: bold;
   line-height: 1.09;
-  text-align: left;
+  text-align: center;
 }
 
 @mixin Text-Style-24 {
-  font-family: NotoSansCJKkr;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 22px;
   line-height: 1.09;
   text-align: left;
 }
 
 @mixin Text-Style-54 {
-  font-family: NotoSansCJKkr;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 20px;
   font-weight: 500;
   letter-spacing: -0.2px;
@@ -432,7 +449,7 @@
 }
 
 @mixin Text-Style-47 {
-  font-family: NotoSansCJKkr;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.6;
@@ -441,7 +458,7 @@
 }
 
 @mixin Text-Style-44 {
-  font-family: NotoSansCJKkr;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 20px;
   font-weight: 500;
   letter-spacing: -0.2px;
@@ -449,7 +466,7 @@
 }
 
 @mixin Text-Style-35 {
-  font-family: NotoSansCJKkr;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.4;
@@ -458,7 +475,7 @@
 }
 
 @mixin Text-Style-59 {
-  font-family: NotoSansCJKkr;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 20px;
   line-height: 2.4;
   letter-spacing: -0.2px;
@@ -466,7 +483,7 @@
 }
 
 @mixin Text-Style-58 {
-  font-family: NotoSansCJKkr;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 20px;
   line-height: 1.8;
   letter-spacing: -0.2px;
@@ -474,14 +491,14 @@
 }
 
 @mixin Text-Style-56 {
-  font-family: NotoSansCJKkr;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 20px;
   letter-spacing: -0.2px;
   text-align: center;
 }
 
 @mixin Text-Style-55 {
-  font-family: NotoSansCJKkr;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 20px;
   line-height: 1.9;
   letter-spacing: -0.2px;
@@ -489,14 +506,14 @@
 }
 
 @mixin Text-Style-45 {
-  font-family: NotoSansCJKkr;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 20px;
   letter-spacing: -0.2px;
   text-align: left;
 }
 
 @mixin Text-Style-37 {
-  font-family: NotoSansCJKkr;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 20px;
   line-height: 1.7;
   letter-spacing: -0.3px;
@@ -504,7 +521,7 @@
 }
 
 @mixin Text-Style-31 {
-  font-family: NotoSansCJKkr;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 20px;
   line-height: 1.7;
   letter-spacing: -0.3px;
@@ -512,8 +529,8 @@
 }
 
 @mixin Text-Style-6 {
-  font-family: NotoSansCJKkr;
-  font-size: 20px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 18px;
   line-height: 1.7;
   letter-spacing: -0.2px;
   text-align: center;
@@ -528,7 +545,7 @@
 }
 
 @mixin Text-Style-15 {
-  font-family: NotoSansCJKkr;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 20px;
   font-weight: 300;
   line-height: 1.7;
@@ -537,7 +554,7 @@
 }
 
 @mixin Text-Style-13 {
-  font-family: NotoSansCJKkr;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 20px;
   font-weight: 300;
   line-height: 1.7;
@@ -546,32 +563,32 @@
 }
 
 @mixin Text-Style-40 {
-  font-family: NotoSansCJKkr;
-  font-size: 20px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 18px;
   font-weight: 300;
-  line-height: 1.9;
+  line-height: 1.7;
   letter-spacing: -0.2px;
   text-align: center;
 }
 
 @mixin Text-Style-27 {
-  font-family: NotoSansCJKkr;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 20px;
   font-weight: 300;
-  line-height: 1.9;
+  line-height: 1.7;
   letter-spacing: -0.2px;
   text-align: left;
 }
 
 @mixin Text-Style-23 {
-  font-family: NotoSansCJKkr;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 20px;
   line-height: 2.5;
-  text-align: left;
+  text-align: center;
 }
 
 @mixin Text-Style-43 {
-  font-family: NotoSansCJKkr;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 18px;
   font-weight: 500;
   line-height: 1.78;
@@ -580,13 +597,13 @@
 }
 
 @mixin Text-Style-53 {
-  font-family: NotoSansCJKkr;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 18px;
   text-align: center;
 }
 
 @mixin Text-Style-10 {
-  font-family: NotoSansCJKkr;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: -0.18px;
@@ -594,7 +611,7 @@
 }
 
 @mixin Text-Style-38 {
-  font-family: NotoSansCJKkr;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 18px;
   font-weight: 300;
   line-height: 1.78;
@@ -603,7 +620,7 @@
 }
 
 @mixin Text-Style-29 {
-  font-family: NotoSansCJKkr;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 18px;
   font-weight: 300;
   line-height: 1.78;
@@ -612,7 +629,7 @@
 }
 
 @mixin Text-Style-41 {
-  font-family: NotoSansCJKkr;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 16px;
   font-weight: bold;
   line-height: 1.88;
@@ -621,7 +638,7 @@
 }
 
 @mixin Text-Style-42 {
-  font-family: NotoSansCJKkr;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: -0.16px;
@@ -629,7 +646,7 @@
 }
 
 @mixin Text-Style-20 {
-  font-family: NotoSansCJKkr;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 16px;
   line-height: 1.63;
   letter-spacing: -0.16px;
@@ -637,7 +654,7 @@
 }
 
 @mixin Text-Style-21 {
-  font-family: NotoSansCJKkr;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: -0.16px;

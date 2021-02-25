@@ -20,8 +20,7 @@ get_template_part('template-parts/header/page');
     <div class="pageTitle">
       풍원정밀 경영 철학
       <p>
-        풍원정밀은 유명훈 대표의 경영 철학을 기반으로 업계에서 높은 임금과 우수한 복지 수준을 갖춘 기업으로,<br />
-        역량있는 우수한 인재들이 일하고 싶어하는 중소기업으로 기업문화를 만들어 나가고 있습니다.
+      미래에 대한 비전과 희망으로 가득한 중소기업 풍원정밀은 성과, 성장, 그리고 화합을 중요하게 생각합니다. 
       </p>
     </div>
   </div>
@@ -29,13 +28,13 @@ get_template_part('template-parts/header/page');
     <div class="container-md-fluid p-0">
       <div class="row">
         <div class="col-12 col-md-6 imgCol">
-          <img draggable="false" src="<?php echo $zeplin ?>/dam-9557.jpg" srcset="<?php echo $zeplin ?>/dam-9557@2x.jpg 2x, <?php echo $zeplin ?>/dam-9557@3x.jpg 3x">
+          <img draggable="false" src="<?php echo $zeplin ?>/dsc-2028.jpg" srcset="<?php echo $zeplin ?>/dsc-2028@2x.jpg 2x, <?php echo $zeplin ?>/dsc-2028@3x.jpg 3x">
         </div>
         <div class="col-12 col-md-6">
           <div class="contentWrap">
             <div class="title">성과에 걸맞는 인정과 보상</div>
             <div class="content">
-              근속연수를 채워서 승진하는 것이 아닌 능력과 성과에 의한 발탁인사제도 및 대표이사와 함께 하는 런치데이트, 그리고 00000한 풍원 비타민제도 등 성취감을 고취하기 위한 다양한 제도가 있습니다.
+            근속연수를 채워서 승진하는 것이 아닌 능력과 성과에 의한 발탁인사제도 및 대표이사와 함께 하는 런치데이트, 그리고 풍원 비타민제도 등 성취감을 고취하기 위한 다양한 제도가 있습니다.
             </div>
           </div>
         </div>
@@ -45,9 +44,7 @@ get_template_part('template-parts/header/page');
           <div class="contentWrap">
             <div class="title">화합과 친목</div>
             <div class="content">
-              체육대회, 송년회, 아유회 등을 통한 구성원들간의 화합을
-              도모합니다. 사내 동아리 지원을 통한 친목을 기르는데도
-              앞장서고 있습니다.
+            체육대회, 송년회, 야유회 등을 통한 구성원들간의 화합을 도모합니다. 사내 동아리 지원을 통한 친목을 기르는데도 앞장서고 있습니다.
             </div>
           </div>
         </div>
@@ -61,11 +58,9 @@ get_template_part('template-parts/header/page');
         </div>
         <div class="col-12 col-md-6">
           <div class="contentWrap">
-            <div class="title">화합과 친목</div>
+            <div class="title">성장 기회</div>
             <div class="content">
-              체육대회, 송년회, 아유회 등을 통한 구성원들간의 화합을
-              도모합니다. 사내 동아리 지원을 통한 친목을 기르는데도
-              앞장서고 있습니다.
+            협력사들과의 제휴를 통한 400여개의 온/오프라인 무료 교육을 직원들에게 제공하여 직원들이 끊임없이 성장해 나갈수 있도록 지원합니다 
             </div>
           </div>
         </div>

@@ -16,7 +16,7 @@ get_template_part('template-parts/header/page');
 <main class="pageTemplate omm">
   <div class="container">
     <div class="pageTitle">
-      OLED 제조 공정의 핵심 소재인 오픈 메탈 마스크
+    OLED 제조 공정의 핵심 소재인 오픈 메탈 마스크
       <div class="subTitle">OMM, Open Metal Mask</div>
     </div>
   </div>
@@ -30,10 +30,10 @@ get_template_part('template-parts/header/page');
         <div class="col-8 contentCol">
           <div class="wrap">
             <p class="head">
-              풍원정밀의 주력 제품은 OLED디스플레이 증착용 부품인 오픈메탈마스크(OMM, Open Metal Mask)입니다.
+            풍원정밀의 주력 제품은 OLED디스플레이 증착용 부품인 오픈메탈마스크(OMM, Open Metal Mask)입니다. 
             </p>
             <p>
-              증착은 OLED 디스플레이 제조 과정의 핵심 공정 가운데 하나로 기판이 되는 유리판(Glass) 위에 빨강(Red), 초록(Green), 파랑(Blue) 색을 내는 유기 발광층을 구성할 때 사용하는 방법입니다. 증착은 ‘증발시킨다(Evaporate)’는 개념과 유사한데 냄비에 물을 끓일 때 수증기가 냄비 뚜껑에 이슬처럼 맺히는 것처럼, OLED 디스플레이 증착 공정은 물이 아닌 유기 재료를 진공 상태에서 가열하여 증착시키는 과정을 의미합니다.
+            증착은 OLED 디스플레이 제조 과정의 핵심 공정 가운데 하나로 기판이 되는 유리판(Glass) 위에 빨강(Red), 초록(Green), 파랑(Blue) 색을 내는 유기 발광층을 구성할 때 사용하는 방법입니다. 증착은 ‘증발시킨다(Evaporate)’는 개념과 유사한데 냄비에 물을 끓일 때 수증기가 냄비 뚜껑에 이슬처럼 맺히는 것처럼, OLED 디스플레이 증착 공정은 물이 아닌 유기 재료를 진공 상태에서 가열하여 증착시키는 과정을 의미합니다. 
             </p>
           </div>
         </div>
@@ -48,10 +48,10 @@ get_template_part('template-parts/header/page');
       <div class="row">
         <div class="col-5">
           <p>
-            OMM은 두께 약 30mm, 크기 약 1700X1100mm의 메탈 프레임에 두께 0.2mm이하의 얇은 금속막에 스마트폰 사각형 액정 모양으로 수십 개의 셀(cell)을 뚫어 놓은 모습입니다. 이 셀(cell)의 스펙은 고객사(애플, 삼성전자 등의 스마트폰 제조사)가 생산하고자 하는 디스플레이 화면 크기및 형태에 따라 달라집니다.
+          OMM은 두께 약 30mm, 크기 약 1,700X1,100mm의 메탈 프레임에 두께 0.2mm이하의 얇은 금속막에 스마트폰 사각형 액정 모양으로 수십 개의 셀(Cell)을 뚫어 놓은 모습입니다. 이 셀(Cell)의 스펙은 고객사가 생산하고자 하는 디스플레이 화면 크기및 형태에 따라 달라집니다.
           </p>
           <p>
-            OMM에서 요구되는 사양중 가장 중요한 것은 셀(Cell)의 위치 정확도인데 이것이 우수할수록 베젤이 작은 디스플레이를 제작할 수 있습니다. 풍원정밀은 에칭 공정과 인장 공정에서 발생하는 오차값을 설계에 반영하여 제작하고 있고, 이를 통해 정확도를 끌어올리며, 업계 최고 수준의 정확도를 자랑합니다.
+          OMM에서 요구되는 사양중 가장 중요한 것은 셀(Cell)의 위치 정확도인데 이것이 우수할수록 베젤(테두리)이 얇은 디스플레이를 제작할 수 있습니다. 풍원정밀은 에칭 공정과 인장 공정에서 발생하는 오차값을 설계에 반영하여 제작함으로써, 업계 최고 수준의 정확도를 자랑합니다.
           </p>
         </div>
         <div class="col-7">
@@ -69,7 +69,7 @@ get_template_part('template-parts/header/page');
         <div class="col-7"></div>
         <div class="col-5 contentCol">
           <p class="head">
-            이러한 우수한 제작능력을 바탕으로 풍원정밀에서는 작업이 까다로운 비정형 디스플레이용 OMM까지 생산하고 있으며 이는 비정형의 스마트 고글이나 차량용 디스플레이에 사용되고 있습니다.
+          이러한 우수한 제작능력을 바탕으로  풍원정밀에서는 작업이 까다로운 비정형 디스플레이용 OMM까지 생산하고 있으며 이는 비정형의 스마트 고글이나 차량용 디스플레이에 사용되고 있습니다. 
           </p>
         </div>
       </div>
@@ -148,10 +148,20 @@ HTML;
           dots: false,
           fade: true,
           asNavFor: '#slickSlideSmall',
-          draggable: false
+          draggable: false,
+          responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                  draggable: true,
+                  dots: true,
+                  asNavFor: '',
+                }
+            }
+          ]
         });
         $('#slickSlideSmall').slick({
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
           arrows: false,
           asNavFor: '#slickSlideBg',

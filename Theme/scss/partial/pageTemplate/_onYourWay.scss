@@ -1,49 +1,93 @@
 main.onYourWay {
   .section1 {
-    padding-top: 60px;
-    padding-bottom: 166px;
-    margin-bottom: 150px;
+    // padding-top: 200px;
+    // padding-bottom: 120px;
+    margin-bottom: 200px;
+    margin-top: 200px;
     position: relative;
+    @include respondTo('mhg') {
+      margin-bottom: 120px;
+      margin-top: 130px;
+    }
+    @include respondTo('mmd') {
+      margin-bottom: 0;
+      margin-top: 60px;
+    }
     .container {
-      @include respondTo("hg") {
+      @include respondTo('hg') {
         max-width: 90%;
       }
     }
-
     .bgCover.double {
       position: absolute;
       top: 0;
       left: 50%;
       transform: translateX(-100%);
-      padding-top: 300px;
+      padding-top: 70px;
       img:first-child {
         position: absolute;
         top: 0;
-        transform: translateX(-50%);
+        transform: translateX(-30%);
+      }
+      @include respondTo('mlg') {
+        position: relative;
+        width: 100%;
+        top: 0;
+        left: 0;
+        transform: none;
+        text-align: right;
+        padding-right: 40px;
+        img:first-child {
+          transform: none;
+          left: 40px;
+          z-index: 2;
+          max-width: 70%;
+        }
+        img:nth-child(2) {
+          max-width: 70%;
+        }
       }
     }
-
+    .imgCol {
+      text-align: right;
+      @include respondTo('mhg') {
+        img {
+          width: 100%;
+        }
+      }
+    }
     .address {
       color: $black;
       @include Text-Style-46;
       text-align: left;
+      margin-top: 20px;
       margin-bottom: 62px;
+      @include respondTo('mlg') {
+        margin-bottom: 40px;
+        @include TextP-L;
+      }
     }
     .infoCol {
       display: flex;
       flex-direction: column;
       align-items: center;
-      @include respondTo("lg") {
+      @include respondTo('lg') {
         align-items: flex-start;
       }
     }
     .iconCol {
-      padding-left: 150px;
+      padding-left: 100px;
       .content {
         max-width: 436px;
         margin-bottom: 120px;
         color: $black;
         @include Text-Style-49;
+      }
+      @include respondTo('mhg') {
+        padding-left: 80px;
+      }
+      @include respondTo('mmd') {
+        padding: 70px 15px;
       }
     }
     ul {
@@ -58,6 +102,9 @@ main.onYourWay {
         }
         img {
           margin-right: 16px;
+          @include respondTo('mmd') {
+            width: 70px;
+          }
         }
         p,
         a {
@@ -65,8 +112,16 @@ main.onYourWay {
           color: $black;
           @include Text-Style-47;
           text-decoration: none;
+          @include respondTo('mmd') {
+            @include TextP-M;
+          }
         }
       }
+    }
+  }
+  .wrap_map {
+    @include respondTo('mmd') {
+      height: 300px !important;
     }
   }
 }

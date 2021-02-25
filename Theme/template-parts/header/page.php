@@ -1,19 +1,42 @@
 <?php
 // variables
+global $is_IE;
+
 $theme_url = get_stylesheet_directory();
 $functions_url = get_stylesheet_directory() . '/functions';
 $img_url = get_home_url() . '/wp-content/uploads';
 $zeplin = get_home_url() . '/wp-content/uploads/zeplin';
 
 if (is_page()) : ?>
-  <header class="default">
-    <div class="coverBg">
-      <?php if (!empty(get_field('thumbnail'))) :
-        echo wp_get_attachment_image(get_field('thumbnail'), 'full');
-      else : ?>
-        <img draggable="false" src="<?php echo $zeplin ?>/2743.png" srcset="<?php echo $zeplin ?>/2743@2x.png 2x, <?php echo $zeplin ?>/2743@3x.png 3x">
-      <?php endif ?>
-    </div>
+    <?php 
+    if (!empty(get_field('thumbnail'))) :
+      if($is_IE) :
+        ?>
+        <header class="default ie11" style="background-image: url('<?php echo wp_get_attachment_image_url(get_field('thumbnail'), 'full');?>')">
+          <!-- <svg width="100%" viewBox="0 0 3000 437" overflow="hidden">
+            <defs>
+              <polygon id="triangle" points="3000,0 3000,340 1500,437 0,340 0,0" />
+            </defs>
+            <clipPath id="clip1">
+                <use xlink:href="#triangle" />
+            </clipPath>
+            <g transform="matrix(1 0 0 1 0 0)" clip-path="url(#clip1)">
+              <image width="100%" xlink:href="<?php echo wp_get_attachment_image_url(get_field('thumbnail'), 'full');?>" >
+              </image>
+            </g>
+          </svg> -->
+      <?php
+      else :
+      ?>
+        <header class="default">
+          <div class="coverBg" style="background-image: url('<?php echo wp_get_attachment_image_url(get_field('thumbnail'), 'full');?>')"></div>
+      <?php
+      endif
+      ?>
+    <?php else : ?>
+      <img draggable="false" src="<?php echo $zeplin ?>/2743.png" srcset="<?php echo $zeplin ?>/2743@2x.png 2x, <?php echo $zeplin ?>/2743@3x.png 3x">
+    <?php endif ?>
+
     <div class="container">
       <div class="parent">
         <?php

@@ -1,9 +1,19 @@
 main.introduction {
   .pageTitle {
     margin-bottom: 0;
+    @include respondTo('mlg') {
+      @include TextTitle-M;
+      @include pageTitle-P;
+    }
+    @include respondTo('msm') {
+      @include TextTitle-S;
+    }
   }
   p {
     @include Text-Style-27;
+    @include respondTo('mlg') {
+      @include TextP-M;
+    }
   }
   .contentCol {
     display: flex;
@@ -15,23 +25,66 @@ main.introduction {
     // max-width: 1800px;
     margin: 0 auto;
     background-color: $very-light-pink-two;
-    clip-path: polygon(0 0, 100% 270px, 100% 100%, 0 calc(100% - 270px));
+    clip-path: polygon(0 0, 100% 215px, 100% 100%, 0 calc(100% - 215px));
     padding-top: 300px;
     padding-bottom: 180px;
-    @include respondTo("hg") {
-      clip-path: polygon(0 0, 100% 270px, 100% 100%, 0 calc(100% - 270px));
+    @include respondTo('mhg') {
+      clip-path: polygon(0 0, 100% 150px, 100% 100%, 0 calc(100% - 150px));
     }
+    @include respondTo('mlg') {
+      padding-top: 0px;
+      margin-top: 40px;
+      clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 calc(100% - 100px));
+      padding-bottom: 100px;
+    }
+    @include respondTo('msm') {
+      clip-path: polygon(0 0, 100% 60px, 100% 100%, 0 calc(100% - 60px));
+      padding-bottom: 50px;
+    }
+
     .bgCover {
       position: absolute;
-      top: 0;
+      top: -30px;
       left: 50%;
       height: 100%;
-      background-image: url(#{$zeplin}/rectangle-645@3x.jpg);
+      background-image: url(#{$zeplin}/management-01.png);
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
       width: 50%;
       transform: translateX(calc(-100% - 1px));
+      @include respondTo('mlg') {
+        position: relative;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 600px;
+        transform: none;
+        clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 calc(100% - 100px));
+      }
+      @include respondTo('msm') {
+        height: 460px;
+        clip-path: polygon(0 0, 100% 60px, 100% 95%, 0 calc(95% - 60px));
+      }
+    }
+    .container {
+      @include respondTo('mlg') {
+        .row {
+          padding: 40px 15px;
+        }
+        .col-6 {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+        .contentCol {
+          padding-left: 0;
+        }
+      }
+      @include respondTo('msm') {
+        .row {
+          padding: 20px 15px 40px;
+        }
+      }
     }
     .contentCol {
       padding-left: 84px;
@@ -56,6 +109,43 @@ main.introduction {
       margin-top: 100px;
       background-color: $deep-aqua;
       padding-top: 350px;
+    }
+    @include respondTo('mhg') {
+      .bgPadding {
+        margin-top: 20px;
+        padding-top: 200px;
+      }
+    }
+    @include respondTo('mlg') {
+      .container {
+        max-width: unset;
+        .row {
+          padding: 0 40px;
+        }
+        .col-6 {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+        .contentCol {
+          padding: 40px 0 0;
+        }
+      }
+      .bgCover {
+        position: relative;
+        top: 40px;
+        left: 0;
+        width: 100%;
+      }
+      .bgPadding {
+        margin-top: 0;
+        background-color: #087f86;
+        padding-top: 200px;
+      }
+    }
+    @include respondTo('msm') {
+      .bgPadding {
+        padding-top: 100px;
+      }
     }
   }
 }

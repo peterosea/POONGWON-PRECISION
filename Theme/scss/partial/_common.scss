@@ -4,13 +4,70 @@ a.skip-link.screen-reader-text,
   display: none;
 }
 
+* {
+  transition: all 0.3s;
+}
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  word-break: keep-all;
+}
+
 html .container {
-  @include respondTo("hg") {
+  @include respondTo('hg') {
     max-width: 1230px;
+  }
+  @include respondTo('mhg') {
+    max-width: 1000px;
+  }
+  @include respondTo('mlg') {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  @include respondTo('msm') {
+    padding-right: 20px;
+    padding-left: 20px;
   }
 }
 
 // ie11
 body.ie11 img.objectfit {
   display: none;
+}
+button,
+button:focus {
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+// 모바일
+body .visual_mobile {
+  display: none;
+}
+body.mobile {
+  .home #myVideo {
+    display: none;
+  }
+  .visual_mobile {
+    display: block;
+  }
+  main.home .section4 .fullBg,
+  main.home .section1 {
+    background-attachment: initial;
+  }
+}
+.slick-slide:focus {
+  outline: none;
+}
+
+@include respondTo('msm') {
+  br {
+    display: none !important;
+  }
 }

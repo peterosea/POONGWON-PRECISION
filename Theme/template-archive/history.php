@@ -9,10 +9,10 @@ get_template_part('template-parts/header/page-archive');
 <main class="pageTemplate history">
   <div class="container">
     <div class="pageTitle">
-      23년간 180여개 기업에<br />
+      26년간 180여개 기업에<br>
       제품 개발 및 공급
       <p>
-        풍원정밀은 1996년 1월 회사 설립 이후 지난 23년간 금속 박막 가공 기술을 통한 고부가가치 제품 총 1만2천870여 개 제품을 개발 양산해, 총 180여개 기업에 공급해 오고 있습니다. 매년 572개 종류의 금속 박막 제품을 개발, 생산, 공급하며 공격적으로 설비를 확장하는 중입니다.
+      풍원정밀은 1996년 1월 회사 설립 이후 지난 26년간 금속 박막 가공 기술을 통한 고부가가치 제품 총 1만4천 여개를 개발 양산해, 총 180여개 기업에 공급해 오고 있습니다. 매년 600개 종류의 금속 박막 제품을 개발, 생산, 공급하며 공격적으로 설비를 확장하는 중입니다. 
       </p>
     </div>
   </div>
@@ -23,7 +23,8 @@ get_template_part('template-parts/header/page-archive');
           <?php
           $historyPosts = get_posts(array(
             'post_type' => 'history',
-            'post_status' => 'publish'
+            'post_status' => 'publish',
+            'numberposts' => 999,
           ));
 
           foreach ($historyPosts as $hp) {
@@ -44,7 +45,7 @@ get_template_part('template-parts/header/page-archive');
                       <div class="thumbnail">$thumbnail</div>
                     </div>
                   </li>
-  HTML;
+            HTML;
             echo $timeline;
           }
           wp_reset_postdata();
