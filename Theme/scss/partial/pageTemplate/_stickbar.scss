@@ -1,6 +1,6 @@
 main.sitckbar {
   .pageTitle {
-    @include respondTo("msm") {
+    @include respondTo('msm') {
       padding-top: 60px;
     }
   }
@@ -8,10 +8,10 @@ main.sitckbar {
     position: relative;
     padding-top: 180px;
     padding-bottom: 84px;
-    @include respondTo("mlg") {
+    @include respondTo('mlg') {
       padding-bottom: 0;
     }
-    @include respondTo("mmd") {
+    @include respondTo('mmd') {
       padding-top: 0px;
     }
     .bgCover {
@@ -19,7 +19,7 @@ main.sitckbar {
       top: 0;
       left: 50%;
       transform: translateX(-100%);
-      @include respondTo("mmd") {
+      @include respondTo('mmd') {
         position: relative;
         left: 0;
         width: 100%;
@@ -31,7 +31,7 @@ main.sitckbar {
       }
     }
     .contentCol {
-      @include respondTo("mmd") {
+      @include respondTo('mmd') {
         flex: 0 0 100%;
         max-width: 100%;
       }
@@ -41,11 +41,11 @@ main.sitckbar {
         max-width: 900px;
         padding: 120px 200px 200px 120px;
         background-color: $white;
-        @include respondTo("mmd") {
+        @include respondTo('mmd') {
           padding: 60px;
           @include TextP-L;
         }
-        @include respondTo("msm") {
+        @include respondTo('msm') {
           padding: 40px 10px;
           @include TextP-G;
         }
@@ -56,7 +56,7 @@ main.sitckbar {
   .section2 {
     padding-top: 90px;
     position: relative;
-    @include respondTo("mlg") {
+    @include respondTo('mlg') {
       padding-top: 0px;
     }
     .bgCover {
@@ -68,7 +68,7 @@ main.sitckbar {
           width: 100%;
         }
       }
-      @include respondTo("mlg") {
+      @include respondTo('mlg') {
         position: relative;
         left: 0;
         padding: 0 30px;
@@ -76,22 +76,22 @@ main.sitckbar {
     }
     .contentCol {
       padding-bottom: 60px;
-      @include respondTo("mlg") {
+      @include respondTo('mlg') {
         flex: 0 0 100%;
         max-width: 100%;
         padding-top: 40px;
       }
-      @include respondTo("mmd") {
+      @include respondTo('mmd') {
         padding: 60px;
       }
-      @include respondTo("msm") {
+      @include respondTo('msm') {
         padding: 40px 25px;
       }
     }
     .head {
       color: $black;
       @include Text-Style-49;
-      @include respondTo("mmd") {
+      @include respondTo('mmd') {
         @include TextP-L;
       }
     }
@@ -99,7 +99,7 @@ main.sitckbar {
       color: $black;
       @include Text-Style-27;
       margin-bottom: 26px;
-      @include respondTo("msm") {
+      @include respondTo('msm') {
         @include TextP-G;
       }
     }

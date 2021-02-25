@@ -2,7 +2,7 @@ main.publicDisclosureIn {
   .section1 {
     padding-top: 130px;
     padding-bottom: 130px;
-    @include respondTo("mlg") {
+    @include respondTo('mlg') {
       padding-top: 80px;
       padding-bottom: 80px;
       .boardTemplate {
@@ -30,7 +30,7 @@ main.publicDisclosureIn {
         }
       }
     }
-    @include respondTo("mmd") {
+    @include respondTo('mmd') {
       .boardTemplate thead th {
         padding-top: 15px;
         padding-bottom: 15px;
@@ -38,18 +38,22 @@ main.publicDisclosureIn {
       .boardTemplate tbody td {
         padding: 15px;
       }
-      .list > div, .header > div {
+      .list > div,
+      .header > div {
         padding: 10px;
       }
-      .header > div, .col-9, .col-2, .col-1 {
+      .header > div,
+      .col-9,
+      .col-2,
+      .col-1 {
         @include TextP-M;
       }
     }
-    @include respondTo("mmd") {
+    @include respondTo('mmd') {
       padding-top: 40px;
       padding-bottom: 40px;
     }
-    @include respondTo("msm") {
+    @include respondTo('msm') {
       .container {
         overflow-y: auto;
       }

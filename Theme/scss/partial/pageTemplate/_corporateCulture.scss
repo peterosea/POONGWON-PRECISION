@@ -1,33 +1,33 @@
 main.corporateCulture {
   .pageTitle {
-    @include respondTo("mhg") {
+    @include respondTo('mhg') {
       padding-top: 80px;
       margin-bottom: 80px;
     }
-    @include respondTo("msm") {
+    @include respondTo('msm') {
       padding-top: 60px;
       margin-bottom: 60px;
     }
   }
   .section1 {
     padding-bottom: 100px;
-    @include respondTo("msm") {
+    @include respondTo('msm') {
       padding-bottom: 40px;
     }
     .container-md-fluid {
-      @include respondTo("msm") {
+      @include respondTo('msm') {
         padding: 0 20px !important;
       }
     }
     .row {
       position: relative;
       margin: 0;
-      @include respondTo("md") {
+      @include respondTo('md') {
         background-color: $very-light-pink-two;
       }
       &:not(:last-child) {
         margin-bottom: 70px;
-        @include respondTo("mhg") {
+        @include respondTo('mhg') {
           margin-bottom: 30px;
         }
       }
@@ -42,12 +42,12 @@ main.corporateCulture {
       .imgCol {
         order: -1;
         margin-bottom: 30px;
-        @include respondTo("md") {
+        @include respondTo('md') {
           order: unset;
           margin-bottom: 0;
         }
       }
-      @include respondTo("md") {
+      @include respondTo('md') {
         > div:nth-child(1) {
           justify-content: flex-end;
           .contentWrap {
@@ -61,7 +61,7 @@ main.corporateCulture {
           }
         }
       }
-      @include respondTo("mhg") {
+      @include respondTo('mhg') {
         > div:nth-child(1) {
           justify-content: center;
           .contentWrap {
@@ -85,8 +85,9 @@ main.corporateCulture {
           }
         }
       }
-      @include respondTo("msm") {
-        > div:nth-child(1), > div:nth-child(2) {
+      @include respondTo('msm') {
+        > div:nth-child(1),
+        > div:nth-child(2) {
           .contentWrap {
             width: 100%;
             padding: 10px 0;
@@ -99,10 +100,10 @@ main.corporateCulture {
       padding: 0;
       width: 90%;
       margin: 0 auto;
-      @include respondTo("mlg") {
+      @include respondTo('mlg') {
         padding: 40px;
       }
-      @include respondTo("md") {
+      @include respondTo('md') {
         width: 100%;
         margin: 0;
       }
@@ -116,7 +117,7 @@ main.corporateCulture {
         @include Text-Style-27;
       }
     }
-    @include respondTo("mlg") {
+    @include respondTo('mlg') {
       .imgCol {
         overflow: hidden;
         height: 300px;

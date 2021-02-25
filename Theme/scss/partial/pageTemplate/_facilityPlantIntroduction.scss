@@ -1,6 +1,6 @@
 main.facilityPlantIntroduction {
   .pageTitle {
-    @include respondTo("msm") {
+    @include respondTo('msm') {
       padding-top: 60px;
     }
     p {
@@ -11,7 +11,7 @@ main.facilityPlantIntroduction {
     &:nth-child(2n -1) {
       background-color: $very-light-pink-two;
       @media (max-width: 412px) {
-        background-color:transparent;
+        background-color: transparent;
       }
     }
     &:last-child .row {
@@ -25,7 +25,7 @@ main.facilityPlantIntroduction {
       @media (max-width: 412px) {
         background-color: $very-light-pink-two;
         &:nth-child(2n) {
-          background-color:$white;
+          background-color: $white;
         }
       }
     }
@@ -37,14 +37,14 @@ main.facilityPlantIntroduction {
     color: $black;
     padding-left: 10px;
     @include Text-Style-44;
-    @include respondTo("mmd") {
+    @include respondTo('mmd') {
       @include TextP-M;
     }
   }
   .value {
     color: $brownish-grey;
     @include Text-Style-45;
-    @include respondTo("mmd") {
+    @include respondTo('mmd') {
       @include TextP-M;
     }
   }

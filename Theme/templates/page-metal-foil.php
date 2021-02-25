@@ -44,9 +44,10 @@ get_template_part('template-parts/header/page');
     <div class="container">
       <div class="row">
         <div class="col-md-5 col-xs-12">
-          <h1>이러한 봉지공정은 증착을 통해 만들어진 OLED 패널이 외부의 영향을 받지 않고 오랫동안 사용될 수 있도록 마감하는 단계로서, OLED 패널의 수명을 좌우합니다. 
-<br><br>
-풍원정밀이 생산하는 금속박막(Metal Foil)은 유기박막과 무기박막이 겹쳐진 봉지 필름과 함께 OLED 기판을 덮어서 수분과 산소의 유입을 차단하는 봉지 공정(Encapsulation)의 재료가 됩니다.</h1>
+          <h1>이러한 봉지공정은 증착을 통해 만들어진 OLED 패널이 외부의 영향을 받지 않고 오랫동안 사용될 수 있도록 마감하는 단계로서, OLED 패널의 수명을 좌우합니다.
+            <br><br>
+            풍원정밀이 생산하는 금속박막(Metal Foil)은 유기박막과 무기박막이 겹쳐진 봉지 필름과 함께 OLED 기판을 덮어서 수분과 산소의 유입을 차단하는 봉지 공정(Encapsulation)의 재료가 됩니다.
+          </h1>
         </div>
         <div class="col-md-7 col-xs-12">
           <!-- <img draggable="false" src="<?php echo $zeplin ?>/1104-0531.jpg" style="visibility:hidden"> -->
@@ -128,16 +129,14 @@ HTML;
           fade: true,
           asNavFor: '#slickSlideSmall',
           draggable: false,
-          responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                  draggable: true,
-                  dots: true,
-                  asNavFor: '',
-                }
+          responsive: [{
+            breakpoint: 768,
+            settings: {
+              draggable: true,
+              dots: true,
+              asNavFor: '',
             }
-          ]
+          }]
         });
         $('#slickSlideSmall').slick({
           slidesToShow: 2,

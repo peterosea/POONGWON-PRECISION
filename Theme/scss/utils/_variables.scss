@@ -1,29 +1,29 @@
-@import "colors";
-@import "typeface";
+@import 'colors';
+@import 'typeface';
 
-$zeplin: "/wp-content/uploads/zeplin";
+$zeplin: '/wp-content/uploads/zeplin';
 
 /////////// 반응형 변수
 // 페이지 타이틀 상단 여백
 @mixin pageTitle-P {
-    padding-top:80px;
+  padding-top: 80px;
 }
 
 /////////// 폰트스타일
 // 제목사이즈
 @mixin TextTitle-M {
-    font-size: 32px;
+  font-size: 32px;
 }
 @mixin TextTitle-S {
-    font-size: 26px;
+  font-size: 26px;
 }
 // 본문사이즈
 @mixin TextP-L {
-    font-size: 20px;
+  font-size: 20px;
 }
 @mixin TextP-G {
-    font-size: 18px;
+  font-size: 18px;
 }
 @mixin TextP-M {
-    font-size: 16px;
+  font-size: 16px;
 }

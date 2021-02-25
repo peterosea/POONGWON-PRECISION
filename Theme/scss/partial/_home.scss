@@ -3,30 +3,30 @@ main.home {
     position: absolute;
     right: 0;
     bottom: 0;
-    min-width: 100%; 
+    min-width: 100%;
     min-height: 100%;
   }
   .sectionTitle {
     @include Text-Style-7;
     color: $black;
     margin-bottom: 18px;
-    @include respondTo("gg") {
+    @include respondTo('gg') {
       font-size: 52px;
     }
-    @include respondTo("mhg") {
+    @include respondTo('mhg') {
       font-size: 46px;
     }
-    @include respondTo("mlg") {
+    @include respondTo('mlg') {
       @include TextTitle-M;
     }
   }
   .excerpt {
     @include Text-Style-8;
     color: $greyish-brown;
-    @include respondTo("gg") {
+    @include respondTo('gg') {
       font-size: 22px;
     }
-    @include respondTo("mmd") {
+    @include respondTo('mmd') {
       @include TextP-M;
     }
   }
@@ -42,11 +42,11 @@ main.home {
     position: relative;
     overflow: hidden;
     &:after {
-      content: "";
+      content: '';
       position: absolute;
       top: 0;
       left: 0;
-      background-color: rgba(0,0,0,0.5);
+      background-color: rgba(0, 0, 0, 0.5);
       width: 100%;
       height: 100%;
     }
@@ -57,7 +57,7 @@ main.home {
       @include Text-Style;
       color: $white;
       margin-bottom: 30px;
-      @include respondTo("gg") {
+      @include respondTo('gg') {
         font-size: 52px;
       }
     }
@@ -70,7 +70,7 @@ main.home {
         font-weight: 700;
       }
     }
-    @include respondTo("mhg") {
+    @include respondTo('mhg') {
       height: 800px;
       h1 {
         font-size: 46px;
@@ -79,7 +79,7 @@ main.home {
         font-size: 20px;
       }
     }
-    @include respondTo("mlg") {
+    @include respondTo('mlg') {
       height: 600px;
       h1 {
         @include TextTitle-M;
@@ -90,7 +90,7 @@ main.home {
         max-width: 80%;
       }
     }
-    @include respondTo("msm") {
+    @include respondTo('msm') {
       h1 {
         font-size: 25px;
         letter-spacing: -0.05em;
@@ -130,27 +130,27 @@ main.home {
     // background-image: url(/wp-content/uploads/zeplin/group-43.svg);
     // background-position: center center;
     // background-repeat: no-repeat;
-    @include respondTo("mxl") {
+    @include respondTo('mxl') {
       height: 560px;
     }
-    @include respondTo("mlg") {
+    @include respondTo('mlg') {
       height: 480px;
     }
-    @include respondTo("msm") {
+    @include respondTo('msm') {
       height: 900px;
     }
     > .container {
       z-index: 200;
       .row {
-        @include respondTo("msm") {
+        @include respondTo('msm') {
           flex-direction: column;
         }
       }
       .col {
-        @include respondTo("msm") {
+        @include respondTo('msm') {
           margin-bottom: 40px;
           &:last-child {
-            margin-bottom:0;
+            margin-bottom: 0;
           }
         }
       }
@@ -178,7 +178,7 @@ main.home {
       z-index: 4;
       clip-path: polygon(0% 25%, 100% 0%, 100% 75%, 0% 100%);
     }
-    @include respondTo("mxl") {
+    @include respondTo('mxl') {
       .bg_green {
         height: 560px;
       }
@@ -186,7 +186,7 @@ main.home {
         height: 560px;
       }
     }
-    @include respondTo("mlg") {
+    @include respondTo('mlg') {
       .bg_green {
         height: 480px;
       }
@@ -194,7 +194,7 @@ main.home {
         height: 480px;
       }
     }
-    @include respondTo("msm") {
+    @include respondTo('msm') {
       .bg_green {
         height: 900px;
         clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 90%);
@@ -211,7 +211,7 @@ main.home {
       object-fit: cover;
       width: 100%;
       height: 100%;
-      @include respondTo("hg") {
+      @include respondTo('hg') {
         height: auto;
       }
     }
@@ -221,11 +221,11 @@ main.home {
       align-items: center;
       img {
         margin-bottom: 42px;
-        @include respondTo("mxl") {
+        @include respondTo('mxl') {
           margin-bottom: 24px;
           max-width: 70px;
         }
-        @include respondTo("mlg") {
+        @include respondTo('mlg') {
           margin-bottom: 15px;
           max-width: 60px;
         }
@@ -242,13 +242,13 @@ main.home {
           @include Text-Style-5;
           color: $white;
         }
-        @include respondTo("mxl") {
+        @include respondTo('mxl') {
           margin-bottom: 30px;
           .point {
             font-size: 70px;
           }
         }
-        @include respondTo("mlg") {
+        @include respondTo('mlg') {
           margin-bottom: 20px;
           .point {
             font-size: 60px;
@@ -257,12 +257,12 @@ main.home {
             font-size: 18px;
           }
         }
-        @include respondTo("mmd") {
+        @include respondTo('mmd') {
           .point {
             font-size: 50px;
           }
         }
-        @include respondTo("msm") {
+        @include respondTo('msm') {
           .point {
             font-size: 64px;
           }
@@ -273,15 +273,15 @@ main.home {
         color: $white;
         max-width: 310px;
         word-break: keep-all;
-        @include respondTo("mlg") {
+        @include respondTo('mlg') {
           margin-bottom: 0;
           font-size: 15px;
           line-height: 1.6em;
         }
-        @include respondTo("mmd") {
+        @include respondTo('mmd') {
           font-size: 15px;
         }
-        @include respondTo("msm") {
+        @include respondTo('msm') {
           max-width: 270px;
         }
       }
@@ -289,20 +289,20 @@ main.home {
     // 슬라이더 제거
     .sld_sect2 {
       .slick-list {
-        padding:0 20px;
+        padding: 0 20px;
       }
       .slick-dots li {
         button {
-          background: rgba(255,255,255,0);
+          background: rgba(255, 255, 255, 0);
           border-radius: 100px;
           display: flex;
           align-items: center;
           justify-content: center;
-          border:1px solid #fff;
+          border: 1px solid #fff;
           width: 14px;
           height: 14px;
           &:before {
-            content:none;
+            content: none;
             // background-color:#fff;
             // width:6px;
             // height:6px;
@@ -311,37 +311,37 @@ main.home {
         }
         &.slick-active {
           button {
-            background: rgba(255,255,255,1);
+            background: rgba(255, 255, 255, 1);
           }
         }
       }
-      
+
       .slick-prev {
-        background-image:url('/wp-content/themes/base/assets/img/arrow.svg');
+        background-image: url('/wp-content/themes/base/assets/img/arrow.svg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
         width: 20px;
         height: 12px;
         transform: rotate(90deg);
-        display:flex;
+        display: flex;
         left: 0;
         &:before {
-          content:none;
+          content: none;
         }
       }
       .slick-next {
-        background-image:url('/wp-content/themes/base/assets/img/arrow.svg');
+        background-image: url('/wp-content/themes/base/assets/img/arrow.svg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
         width: 20px;
         height: 12px;
         transform: rotate(-90deg);
-        display:flex;
+        display: flex;
         right: 0;
         &:before {
-          content:none;
+          content: none;
         }
       }
     }
@@ -352,22 +352,22 @@ main.home {
     position: relative;
     z-index: 2;
     background-color: $white;
-    @include respondTo("mlg") {
+    @include respondTo('mlg') {
       padding-top: 20px;
       padding-bottom: 130px;
     }
-    @include respondTo("mmd") {
+    @include respondTo('mmd') {
       padding-top: 0;
       padding-bottom: 20px;
     }
     .excerpt {
       margin-bottom: 76px;
-      @include respondTo("mlg") {
+      @include respondTo('mlg') {
         font-size: 18px;
         margin-bottom: 55px;
       }
     }
-    @include respondTo("mmd") {
+    @include respondTo('mmd') {
       padding-top: 60px;
     }
     .coverCard {
@@ -416,7 +416,7 @@ main.home {
           color: $white;
           margin-bottom: 20px;
           text-align: center;
-          @include respondTo("gg") {
+          @include respondTo('gg') {
             font-size: 52px;
           }
         }
@@ -424,11 +424,11 @@ main.home {
           @include Text-Style-10;
           color: $white;
         }
-        @include respondTo("mxl") {
+        @include respondTo('mxl') {
           width: 50%;
           padding: 60px;
         }
-        @include respondTo("mlg") {
+        @include respondTo('mlg') {
           .title {
             font-size: 28px;
           }
@@ -437,7 +437,7 @@ main.home {
           }
         }
       }
-      @include respondTo("mmd") {
+      @include respondTo('mmd') {
         .content {
           position: relative;
           padding: 40px;
@@ -472,7 +472,7 @@ main.home {
       }
     }
     .col-6 {
-      @include respondTo("mmd") {
+      @include respondTo('mmd') {
         flex: 0 0 100%;
         max-width: 100%;
       }
@@ -488,15 +488,15 @@ main.home {
       position: relative;
       background-attachment: fixed;
       &:nth-child(2) {
-        background-image:url('#{$zeplin}/2800.jpg');
-        @include respondTo("msm") {
-          background-image:url('#{$zeplin}/home-sec5-05.jpg');
+        background-image: url('#{$zeplin}/2800.jpg');
+        @include respondTo('msm') {
+          background-image: url('#{$zeplin}/home-sec5-05.jpg');
         }
       }
-      @include respondTo("mlg") {
+      @include respondTo('mlg') {
         padding-top: 70%;
       }
-      @include respondTo("msm") {
+      @include respondTo('msm') {
         padding: 180px 10px;
         &:nth-child(2) {
           padding: 120px 10px;
@@ -515,15 +515,15 @@ main.home {
         align-items: center;
         justify-content: flex-end;
         z-index: 300;
-        @include respondTo("mxl") {
+        @include respondTo('mxl') {
           align-items: center;
         }
-        @include respondTo("msm") {
+        @include respondTo('msm') {
           justify-content: start;
-          position:relative;
-          height:auto;
-          top:auto;
-          left:auto;
+          position: relative;
+          height: auto;
+          top: auto;
+          left: auto;
           transform: none;
           .wrap {
             z-index: 3;
@@ -538,7 +538,7 @@ main.home {
           @include Text-Style-13;
           color: $white;
         }
-        @include respondTo("gg") {
+        @include respondTo('gg') {
           h1 {
             font-size: 52px;
           }
@@ -546,7 +546,7 @@ main.home {
             font-size: 22px;
           }
         }
-        @include respondTo("mhg") {
+        @include respondTo('mhg') {
           h1 {
             font-size: 46px;
           }
@@ -554,11 +554,11 @@ main.home {
             font-size: 20px;
           }
         }
-        @include respondTo("mlg") {
+        @include respondTo('mlg') {
           padding-top: 0;
           padding-bottom: 0;
         }
-        @include respondTo("mmd") {
+        @include respondTo('mmd') {
           h1 {
             @include TextTitle-M;
           }
@@ -571,26 +571,26 @@ main.home {
       &:nth-child(2) .container {
         justify-content: flex-start;
         padding-bottom: 190px;
-        @include respondTo("mxl") {
+        @include respondTo('mxl') {
           padding-bottom: 0px;
         }
       }
 
       // 이미지위에 검은배경이미지
       &::before {
-        content: "";
-        background-color:rgba(0,0,0,0.2);
+        content: '';
+        background-color: rgba(0, 0, 0, 0.2);
         width: 100%;
         height: 100%;
         position: absolute;
-        top:0;
-        left:0;
+        top: 0;
+        left: 0;
         z-index: 1;
       }
 
       &:nth-child(1)::after,
       &:nth-child(2)::after {
-        content: "";
+        content: '';
         display: block;
         width: 1800px;
         max-width: 60%;
@@ -599,7 +599,7 @@ main.home {
         position: absolute;
         z-index: 2;
         transform-origin: center;
-        @include respondTo("mmd") {
+        @include respondTo('mmd') {
           width: 100%;
           max-width: 100%;
           height: 600px;
@@ -610,13 +610,13 @@ main.home {
         right: 0;
         bottom: 0;
         transform: translate(50%, calc(50% - 100px)) rotate(45deg);
-        @include respondTo("mlg") {
+        @include respondTo('mlg') {
           transform: translate(70%, 40%) rotate(45deg);
         }
-        @include respondTo("mmd") {
+        @include respondTo('mmd') {
           transform: translate(70%, 10%) rotate(45deg);
         }
-        @include respondTo("msm") {
+        @include respondTo('msm') {
           transform: translate(90%, 10%) rotate(45deg);
         }
       }
@@ -627,27 +627,27 @@ main.home {
         max-width: 80%;
         max-height: 160%;
         transform: translate(-50%, 50%) rotate(45deg);
-        @include respondTo("mlg") {
+        @include respondTo('mlg') {
           transform: translate(-70%, 50%) rotate(45deg);
         }
-        @include respondTo("mmd") {
+        @include respondTo('mmd') {
           max-width: 100%;
           transform: translate(-80%, 50%) rotate(45deg);
         }
-        @include respondTo("mmd") {
+        @include respondTo('mmd') {
           transform: translate(-90%, 40%) rotate(45deg);
         }
       }
       &:nth-child(1) .wrap {
-        @include respondTo("hg") {
+        @include respondTo('hg') {
           margin-right: 60px;
         }
       }
       &:nth-child(2) .wrap {
-        @include respondTo("mmd") {
+        @include respondTo('mmd') {
           padding-left: 20px;
         }
-        @include respondTo("msm") {
+        @include respondTo('msm') {
           padding-left: 0;
         }
       }
@@ -658,11 +658,11 @@ main.home {
     padding-top: 250px;
     padding-bottom: 240px;
     color: $white;
-    @include respondTo("mxl") {
+    @include respondTo('mxl') {
       padding-top: 160px;
       padding-bottom: 100px;
     }
-    @include respondTo("mmd") {
+    @include respondTo('mmd') {
       padding-top: 80px;
       padding-bottom: 20px;
     }
@@ -699,7 +699,7 @@ main.home {
       align-items: center;
       padding-top: 60px;
       padding-bottom: 60px;
-      @include respondTo("mmd") {
+      @include respondTo('mmd') {
         padding-top: 0px;
         padding-bottom: 30px;
       }
@@ -710,7 +710,7 @@ main.home {
         margin-bottom: 100px;
         overflow: hidden;
         position: relative;
-        @include respondTo("mmd") {
+        @include respondTo('mmd') {
           margin-bottom: 30px;
         }
         img {
@@ -730,7 +730,7 @@ main.home {
           align-items: center;
           @include Text-Style-19;
           &:after {
-            content: "";
+            content: '';
             display: block;
             width: 1px;
             height: 18px;
@@ -755,21 +755,21 @@ main.home {
       bottom: 0;
       li {
         button {
-          background: rgba(255,255,255,0);
+          background: rgba(255, 255, 255, 0);
           border-radius: 100px;
           display: flex;
           align-items: center;
           justify-content: center;
-          border:1px solid #fff;
+          border: 1px solid #fff;
           width: 14px;
           height: 14px;
           &:before {
-            content:none;
+            content: none;
           }
         }
         &.slick-active {
           button {
-            background: rgba(255,255,255,1);
+            background: rgba(255, 255, 255, 1);
           }
         }
       }

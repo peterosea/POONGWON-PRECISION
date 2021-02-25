@@ -1,10 +1,10 @@
 main.benefits {
   .pageTitle {
-    @include respondTo("mlg") {
+    @include respondTo('mlg') {
       padding-top: 70px;
       margin-bottom: 70px;
     }
-    @include respondTo("mmd") {
+    @include respondTo('mmd') {
       padding-top: 40px;
       margin-bottom: 50px;
     }
@@ -12,7 +12,7 @@ main.benefits {
   .section1 {
     padding-bottom: 38px;
     padding-bottom: 130px;
-    @include respondTo("mlg") {
+    @include respondTo('mlg') {
       padding-bottom: 60px;
     }
     .imgWrap {
@@ -29,7 +29,7 @@ main.benefits {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        @include respondTo("mlg") {
+        @include respondTo('mlg') {
           span {
             @include TextTitle-S;
           }
@@ -42,7 +42,7 @@ main.benefits {
       }
     }
     .col-md-6.mb-5 {
-      @include respondTo("mlg") {
+      @include respondTo('mlg') {
         padding-right: 50px;
         padding-left: 50px;
         margin-bottom: 40px !important;
@@ -50,11 +50,11 @@ main.benefits {
           margin-bottom: 20px;
         }
       }
-      @include respondTo("mmd") {
+      @include respondTo('mmd') {
         padding-right: 120px;
         padding-left: 120px;
       }
-      @include respondTo("mmd") {
+      @include respondTo('mmd') {
         padding-right: 30px;
         padding-left: 30px;
       }
@@ -63,14 +63,14 @@ main.benefits {
       padding: 10px;
       color: $black;
       @include Text-Style-27;
-      @include respondTo("mmd") {
+      @include respondTo('mmd') {
         @include TextP-M;
       }
     }
   }
   .section2 {
     padding-bottom: 150px;
-    @include respondTo("mlg") {
+    @include respondTo('mlg') {
       padding-bottom: 80px;
     }
     .titleWrap {
@@ -79,7 +79,7 @@ main.benefits {
         font-family: NotoSansCJKkr;
         font-size: 40px;
         font-weight: bold;
-        @include respondTo("mmd") {
+        @include respondTo('mmd') {
           @include TextTitle-M;
         }
       }
@@ -92,15 +92,15 @@ main.benefits {
     }
     .postWrap {
       margin-top: 140px;
-      @include respondTo("mlg") {
+      @include respondTo('mlg') {
         margin-top: 60px;
         padding-right: 60px;
         padding-left: 60px;
       }
-      @include respondTo("mmd") {
+      @include respondTo('mmd') {
         margin-top: 40px;
       }
-      @include respondTo("msm") {
+      @include respondTo('msm') {
         padding-right: 30px;
         padding-left: 30px;
       }
@@ -108,14 +108,14 @@ main.benefits {
         // background-image: url('/wp-content/uploads/zeplin/people-pattern.png');
         // background-position: bottom right;
         // background-repeat: repeat;
-        @include respondTo("msm") {
-          background-image:none;
+        @include respondTo('msm') {
+          background-image: none;
         }
       }
       .col-12 {
-        padding:0;
-        background-color:#fff;
-        @include respondTo("msm") {
+        padding: 0;
+        background-color: #fff;
+        @include respondTo('msm') {
           margin-bottom: 20px;
         }
       }
@@ -125,14 +125,14 @@ main.benefits {
     }
     .thumbnail img {
       width: 100%;
-      @include respondTo("mhg") {
+      @include respondTo('mhg') {
         height: auto;
       }
     }
     .contentWrap {
-      padding:50px 40px 90px;
-      @include respondTo("msm") {
-        padding:50px 40px 60px;
+      padding: 50px 40px 90px;
+      @include respondTo('msm') {
+        padding: 50px 40px 60px;
       }
       > p {
         font-size: 20px;

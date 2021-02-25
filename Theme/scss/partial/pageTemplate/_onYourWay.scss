@@ -5,16 +5,16 @@ main.onYourWay {
     margin-bottom: 200px;
     margin-top: 200px;
     position: relative;
-    @include respondTo("mhg") {
+    @include respondTo('mhg') {
       margin-bottom: 120px;
       margin-top: 130px;
     }
-    @include respondTo("mmd") {
+    @include respondTo('mmd') {
       margin-bottom: 0;
       margin-top: 60px;
     }
     .container {
-      @include respondTo("hg") {
+      @include respondTo('hg') {
         max-width: 90%;
       }
     }
@@ -29,7 +29,7 @@ main.onYourWay {
         top: 0;
         transform: translateX(-30%);
       }
-      @include respondTo("mlg") {
+      @include respondTo('mlg') {
         position: relative;
         width: 100%;
         top: 0;
@@ -50,7 +50,7 @@ main.onYourWay {
     }
     .imgCol {
       text-align: right;
-      @include respondTo("mhg") {
+      @include respondTo('mhg') {
         img {
           width: 100%;
         }
@@ -62,7 +62,7 @@ main.onYourWay {
       text-align: left;
       margin-top: 20px;
       margin-bottom: 62px;
-      @include respondTo("mlg") {
+      @include respondTo('mlg') {
         margin-bottom: 40px;
         @include TextP-L;
       }
@@ -71,7 +71,7 @@ main.onYourWay {
       display: flex;
       flex-direction: column;
       align-items: center;
-      @include respondTo("lg") {
+      @include respondTo('lg') {
         align-items: flex-start;
       }
     }
@@ -83,10 +83,10 @@ main.onYourWay {
         color: $black;
         @include Text-Style-49;
       }
-      @include respondTo("mhg") {
+      @include respondTo('mhg') {
         padding-left: 80px;
       }
-      @include respondTo("mmd") {
+      @include respondTo('mmd') {
         padding: 70px 15px;
       }
     }
@@ -102,7 +102,7 @@ main.onYourWay {
         }
         img {
           margin-right: 16px;
-          @include respondTo("mmd") {
+          @include respondTo('mmd') {
             width: 70px;
           }
         }
@@ -112,7 +112,7 @@ main.onYourWay {
           color: $black;
           @include Text-Style-47;
           text-decoration: none;
-          @include respondTo("mmd") {
+          @include respondTo('mmd') {
             @include TextP-M;
           }
         }
@@ -120,7 +120,7 @@ main.onYourWay {
     }
   }
   .wrap_map {
-    @include respondTo("mmd") {
+    @include respondTo('mmd') {
       height: 300px !important;
     }
   }

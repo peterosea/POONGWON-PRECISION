@@ -44,9 +44,10 @@ nav.GNB {
     }
   }
 
-  &:hover, &._active {
+  &:hover,
+  &._active {
     background-color: $dark-blue-grey;
-    @include respondTo("mxl") {
+    @include respondTo('mxl') {
       cursor: pointer;
     }
   }
@@ -56,18 +57,19 @@ nav.GNB {
     left: 54px;
     width: 188px;
     height: 30px;
-    z-index:999;
+    z-index: 999;
     svg {
       width: 100%;
       height: 100%;
     }
-    @include respondTo("msm") {
+    @include respondTo('msm') {
       left: 30px;
     }
   }
-  
-  @include respondTo("mxl") {
-    .pc_menu, .side_menu {
+
+  @include respondTo('mxl') {
+    .pc_menu,
+    .side_menu {
       display: none;
     }
   }
@@ -99,7 +101,7 @@ nav.GNB {
     padding: 0;
     margin: 0;
     list-style: none;
-    
+
     > .menu-item {
       position: relative;
     }
@@ -111,7 +113,7 @@ nav.GNB {
       z-index: 2;
       @include Text-Style-22;
       color: $white;
-      @include respondTo("mhg") {
+      @include respondTo('mhg') {
         padding: 27px 30px;
         font-size: 20px;
       }
@@ -139,7 +141,7 @@ nav.GNB {
         &:hover {
           color: $turquoise;
         }
-        @include respondTo("mhg") {
+        @include respondTo('mhg') {
           font-size: 16px;
         }
       }

@@ -10,25 +10,25 @@ main.pageTemplate {
       margin: 0 auto;
       padding-top: 22px;
       max-width: 800px;
-      word-break:keep-all;
+      word-break: keep-all;
     }
     .subTitle {
       color: $black;
       @include Text-Style-48;
       margin-top: 12px;
     }
-    @include respondTo("mlg") {
+    @include respondTo('mlg') {
       @include TextTitle-M;
       p {
         @include TextP-M;
       }
     }
-    @include respondTo("mmd") {
+    @include respondTo('mmd') {
       @include TextTitle-S;
       padding-top: 70px;
       margin-bottom: 70px;
     }
-    @include respondTo("msm") {
+    @include respondTo('msm') {
       padding-top: 0;
       margin-bottom: 60px;
     }
@@ -39,17 +39,17 @@ main.pageTemplate {
   }
 }
 
-@import "introduction";
-@import "ceoGreeting";
-@import "managementIdeology";
-@import "startUpIdeology";
-@import "facilityPlantIntroduction";
-@import "onYourWay";
-@import "metalFoil";
-@import "stickbar";
-@import "FMM";
-@import "OMM";
-@import "benefits";
-@import "corporateCulture";
-@import "labIntroduction";
-@import "retentionTechnology";
+@import 'introduction';
+@import 'ceoGreeting';
+@import 'managementIdeology';
+@import 'startUpIdeology';
+@import 'facilityPlantIntroduction';
+@import 'onYourWay';
+@import 'metalFoil';
+@import 'stickbar';
+@import 'FMM';
+@import 'OMM';
+@import 'benefits';
+@import 'corporateCulture';
+@import 'labIntroduction';
+@import 'retentionTechnology';

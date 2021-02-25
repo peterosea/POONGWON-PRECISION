@@ -6,16 +6,16 @@ header.default {
     background-size: cover;
     background-position: center;
     clip-path: polygon(100% 0, 100% 70%, 50% 100%, 0 70%, 0 0);
-    @include respondTo("mxl") {
+    @include respondTo('mxl') {
       height: 280px;
       .container {
         padding-top: 50px;
       }
     }
-    @include respondTo("mmd") {
+    @include respondTo('mmd') {
       clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
     }
-    @include respondTo("mxl") {
+    @include respondTo('mxl') {
       clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
     }
   }
@@ -30,7 +30,7 @@ header.default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    @include respondTo("mlg") {
+    @include respondTo('mlg') {
       transform: translate(-50%, -25%);
     }
     .parent {
@@ -57,14 +57,14 @@ header.default {
         opacity: 1;
       }
       p {
-        color:#fff;
+        color: #fff;
         margin-right: 13px;
         @include Text-Style-25;
         margin-bottom: 0;
-        @include respondTo("mlg") {
+        @include respondTo('mlg') {
           @include TextTitle-M;
         }
-        @include respondTo("msm") {
+        @include respondTo('msm') {
           font-size: 24px;
         }
       }
@@ -84,7 +84,7 @@ header.default {
       width: 100%;
       border: none;
       border-radius: 0;
-      box-shadow: 2px 8px 0px rgba(0,0,0,0.15);
+      box-shadow: 2px 8px 0px rgba(0, 0, 0, 0.15);
       ul {
         list-style: none;
         margin: 0;
@@ -94,7 +94,7 @@ header.default {
           line-height: 2em;
         }
         a {
-          color: rgba(0,0,0,0.4);
+          color: rgba(0, 0, 0, 0.4);
           text-decoration: none;
         }
         li.menu-item.current-menu-item a {

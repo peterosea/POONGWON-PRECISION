@@ -31,7 +31,7 @@
         background-color: $black-two;
         bottom: 0;
         z-index: 3;
-        @include respondTo("mmd") {
+        @include respondTo('mmd') {
           height: 90px;
         }
       }
@@ -71,7 +71,7 @@
       left: 50%;
       transform: translateX(-50%);
       z-index: 9;
-      @include respondTo("mmd") {
+      @include respondTo('mmd') {
         bottom: 20px;
       }
       .slick-slide {
@@ -134,28 +134,28 @@
       bottom: 10px;
       li {
         button {
-          background: rgba(255,255,255,0);
+          background: rgba(255, 255, 255, 0);
           border-radius: 100px;
           display: flex;
           align-items: center;
           justify-content: center;
-          border:1px solid #fff;
+          border: 1px solid #fff;
           width: 14px;
           height: 14px;
           &:before {
-            content:none;
+            content: none;
           }
         }
         &.slick-active {
           button {
-            background: rgba(255,255,255,1);
+            background: rgba(255, 255, 255, 1);
           }
         }
       }
     }
   }
-  @include respondTo("mmd") {
-    .slick-list{
+  @include respondTo('mmd') {
+    .slick-list {
       .bottomCover {
         display: none;
       }
