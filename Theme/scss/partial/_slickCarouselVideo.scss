@@ -31,6 +31,9 @@
         background-color: $black-two;
         bottom: 0;
         z-index: 3;
+        @include respondTo('mmd') {
+          height: 90px;
+        }
       }
       .controlBtn {
         display: flex;
@@ -67,6 +70,10 @@
       bottom: 40px;
       left: 50%;
       transform: translateX(-50%);
+      z-index: 9;
+      @include respondTo('mmd') {
+        bottom: 20px;
+      }
       .slick-slide {
         cursor: pointer;
       }
@@ -78,6 +85,7 @@
           }
         }
         .title {
+          display: none;
           color: $white;
           opacity: 1;
         }
@@ -107,8 +115,13 @@
           transition: filter 0.3s ease-in-out;
           will-change: filter;
         }
+        // @include respondTo("mhg") {
+        //   width: 150px;
+        //   height: auto;
+        // }
       }
       .title {
+        display: none;
         padding-top: 15px;
         opacity: 0.5;
         color: $white;
@@ -116,6 +129,39 @@
         text-align: center;
         transition: opacity 0.3s ease-in-out, color 0.3s ease-in-out;
       }
+    }
+    .slick-dots {
+      bottom: 10px;
+      li {
+        button {
+          background: rgba(255, 255, 255, 0);
+          border-radius: 100px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid #fff;
+          width: 14px;
+          height: 14px;
+          &:before {
+            content: none;
+          }
+        }
+        &.slick-active {
+          button {
+            background: rgba(255, 255, 255, 1);
+          }
+        }
+      }
+    }
+  }
+  @include respondTo('mmd') {
+    .slick-list {
+      .bottomCover {
+        display: none;
+      }
+    }
+    .slick-slider.slickSlideSmall {
+      z-index: -1;
     }
   }
 }

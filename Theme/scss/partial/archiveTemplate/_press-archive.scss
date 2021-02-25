@@ -2,5 +2,79 @@ main.press {
   .section1 {
     padding-top: 130px;
     padding-bottom: 130px;
+    @include respondTo('mlg') {
+      padding-top: 80px;
+      padding-bottom: 80px;
+      .boardTemplate {
+        margin-bottom: 40px;
+      }
+      .boardTemplate {
+        .col-9 {
+          flex: 0 0 65%;
+          max-width: 65%;
+        }
+        .col-2 {
+          flex: 0 0 20%;
+          max-width: 20%;
+        }
+        .col-1 {
+          flex: 0 0 15%;
+          max-width: 15%;
+        }
+        tbody td {
+          padding: 20px;
+          @include TextP-M;
+        }
+        .attachment img {
+          width: 27px;
+        }
+      }
+    }
+    @include respondTo('mmd') {
+      .boardTemplate thead th {
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+      .boardTemplate tbody td {
+        padding: 15px;
+      }
+      .list > div,
+      .header > div {
+        padding: 10px;
+      }
+      .header > div,
+      .col-9,
+      .col-2,
+      .col-1 {
+        @include TextP-M;
+      }
+    }
+    @include respondTo('mmd') {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+    @include respondTo('msm') {
+      .boardTemplate {
+        .col-9 {
+          flex: 0 0 63%;
+          max-width: 63%;
+        }
+        .col-2 {
+          flex: 0 0 25%;
+          max-width: 25%;
+        }
+        .col-1 {
+          flex: 0 0 12%;
+          max-width: 12%;
+        }
+        .content p {
+          @include TextP-M;
+          line-height: 1.6;
+        }
+        .row .btnWrap img {
+          width: 40px;
+        }
+      }
+    }
   }
 }

@@ -12,6 +12,9 @@ body.admin-bar nav.GNB {
       }
     }
   }
+  @media screen and (max-width: 783px) {
+    top: 46px;
+  }
 }
 
 nav.GNB {
@@ -41,8 +44,12 @@ nav.GNB {
     }
   }
 
-  &:hover {
+  &:hover,
+  &._active {
     background-color: $dark-blue-grey;
+    @include respondTo('mxl') {
+      cursor: pointer;
+    }
   }
   .logo {
     position: absolute;
@@ -50,43 +57,53 @@ nav.GNB {
     left: 54px;
     width: 188px;
     height: 30px;
+    z-index: 999;
     svg {
       width: 100%;
       height: 100%;
+    }
+    @include respondTo('msm') {
+      left: 30px;
+    }
+  }
+
+  @include respondTo('mxl') {
+    .pc_menu,
+    .side_menu {
+      display: none;
     }
   }
   .menu-gnb-container {
     display: flex;
     justify-content: center;
-    &::after {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 77px;
-      height: 1px;
-      width: 100%;
-      background-color: rgba($white, 0.1);
-      z-index: 200;
-    }
+    // &::after {
+    //   content: "";
+    //   display: block;
+    //   position: absolute;
+    //   top: 77px;
+    //   height: 1px;
+    //   width: 100%;
+    //   background-color: rgba($white, 0.1);
+    //   z-index: 200;
+    // }
+  }
+  .gnb_border {
+    display: block;
+    position: absolute;
+    top: 77px;
+    height: 1px;
+    width: 100%;
+    background-color: rgba($white, 0.1);
+    z-index: 9;
   }
   .menu {
     display: flex;
     padding: 0;
     margin: 0;
     list-style: none;
-    &:hover .sub-menu {
-      opacity: 1;
-      display: block;
-    }
+
     > .menu-item {
       position: relative;
-
-      &:hover .sub-menu {
-        background-color: $dark;
-        a {
-          opacity: 1;
-        }
-      }
     }
     > .menu-item > a {
       display: block;
@@ -96,6 +113,10 @@ nav.GNB {
       z-index: 2;
       @include Text-Style-22;
       color: $white;
+      @include respondTo('mhg') {
+        padding: 27px 30px;
+        font-size: 20px;
+      }
     }
     .sub-menu {
       display: none;
@@ -111,7 +132,7 @@ nav.GNB {
       margin-top: -77px;
       a {
         display: block;
-        padding: 0 28px;
+        padding: 0 23px;
         text-decoration: none;
         opacity: 0.6;
         @include Text-Style-23;
@@ -120,6 +141,59 @@ nav.GNB {
         &:hover {
           color: $turquoise;
         }
+        @include respondTo('mhg') {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .pc_menu {
+    .menu:hover .sub-menu {
+      opacity: 1;
+      display: block;
+    }
+    .menu > .menu-item {
+      &:hover .sub-menu {
+        background-color: $dark;
+        a {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  // 언어 메뉴
+  .side_menu {
+    position: absolute;
+    top: 23px;
+    right: 54px;
+    .menu_lang {
+      padding: 0;
+      display: flex;
+      margin: 0;
+      li.menu-item {
+        padding-left: 15px;
+        list-style: none;
+      }
+      a {
+        color: $white;
+        font-size: 14px;
+        opacity: 0.6;
+      }
+      li.current-menu-item a {
+        opacity: 1;
+        font-weight: bold;
+      }
+    }
+  }
+  // GNB Border 처리
+  &._active {
+    .menu .sub-menu {
+      opacity: 1;
+      display: block;
+    }
+    .menu > .menu-item .sub-menu {
+      a {
+        opacity: 1;
       }
     }
   }

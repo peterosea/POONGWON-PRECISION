@@ -26,6 +26,9 @@ function get_new_archive_template($archive_template)
   if ($post->post_type === 'recruitment') {
     $archive_template = get_stylesheet_directory() . '/template-archive/recruitment.php';
   }
+  if ($post->post_type === 'benefits') {
+    $archive_template = get_stylesheet_directory() . '/template-archive/benefits.php';
+  }
   return $archive_template;
 }
 add_filter('archive_template', 'get_new_archive_template');

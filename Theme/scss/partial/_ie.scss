@@ -1,0 +1,279 @@
+body.ie {
+  header.default {
+    &.ie11 {
+      height: 437px;
+      background-position: center;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include respondTo('gg') {
+        height: 480px;
+      }
+      @include respondTo('mxl') {
+        height: 280px;
+      }
+      .container {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        max-width: none;
+      }
+    }
+  }
+  main.home {
+    .col {
+      flex-basis: 1;
+    }
+    .section1 {
+      .container {
+        padding-top: 80px;
+      }
+    }
+    .section2 {
+      padding: 120px 0;
+      margin-top: 0;
+      height: auto;
+      background-color: #77c7c7;
+      @include respondTo('mlg') {
+        padding: 60px 0;
+        margin-top: 0;
+        height: auto;
+      }
+    }
+    .bg_green,
+    .bg_navy {
+      display: none;
+    }
+    .section3 {
+      .coverCard .imgWrap img {
+        width: auto;
+      }
+      @include respondTo('mlg') {
+        padding-top: 120px;
+        padding-bottom: 130px;
+      }
+    }
+    .section4 {
+      .fullBg {
+        &:nth-child(1)::after {
+          transform: translate(50%, 50%) rotate(45deg);
+        }
+      }
+    }
+  }
+  // 소개
+  main.introduction {
+    .pageTitle {
+      margin-bottom: 100px;
+    }
+    .section1 {
+      padding-top: 120px;
+      padding-bottom: 100px;
+      @include respondTo('mlg') {
+        padding-top: 60px;
+        padding-bottom: 20px;
+      }
+      .bgCover {
+        transform: translateX(-100%);
+        background-size: contain;
+        max-width: 900px;
+        @include respondTo('mlg') {
+          transform: none;
+        }
+      }
+    }
+    .section2 {
+      margin-top: 80px;
+      @include respondTo('mlg') {
+        margin-top: 20px;
+      }
+    }
+  }
+  // CEO 인사말
+  main.ceoGreeting {
+    .section2 {
+      height: auto;
+      overflow: hidden;
+      .ceo {
+        height: auto;
+      }
+      @include respondTo('mlg') {
+        height: auto;
+      }
+    }
+  }
+  main.startUpIdeology {
+    .top_image {
+      background-image: none;
+      height: auto;
+      img {
+        width: 100%;
+      }
+    }
+    .section1 {
+      background-color: transparent;
+      margin-top: -140px;
+      overflow: hidden;
+      @include respondTo('mlg') {
+        margin-top: -80px;
+        padding-bottom: 0;
+      }
+      .bgCover {
+        background-image: none;
+        @include respondTo('mlg') {
+          padding: 0 40px;
+          height: auto;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  main.managementIdeology {
+    .section1 {
+      .bgCover {
+        left: auto;
+        transform: none;
+      }
+      .imgCol img {
+        height: 600px;
+        transform: translateX(0);
+        @include respondTo('mhg') {
+          transform: translateX(-200px);
+        }
+        @include respondTo('mlg') {
+          transform: translateX(0px);
+          height: auto;
+          width: 100%;
+        }
+      }
+      .contentCol {
+        height: 540px;
+        margin-top: 70px;
+        .labelContent {
+          padding-top: 40px;
+        }
+        @include respondTo('mlg') {
+          height: auto;
+        }
+        @include respondTo('mmd') {
+          margin-top: 0;
+          .labelContent {
+            padding-top: 0;
+          }
+        }
+      }
+      .container {
+        @include respondTo('mlg') {
+          overflow: hidden;
+        }
+        > .row {
+          justify-content: center;
+        }
+        .col-12 {
+          @include respondTo('md') {
+            flex: 0 0 50%;
+            max-width: 50%;
+          }
+        }
+      }
+    }
+    .section2 {
+      .goalWrap.slider_goal .goalElement .container {
+        margin: 0;
+      }
+    }
+  }
+  main.history {
+    .timeline {
+      &:before {
+        @include respondTo('mmd') {
+          height: calc(100% - 160px);
+        }
+      }
+      .historyWrap {
+        width: 50%;
+        position: relative;
+        padding-right: 0;
+        padding-left: 0;
+        padding-top: 0;
+        @include respondTo('mmd') {
+          width: 100%;
+        }
+        .date {
+          line-height: 1.2em;
+          margin-bottom: 0;
+          &:before {
+            width: 30px;
+          }
+        }
+        .content {
+          width: 100%;
+          white-space: pre-line;
+          line-height: 1.2em;
+          margin-bottom: 20px;
+        }
+        .thumbnail {
+          width: 100%;
+          @include respondTo('mmd') {
+            overflow: hidden;
+          }
+        }
+      }
+      li {
+        display: flex;
+        margin-bottom: 0;
+        justify-content: flex-start;
+        @include respondTo('mmd') {
+          margin-bottom: 30px;
+        }
+        &:nth-child(2),
+        &:nth-child(4),
+        &:nth-child(5),
+        &:nth-child(6),
+        &:nth-child(8),
+        &:nth-child(9),
+        &:nth-child(12),
+        &:nth-child(13),
+        &:nth-child(14),
+        &:nth-child(15) {
+          justify-content: flex-end;
+          @include respondTo('mmd') {
+            justify-content: flex-start;
+          }
+        }
+        .historyWrap > * {
+          padding-left: 40px;
+          padding-right: 0px;
+        }
+      }
+      li:nth-child(1) .historyWrap > *,
+      li:nth-child(3) .historyWrap > *,
+      li:nth-child(7) .historyWrap > *,
+      li:nth-child(10) .historyWrap > *,
+      li:nth-child(11) .historyWrap > * {
+        padding-right: 40px;
+        padding-left: 0;
+        @include respondTo('mmd') {
+          padding-left: 40px;
+          padding-right: 0px;
+        }
+      }
+    }
+  }
+  main.facilityPlantIntroduction {
+    .section1 {
+      .sprite .row {
+        @media (max-width: 412px) {
+          flex-direction: column;
+          .col {
+            flex-basis: auto;
+          }
+        }
+      }
+    }
+  }
+}

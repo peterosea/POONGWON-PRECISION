@@ -1,21 +1,36 @@
+.pageTemplate.history {
+  .pageTitle {
+    margin-bottom: 50px;
+    @include respondTo('msm') {
+      padding-top: 60px;
+    }
+  }
+}
+
 .timeline {
   list-style: none;
   width: 100%;
   max-width: 1800px;
-  padding: 0;
+  padding: 0 0 120px 0;
   position: relative;
-
+  @include respondTo('mmd') {
+    padding: 0 0 40px 0;
+  }
   &:before {
-    content: "";
+    content: '';
     display: block;
-    height: 100%;
+    height: calc(100% - 280px);
     position: absolute;
     width: 1px;
     background-color: $very-light-pink-two;
     left: 0;
-    @include respondTo("md") {
+    margin-top: 20px;
+    @include respondTo('md') {
       transform: translateX(-50%);
       left: 50%;
+    }
+    @include respondTo('mmd') {
+      height: calc(100% - 200px);
     }
   }
 
@@ -30,7 +45,7 @@
         display: flex;
         flex-direction: column;
 
-        @include respondTo("md") {
+        @include respondTo('md') {
           margin-bottom: 20px;
         }
       }
@@ -47,8 +62,21 @@
         position: relative;
         margin-bottom: 20px;
         display: flex;
+        &:before {
+          content: '';
+          width: 70px;
+          height: 1px;
+          top: 50%;
+          left: 0;
+          position: absolute;
+          display: block;
+          background-color: #087f86;
+          @include respondTo('mlg') {
+            width: 40px;
+          }
+        }
         &:after {
-          content: "";
+          content: '';
           display: block;
           width: 15px;
           height: 15px;
@@ -61,23 +89,29 @@
         }
       }
     }
-    @include respondTo("md") {
+    @include respondTo('md') {
       .content {
         align-items: flex-start;
       }
       .historyWrap {
         padding-left: 50%;
+        padding-top: 140px;
       }
       .historyWrap > * {
         padding-left: 90px;
       }
-      &.isThumbnail {
+      &:nth-child(1),
+      &:nth-child(3),
+      &:nth-child(7),
+      &:nth-child(10),
+      &:nth-child(11) {
         .historyWrap > * {
           padding-left: 0px;
         }
         .content {
           align-items: flex-end;
           padding-left: 0px;
+          text-align: right;
         }
         .date::after {
           right: 0;
@@ -88,11 +122,81 @@
           align-items: flex-end;
           padding-right: 50%;
           padding-left: 0;
+          position: absolute;
+          right: 0;
+          padding-top: 0;
         }
         .historyWrap > * {
           padding-right: 90px;
         }
+        .date {
+          &:before {
+            left: auto;
+            right: 0;
+          }
+        }
       }
+      &:nth-child(6),
+      &:nth-child(9) {
+        .historyWrap {
+          position: absolute;
+          right: 0;
+          padding-top: 0;
+        }
+      }
+      &:nth-child(7) {
+        .historyWrap {
+          padding-top: 140px;
+        }
+      }
+      &:nth-child(5),
+      &:nth-child(6),
+      &:nth-child(13),
+      &:nth-child(14),
+      &:nth-child(15) {
+        .historyWrap {
+          padding-top: 0;
+        }
+      }
+      &:nth-child(8) {
+        .historyWrap {
+          position: relative;
+          padding-top: 540px;
+        }
+      }
+      &:nth-child(10) {
+        .historyWrap {
+          position: relative;
+          padding-top: 140px;
+        }
+      }
+      &:nth-child(12) {
+        .historyWrap {
+          padding-top: 220px;
+        }
+      }
+      // &.isThumbnail {
+      //   .historyWrap > * {
+      //     padding-left: 0px;
+      //   }
+      //   .content {
+      //     align-items: flex-end;
+      //     padding-left: 0px;
+      //   }
+      //   .date::after {
+      //     right: 0;
+      //     left: auto;
+      //     transform: translate(50%, -50%);
+      //   }
+      //   .historyWrap {
+      //     align-items: flex-end;
+      //     padding-right: 50%;
+      //     padding-left: 0;
+      //   }
+      //   .historyWrap > * {
+      //     padding-right: 90px;
+      //   }
+      // }
     }
   }
 }

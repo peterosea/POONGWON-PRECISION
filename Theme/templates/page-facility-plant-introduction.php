@@ -19,12 +19,12 @@ get_template_part('template-parts/header/page');
       섬세한 초정밀 금속 가공을 위한<br />
       첨단 설비 라인
       <p>
-        풍원정밀은 제품에 따라 크게 3개의 생산 라인을 가지고 있습니다. 연구소 및 본사와 함께 위치한 설비 공장은 안전하고 위생적으로 관리되며 24시간 가동이 가능합니다. 특히 극도로 섬세한 초정밀 금속 가공을 위하여 미세먼지도 허락하지 않는 클린룸(clean room) 공정을 완벽히 갖추고 있습니다.
+      풍원정밀은 제품에 따라 크게 3개의 생산 라인을 가지고 있습니다. 연구소 및 본사와 함께 위치한 설비 공장은 안전하고 위생적으로 관리되며 24시간 가동이 가능합니다. 특히 극도로 섬세한 초정밀 금속 가공을 위하여 미세먼지도 허락하지 않는 클린룸(clean room) 공정을 완벽히 갖추고 있습니다.
       </p>
     </div>
   </div>
   <div class="section section1">
-    <div class="container-fluid px-0 sprite">
+    <div class="container sprite">
       <div class="row m-0">
         <div class="container">
           <div class="row">
@@ -35,14 +35,17 @@ get_template_part('template-parts/header/page');
               <span class="value" id="t231">
               </span>
               <script>
-                katex.render("13,225m^2", document.querySelector('#t231'), {
+                katex.render("5,406m^2", document.querySelector('#t231'), {
                   throwOnError: false
-                })
+                });
               </script>
             </div>
             <div class="col">
               <span class="label">주요생산품</span>
-              <span class="value">AVN,AV</span>
+              <span class="value">
+                금속박막(Metal Foil), 오픈 메탈 마스크(OMM),<br>
+                파인 메탈 마스크(FMM), 스틱바 마스크(SBM)
+                </span>
             </div>
           </div>
         </div>
@@ -57,14 +60,14 @@ get_template_part('template-parts/header/page');
               <span class="value" id="t232">
               </span>
               <script>
-                katex.render("9,193m^2", document.querySelector('#t232'), {
+                katex.render("13,109m^2", document.querySelector('#t232'), {
                   throwOnError: false
-                })
+                });
               </script>
             </div>
             <div class="col">
               <span class="label">근무인원</span>
-              <span class="value">약 100여명</span>
+              <span class="value">150여명</span>
             </div>
           </div>
         </div>
@@ -77,12 +80,12 @@ get_template_part('template-parts/header/page');
                 주요시설
               </span>
               <span class="value">
-                생산동, 물류동, 사무동, 기숙사, 홍보관, 구내식당
+              생산동, 물류동, 사무동
               </span>
             </div>
             <div class="col">
               <span class="label">주요인증</span>
-              <span class="value">ISO/TS16949, ISO9001, ISO14001</span>
+              <span class="value">ISO9001, ISO14001</span>
             </div>
           </div>
         </div>

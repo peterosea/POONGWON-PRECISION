@@ -1,38 +1,133 @@
 main.metalFoil {
+  .pageTitle {
+    @include respondTo('msm') {
+      padding-top: 70px;
+      margin-bottom: 70px;
+    }
+  }
+  .subTitle {
+    font-size: 20px;
+  }
   .section1 {
     position: relative;
-    padding-top: 180px;
-    padding-bottom: 84px;
+    padding-top: 100px;
+    padding-bottom: 130px;
+    @include respondTo('mxl') {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+    @include respondTo('mlg') {
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+    @include respondTo('mmd') {
+      padding-top: 0;
+      padding-bottom: 20px;
+    }
     .bgCover {
       position: absolute;
       top: 0;
       left: 50%;
       transform: translateX(-100%);
+      @include respondTo('mxl') {
+        transform: translateX(-120%);
+        img {
+          width: 120%;
+        }
+      }
+      @include respondTo('mmd') {
+        position: relative;
+        left: 0;
+        transform: none;
+        padding: 0 30px;
+        img {
+          width: 100%;
+        }
+      }
     }
     .contentCol {
       p {
         color: $black;
         @include Text-Style-49;
         max-width: 900px;
-        padding: 120px 200px 200px 120px;
+        padding: 180px 200px 240px 120px;
         background-color: $white;
+        @include respondTo('mhg') {
+          padding: 160px 120px;
+        }
+        @include respondTo('mxl') {
+          padding: 110px 120px;
+        }
+        @include respondTo('mlg') {
+          @include TextP-L;
+          padding: 110px 80px;
+        }
+        @include respondTo('mmd') {
+          padding: 40px;
+        }
+        @include respondTo('msm') {
+          padding: 40px 10px;
+          @include TextP-G;
+          line-height: 1.8;
+        }
       }
     }
   }
 
   .section2 {
-    padding-top: 90px;
+    padding-top: 120px;
     position: relative;
+    padding-bottom: 120px;
+    @include respondTo('mhg') {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+    @include respondTo('mhg') {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    @include respondTo('mlg') {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    @include respondTo('mmd') {
+      padding-top: 0px;
+      padding-bottom: 0;
+    }
     .bgCover {
       position: absolute;
       top: 0;
       left: 50%;
-      transform: translateX(20px);
+      // transform: translateX(20px);
+      width: 50%;
+      @include respondTo('mhg') {
+        img {
+          width: 100%;
+        }
+      }
+      @include respondTo('mmd') {
+        position: relative;
+        left: 0;
+        width: 100%;
+        padding: 0 30px;
+      }
     }
     h1 {
       color: $black;
       @include Text-Style-49;
       margin-bottom: 26px;
+      @include respondTo('mlg') {
+        @include TextP-L;
+        padding-left: 20px;
+      }
+      @include respondTo('mmd') {
+        padding: 40px;
+      }
+      @include respondTo('msm') {
+        padding: 40px 10px;
+        @include TextP-G;
+        line-height: 1.8;
+      }
     }
     p {
       color: $black;
@@ -40,6 +135,16 @@ main.metalFoil {
     }
   }
   .section3 {
+    margin-top: 160px;
     @include slickCarouselVideo();
+    @include respondTo('mhg') {
+      margin-top: 60px;
+    }
+    @include respondTo('mxl') {
+      margin-top: 30px;
+    }
+    @include respondTo('mmd') {
+      margin-top: 0px;
+    }
   }
 }

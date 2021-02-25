@@ -3,6 +3,12 @@ footer.FNB {
   color: $brownish-grey;
   @include Text-Style-42;
   border-top: 1px solid rgba($very-light-pink, 0.6);
+  @include respondTo('mmd') {
+    padding: 30px 15px;
+  }
+  @include respondTo('msm') {
+    padding: 30px 5px;
+  }
   ul {
     list-style: none;
     display: flex;
@@ -10,10 +16,16 @@ footer.FNB {
     margin-bottom: 0;
     li:not(:last-child) {
       margin-right: 14px;
+      @include respondTo('msm') {
+        margin-right: 10px;
+      }
     }
   }
   .info {
     margin-bottom: 14px;
+    @include respondTo('mmd') {
+      flex-direction: column;
+    }
     a {
       color: $brownish-grey;
       @include Text-Style-42;
@@ -22,14 +34,29 @@ footer.FNB {
     strong {
       margin-right: 6px;
     }
+    li,
+    li > a {
+      line-height: 1.4em;
+    }
   }
   .pagelistCol {
     display: flex;
     margin-bottom: 40px;
-    @include respondTo("xl") {
+    @include respondTo('xl') {
       align-items: center;
       justify-content: flex-end;
       margin-bottom: 0;
+    }
+    @include respondTo('mmd') {
+      margin-bottom: 15px;
+    }
+  }
+  .copyright {
+    @include respondTo('mmd') {
+      margin-bottom: 0;
+    }
+    @include respondTo('msm') {
+      font-size: 14px;
     }
   }
   .page-list {
@@ -37,12 +64,15 @@ footer.FNB {
       color: $black;
       @include Text-Style-43;
       text-decoration: none;
+      @include respondTo('msm') {
+        @include TextP-M;
+      }
     }
     li:not(:last-child) {
       position: relative;
       padding-right: 14px;
       &::after {
-        content: "";
+        content: '';
         position: absolute;
         right: 0;
         top: 50%;
@@ -50,6 +80,9 @@ footer.FNB {
         width: 2px;
         height: 16px;
         background-color: $brown-grey;
+      }
+      @include respondTo('msm') {
+        padding-right: 12px;
       }
     }
   }

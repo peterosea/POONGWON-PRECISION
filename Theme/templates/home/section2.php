@@ -1,18 +1,18 @@
 <div class="section section2">
-  <img draggable="false" src="<?php echo $zeplin ?>/group-43.svg" class="bgImg">
+  <!-- <img draggable="false" src="<?php echo $zeplin ?>/group-43.svg" class="bgImg"> -->
   <div class="container">
     <div class="row">
       <div class="col ">
         <div class="valueWrap">
           <img draggable="false" src="<?php echo $zeplin ?>/1.svg">
           <div class="textPoint">
-            <div class="point">33</div>
+            <div class="point">26</div>
             <div class="unit">
               년
             </div>
           </div>
           <p>
-            1996년 금속가공핵심기술을 가진 <br />
+            1996년 금속가공핵심기술을 가진
             기술집약형 기업으로 설립되었습니다.
           </p>
         </div>
@@ -21,14 +21,14 @@
         <div class="valueWrap">
           <img draggable="false" src="<?php echo $zeplin ?>/2.svg">
           <div class="textPoint">
-            <div class="point">22</div>
+            <div class="point">180</div>
             <div class="unit">
-              %
+              기업
             </div>
           </div>
           <p>
-            최근 3년 연평균 매출액 증가율<br />
-            23%의 고속성장 중입니다.
+          박막 금속 가공 기술을 이용해 총
+          180여 기업에 공급해 왔습니다.
           </p>
         </div>
       </div>
@@ -36,17 +36,39 @@
         <div class="valueWrap">
           <img draggable="false" src="<?php echo $zeplin ?>/3.svg">
           <div class="textPoint">
-            <div class="point">8</div>
+            <div class="point">14,000</div>
             <div class="unit">
-              억
+              개
             </div>
           </div>
           <p>
-            풍원정밀의 부품소재 기술로 만들어진 <br />
-            TV와 핸드폰의 갯수입니다.
+          풍원정밀의 박막 금속 가공 기술을 이용해
+          개발, 생산한 제품의 갯수입니다.
           </p>
         </div>
       </div>
     </div>
   </div>
+  <!-- 사선 배경 CSS처리 -->
+  <div class="bg_green"></div>
+  <div class="bg_navy"></div>
 </div>
+
+<script type="text/javascript">
+// 홈페이지 섹션2
+// $('.sld_sect2').slick({
+//     slidesToShow: 3,
+//     autoplay: false,
+//     responsive: [
+//         {
+//             breakpoint: 992,
+//             settings: {
+//                 dots: true,
+//                 arrows: true,
+//                 slidesToShow: 1,
+//                 autoplay: false,
+//             }
+//         }
+//     ]
+// });
+</script>

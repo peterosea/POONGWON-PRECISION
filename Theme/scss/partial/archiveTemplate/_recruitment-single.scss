@@ -2,12 +2,25 @@ main.recruitment-single {
   .section1 {
     padding-top: 130px;
     padding-bottom: 150px;
+    @include respondTo('mhg') {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+    .container {
+      @include respondTo('mlg') {
+        padding-right: 45px;
+        padding-left: 45px;
+      }
+    }
     .header {
       padding: 26px 59px;
       background-color: $turquoise;
       color: $white;
       @include Text-Style-54;
       text-align: left;
+      @include respondTo('msm') {
+        padding: 20px 10px;
+      }
       .date {
         display: flex;
         justify-content: flex-end;
@@ -17,6 +30,9 @@ main.recruitment-single {
       padding: 40px 0;
       color: $brownish-grey;
       @include Text-Style-55;
+      @include respondTo('mhg') {
+        padding-bottom: 0;
+      }
       table {
         tr:first-child {
           td,
@@ -33,16 +49,27 @@ main.recruitment-single {
           background-color: $very-light-pink-two;
           color: $black;
           @include Text-Style-56;
+          @include respondTo('mmd') {
+            padding: 20px;
+            @include TextP-M;
+          }
         }
         td {
           color: $black;
           @include Text-Style-45;
+          @include respondTo('mmd') {
+            padding: 20px;
+            @include TextP-M;
+          }
         }
       }
     }
     .footer {
       padding-top: 50px;
       justify-content: space-between;
+      @include respondTo('mmd') {
+        padding-top: 30px;
+      }
       .btn {
         padding: 17px 42px;
         background-color: $dark-blue-grey;
@@ -50,11 +77,18 @@ main.recruitment-single {
         @include Text-Style-56;
         text-decoration: none;
         border-radius: 0;
+        @include respondTo('mmd') {
+          @include TextP-M;
+        }
+        @include respondTo('msm') {
+          padding: 12px 30px;
+        }
         &.list {
           background-color: $turquoise;
         }
         &.disable {
-          color: $brownish-grey;
+          opacity: 0.5;
+          color: rgba(255, 255, 255, 0.5);
           cursor: default;
         }
       }
