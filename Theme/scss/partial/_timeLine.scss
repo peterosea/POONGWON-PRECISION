@@ -4,6 +4,9 @@
     @include respondTo('msm') {
       padding-top: 60px;
     }
+    p {
+      max-width: 720px;
+    }
   }
 }
 

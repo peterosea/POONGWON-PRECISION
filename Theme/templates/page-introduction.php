@@ -34,7 +34,7 @@ get_template_part('template-parts/header/page');
           풍원정밀은 첨단 디스플레이 부품 제조 회사로 차세대 디스플레이 제조 공정의 핵심 소재들을 생산, 공급하고 있습니다. 1996년 설립된 이후 박막 금속 가공 기술을 이용해 총 1만 4천개의 제품을 개발, 생산해 총 180여 기업에 공급해 왔습니다.
           </p>
           <br>
-          <p>종이보다 얇은 금속을 미세하게 가공하는 초정밀 금속가공기술에 있어서 세계 최고의 기술력을 보유한 풍원정밀의 주력 제품은 OLED디스플레이 증착용 부품인 오픈 메탈 마스크(OMM, Open Metal Mask), 파인 메탈 마스크(FMM, Fine Metal Mask), 스틱바 마스크(SBM, Stick Bar Mask) 와, OLED TV의 봉지공정(Encapsulation)에 사용되는 금속박막(Metal Foil) 등입니다.</p>
+          <p>종이보다 얇은 금속을 미세하게 가공하는 초정밀 금속가공 기술에 있어서 세계 최고의 기술력을 보유한 풍원정밀의 주력 제품은 OLED 디스플레이 증착용 부품인 오픈 메탈 마스크(OMM, Open Metal Mask), 파인 메탈 마스크(FMM, Fine Metal Mask), 스틱바 마스크(SBM, Stick Bar Mask)와, OLED TV의 봉지 공정(Encapsulation)에 사용되는 금속박막(Metal Foil) 등입니다.</p>
         </div>
       </div>
     </div>
@@ -44,7 +44,7 @@ get_template_part('template-parts/header/page');
       <div class="row">
         <div class="col-6 contentCol">
           <p>
-          메탈 마스크(Metal Mask)는 OLED 제조 과정에서 빛과 색을 내는 픽셀을 만드는 증착 공정에 사용되며, 금속박막(Metal Foil)은 만들어진 OLED 디스플레이 패널이 산소, 수분과 같은 외부 영향을 받지 않고 오랫동안 사용될 수 있도록 마감하는 봉지공정(Encapsulation)에 꼭 필요한 핵심 소재입니다.
+          메탈 마스크(Metal Mask)는 OLED 제조 과정에서 빛과 색을 내는 픽셀을 만드는 증착 공정에 사용되며, 금속박막(Metal Foil)은 만들어진 OLED 디스플레이 패널이 산소, 수분과 같은 외부 영향을 받지 않고 오랫동안 사용될 수 있도록 마감하는 봉지 공정(Encapsulation)에 꼭 필요한 핵심 소재입니다.
           </p>
           <br>
           <br>
