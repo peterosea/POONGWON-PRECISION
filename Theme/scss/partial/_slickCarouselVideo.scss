@@ -71,6 +71,8 @@
       left: 50%;
       transform: translateX(-50%);
       z-index: 9;
+      width: 100%;
+      max-width: 680px;
       @include respondTo('mmd') {
         bottom: 20px;
       }
@@ -103,8 +105,9 @@
         }
       }
       .thumbnail {
-        width: 240px;
-        height: 150px;
+        // width: 240px;
+        width: 180px;
+        height: 90px;
         overflow: hidden;
         border: 3px solid transparent;
         transition: border 0.3s ease-in-out;

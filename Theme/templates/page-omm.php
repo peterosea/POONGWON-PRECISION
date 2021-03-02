@@ -17,7 +17,7 @@ get_template_part('template-parts/header/page');
   <div class="container">
     <div class="pageTitle">
     OLED 제조 공정의 핵심 소재인 오픈 메탈 마스크
-      <div class="subTitle">OMM, Open Metal Mask</div>
+      <div class="subTitle">OMM(Open Metal Mask)</div>
     </div>
   </div>
   <div class="section section1">
@@ -80,7 +80,8 @@ get_template_part('template-parts/header/page');
       <?php
       $OMM = get_posts(array(
         'post_type' => 'omm-slide',
-        'post_status' => 'publish'
+        'post_status' => 'publish',
+        'numberposts' => 999,
       ));
       ?>
       <div id="slickSlideBg" class="slickSlideBg">

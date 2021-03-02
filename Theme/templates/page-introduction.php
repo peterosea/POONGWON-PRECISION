@@ -57,7 +57,7 @@ get_template_part('template-parts/header/page');
       </div>
     </div>
     <div class="bgCover">
-      <img draggable="false" src="<?php echo $zeplin ?>/dam-9338.jpg" srcset="<?php echo $zeplin ?>/dam-9338@2x.jpg 2x, <?php echo $zeplin ?>/dam-9338@3x.jpg 3x">
+      <img draggable="false" src="<?php echo $zeplin ?>/1104-0344-fix.jpg" >
     </div>
     <div class="bgPadding"></div>
   </div>
