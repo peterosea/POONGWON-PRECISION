@@ -21,7 +21,7 @@ get_template_part('template-parts/header/page-archive');
       <div class="row">
         <div class="col-12 col-md-6 col-lg-4 mb-5">
           <div class="imgWrap">
-            <img draggable="false" src="<?php echo $zeplin ?>/2851.jpg" srcset="<?php echo $zeplin ?>/2851@2x.jpg 2x, <?php echo $zeplin ?>/2851@3x.jpg 3x">
+            <img draggable="false" src="<?php echo $zeplin ?>/2884.png" srcset="<?php echo $zeplin ?>/2884@2x.png 2x, <?php echo $zeplin ?>/2884@3x.png 3x">
             <div class="content">
               <svg>
                 <use xlink:href="#642"></use>
@@ -33,7 +33,7 @@ get_template_part('template-parts/header/page-archive');
         </div>
         <div class="col-12 col-md-6 col-lg-4 mb-5">
           <div class="imgWrap">
-            <img draggable="false" src="<?php echo $zeplin ?>/2852.jpg" srcset="<?php echo $zeplin ?>/2852@2x.jpg 2x, <?php echo $zeplin ?>/2852@3x.jpg 3x">
+            <img draggable="false" src="<?php echo $zeplin ?>/2885.png" srcset="<?php echo $zeplin ?>/2885@2x.png 2x, <?php echo $zeplin ?>/2885@3x.png 3x">
             <div class="content">
               <svg>
                 <use xlink:href="#2819"></use>
@@ -47,7 +47,7 @@ get_template_part('template-parts/header/page-archive');
         </div>
         <div class="col-12 col-md-6 col-lg-4 mb-5">
           <div class="imgWrap">
-            <img draggable="false" src="<?php echo $zeplin ?>/2853.jpg" srcset="<?php echo $zeplin ?>/2853@2x.jpg 2x, <?php echo $zeplin ?>/2853@3x.jpg 3x">
+            <img draggable="false" src="<?php echo $zeplin ?>/2886.png" srcset="<?php echo $zeplin ?>/2886@2x.png 2x, <?php echo $zeplin ?>/2886@3x.png 3x">
             <div class="content">
               <svg>
                 <use xlink:href="#647"></use>

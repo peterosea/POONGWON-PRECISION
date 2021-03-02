@@ -82,15 +82,14 @@
       <div class="col-12 col-sm-6 col-lg-4">
         <div class="profileWrap">
           <div class="imgWrap">
-            <img draggable="false" src="<?php echo $zeplin ?>/home-people-5.png" srcset="<?php echo $zeplin ?>/home-people-5@2x.png 2x, <?php echo $zeplin ?>/home-people-5@3x.png 3x">
+            <img draggable="false" src="<?php echo $zeplin ?>/people-jsy.png" >
           </div>
           <div class="nameWrap">
-            <span class="name">김영권 과장</span>
-            <span class="department">설비지원팀</span>
+            <span class="name">정선영 사원</span>
+            <span class="department">연구소</span>
           </div>
           <p>
-          대기업 못지않게 설비투자와 연구 개발에
-          지원을 아끼지 않아서 일할 맛이 나죠. 
+          성공적인 결과가 나올 때까지 수백수천 번의 실험을 거듭하지만 실패에도 늘 응원과 격려해 주는 회사 분위기가 좋습니다.
           </p>
         </div>
       </div>

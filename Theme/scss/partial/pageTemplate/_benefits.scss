@@ -137,6 +137,10 @@ main.benefits {
       > p {
         font-size: 20px;
         font-weight: normal;
+        min-height: 160px;
+        @include respondTo('mmd') {
+          min-height: auto;
+        }
       }
       .name > span {
         font-size: 18px;

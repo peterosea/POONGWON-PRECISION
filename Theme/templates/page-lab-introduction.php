@@ -32,14 +32,14 @@ get_template_part('template-parts/header/page');
   </div>
   <div class="section section2">
     <div class="bgCover">
-      <img draggable="false" src="<?php echo $zeplin ?>/dam-0213.jpg" srcset="<?php echo $zeplin ?>/dam-0213@2x.jpg 2x, <?php echo $zeplin ?>/dam-0213@3x.jpg 3x">
+      <img draggable="false" src="<?php echo $zeplin ?>/lab-introduce-02.jpg" >
     </div>
     <div class="container">
       <div class="row">
         <div class="col-5 contentCol">
           <p>
           정교함이 생명인 디스플레이 시장에서 풍원정밀의 
-포토 에칭(Photo-Etching) 기술은 단연 독보적이며 이에 2019년 중소벤처기업부 소재부품장비 강소기업 100에 선정되기도 하였습니다.
+포토 에칭(Photo-Etching) 기술은 단연 독보적이며 이에 2019년 중소벤처기업부 소재부품장비 <b class="pointColor">강소기업100</b>에 선정되기도 하였습니다.
           </p>
         </div>
         <div class="col-7">

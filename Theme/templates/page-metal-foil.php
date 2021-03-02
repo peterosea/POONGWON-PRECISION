@@ -60,7 +60,8 @@ get_template_part('template-parts/header/page');
       <?php
       $metalFoil = get_posts(array(
         'post_type' => 'metalfoil-slide',
-        'post_status' => 'publish'
+        'post_status' => 'publish',
+        'numberposts' => 999,
       ));
       ?>
       <div id="slickSlideBg" class="slickSlideBg">

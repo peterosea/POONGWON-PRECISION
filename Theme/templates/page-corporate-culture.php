@@ -18,7 +18,6 @@ get_template_part('template-parts/header/page');
 <main class="pageTemplate corporateCulture">
   <div class="container">
     <div class="pageTitle">
-      풍원정밀 경영 철학
       <p>
       미래에 대한 비전과 희망으로 가득한 중소기업 풍원정밀은 성과, 성장, 그리고 화합을 중요하게 생각합니다. 
       </p>

@@ -69,30 +69,15 @@ get_template_part('template-parts/header/page');
             </div>
             <div class="row">
               <div class="col-2 rowTitle">공정</div>
-              <div class="col rowspan">
-                <div class="row">
-                  <div class="col">H-PR Technology</div>
-                  <div class="col">두꺼운 DFR대신 얇은 액상 PR을 적용하여 고해상도를 구현하는 기술</div>
-                  <div class="col">
-                    <ul>
-                      <li>10-2020-0090704(출원)</li>
-                      <li>10-2020-0090705(출원)</li>
-                      <li>10-2020-0090706(출원)</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col">Fine Etching Technology</div>
-                  <div class="col">공정조건을 조율하여 수 ㎛단위의 미세패턴을 정확하게 구현하는 기술</div>
-                  <div class="col">
-                    <ul>
-                      <li>10-2004-0016982(등록)</li>
-                      <li>10-2012-0102915(등록)</li>
-                      <li>10-2012-0102916(등록)</li>
-                      <li>10-2012-0115864(등록)</li>
-                    </ul>
-                  </div>
-                </div>
+              <div class="col">Fine Etching Technology</div>
+              <div class="col">공정조건을 조율하여 수 ㎛단위의 미세패턴을 정확하게 구현하는 기술</div>
+              <div class="col">
+                <ul>
+                  <li>10-2004-0016982(등록)</li>
+                  <li>10-2012-0102915(등록)</li>
+                  <li>10-2012-0102916(등록)</li>
+                  <li>10-2012-0115864(등록)</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -137,16 +122,16 @@ get_template_part('template-parts/header/page');
           <h1 class="title">Etching Resist For FMM</h1>
           <h2 class="subTitle">(FMM 제조에 최적화된 합성수지액)</h2>
           <p>
-          FMM 제조 공정 중 1차 가공면의 부식을 방지하기 위해 액상에 합성수지(resin)를 도포하게 됩니다. 이때 합성수지의 배합, 코팅 두께, 건조 조건에 따라서 FMM의 미세 구멍이 둔턱 높이 및 패턴이 달라질 수 있습니다. 풍원정밀은 폴리우레탄계의 고분자 물질을 넣은 새로운 합성수지 배합을 자체 개발하여 적용함으로써 더욱 정밀한 FMM을 생산하고 있습니다.
+          FMM 제조 공정에 합성수지(Resin)를 도포하는 과정이 있습니다. 이때 합성수지의 배합, 코팅 두께, 건조 조건 등은 미세하고 정밀한 FMM 공정에 영향을 미칩니다. 풍원정밀은 폴리우레탄계의 고분자 물질을 넣은 새로운 합성수지 배합을 자체 개발하여 한층 뛰어난 품질의 FMM을 생산하고 있습니다.
           </p>
         </div>
       </div>
     </div>
   </div>
   <div class="section section5 section3n">
-    <div class="bgCover double">
+    <div class="bgCover ">
       <img draggable="false" src="<?php echo $zeplin ?>/dsc-1810.jpg" srcset="<?php echo $zeplin ?>/dsc-1810@2x.jpg 2x, <?php echo $zeplin ?>/dsc-1810@3x.jpg 3x">
-      <img draggable="false" src="<?php echo $zeplin ?>/dsc-1979.jpg" srcset="<?php echo $zeplin ?>/dsc-1979@2x.jpg 2x, <?php echo $zeplin ?>/dsc-1979@3x.jpg 3x">
+      <!-- <img draggable="false" src="<?php echo $zeplin ?>/dsc-1979.jpg" srcset="<?php echo $zeplin ?>/dsc-1979@2x.jpg 2x, <?php echo $zeplin ?>/dsc-1979@3x.jpg 3x"> -->
     </div>
     <div class="container">
       <div class="row">
@@ -154,13 +139,6 @@ get_template_part('template-parts/header/page');
           <div class="label">
             공정
           </div>
-          <h1 class="title">H-PR Technology</h1>
-          <h2 class="subTitle">(액상 PR 기술)</h2>
-          <p>
-          PR(Photo Resist) 선정은 공정설계 및 기술 개발의 시작점이 되는 중요한 재료입니다. 액상 PR은 필름 형태의 PR보다 코팅 기판에 대한 접착력이 우수한데, 표면 조도가 높아 접착이 어려운 금속 표면에 코팅했을 때 더욱 효과가 뛰어납니다. 
-또한 액상 PR은 도포되는 두께가 얇아(2~3㎛) 필름 형태의 PR(7~10 ㎛ )에 비해 고해상도 제품을 제작하는데 있어 
-유리합니다. 풍원정밀은 액상 PR로 금속을 코팅하기 전 금속표면의 거칠기를 조절할 수 있는 약품을 자회사인 풍원화학과 공동 개발하여 액상 PR의 장점을 극대화하였습니다. 
-          </p>
           <h1 class="title">Fine Etching Technology</h1>
           <h2 class="subTitle">(정교한 에칭 기술)</h2>
           <p>
