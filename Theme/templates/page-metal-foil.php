@@ -60,7 +60,8 @@ get_template_part('template-parts/header/page');
       <?php
       $metalFoil = get_posts(array(
         'post_type' => 'metalfoil-slide',
-        'post_status' => 'publish'
+        'post_status' => 'publish',
+        'numberposts' => 999,
       ));
       ?>
       <div id="slickSlideBg" class="slickSlideBg">
@@ -88,7 +89,7 @@ HTML;
               <div class="bottomCover">
               </div>
             </div>
-            <script>
+            <!-- <script>
               var control_$p->ID = document.querySelector('#control_$p->ID');
               var target_$p->ID = document.querySelector('#target_$p->ID');
               var videoWrap_$p->ID = document.querySelector('#videoWrap_$p->ID');
@@ -99,7 +100,7 @@ HTML;
               target_$p->ID.addEventListener('ended', function() {
                 videoWrap_$p->ID.classList.remove('play');
               });
-            </script>
+            </script> -->
           </div>
 HTML;
         } ?>
@@ -120,38 +121,51 @@ HTML;
 HTML;
         } ?>
       </div>
-      <script>
-        $('#slickSlideBg').slick({
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          arrows: false,
-          dots: false,
-          fade: true,
-          asNavFor: '#slickSlideSmall',
-          draggable: false,
-          responsive: [{
-            breakpoint: 768,
-            settings: {
-              draggable: true,
-              dots: true,
-              asNavFor: '',
-            }
-          }]
-        });
-        $('#slickSlideSmall').slick({
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          arrows: false,
-          asNavFor: '#slickSlideBg',
-          focusOnSelect: true,
-          edgeFriction: true,
-          autoplay: true,
-          autoplaySpeed: 2000,
-          centerMode: true,
-        });
-      </script>
     </div>
   </div>
 </main>
+<script>
+  $('#slickSlideBg').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: false,
+    fade: true,
+    asNavFor: '#slickSlideSmall',
+    draggable: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    infinite: true,
+    responsive: [{
+      breakpoint: 768,
+      settings: {
+        draggable: true,
+        dots: true,
+        asNavFor: '',
+      }
+    }]
+  });
+  $('#slickSlideSmall').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: false,
+    asNavFor: '#slickSlideBg',
+    focusOnSelect: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    centerMode: true,
+    infinite: true,
+    responsive: [
+      {
+          breakpoint: 768,
+          settings: {
+            draggable: false,
+            centerMode: false,
+          }
+      }
+    ]
+  });
+</script>
 <?php
 get_footer();

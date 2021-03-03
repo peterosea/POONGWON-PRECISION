@@ -71,8 +71,13 @@
       left: 50%;
       transform: translateX(-50%);
       z-index: 9;
+      display: flex;
+      justify-content: center;
       @include respondTo('mmd') {
         bottom: 20px;
+      }
+      .slick-list {
+        max-width: 960px;
       }
       .slick-slide {
         cursor: pointer;
@@ -103,14 +108,17 @@
         }
       }
       .thumbnail {
-        width: 240px;
+        // width: 240px;
         height: 150px;
         overflow: hidden;
         border: 3px solid transparent;
         transition: border 0.3s ease-in-out;
         will-change: border;
+        @include respondTo("mxl") {
+          height: 90px;
+        }
         img {
-          width: 100%;
+          // width: 100%;
           filter: grayscale(80%);
           transition: filter 0.3s ease-in-out;
           will-change: filter;

@@ -86,7 +86,8 @@ get_template_part('template-parts/header/page');
       <?php
       $FMM = get_posts(array(
         'post_type' => 'fmm-slide',
-        'post_status' => 'publish'
+        'post_status' => 'publish',
+        'numberposts' => 999,
       ));
       ?>
       <div id="slickSlideBg" class="slickSlideBg">
@@ -145,8 +146,11 @@ HTML;
     arrows: false,
     dots: false,
     fade: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
     asNavFor: '#slickSlideSmall',
     draggable: false,
+    infinite: true,
     responsive: [
       {
           breakpoint: 768,
@@ -163,10 +167,10 @@ HTML;
     arrows: false,
     asNavFor: '#slickSlideBg',
     focusOnSelect: true,
-    edgeFriction: true,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
     centerMode: true,
+    infinite: true,
     responsive: [
       {
           breakpoint: 768,
