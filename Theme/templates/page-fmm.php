@@ -148,6 +148,8 @@ HTML;
     arrows: false,
     dots: false,
     fade: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
     asNavFor: '#slickSlideSmall',
     draggable: false,
     infinite: true,

@@ -23,7 +23,7 @@
       <div class="col-12 col-sm-6 col-lg-4">
         <div class="profileWrap">
           <div class="imgWrap">
-            <img draggable="false" src="<?php echo $zeplin ?>/home-people-1.png" srcset="<?php echo $zeplin ?>/home-people-1@2x.png 2x, <?php echo $zeplin ?>/home-people-1@3x.png 3x">
+            <img draggable="false" src="<?php echo $zeplin ?>/home-people01.png">
           </div>
           <div class="nameWrap">
             <span class="name">김영진 과장</span>
@@ -38,7 +38,7 @@
       <div class="col-12 col-sm-6 col-lg-4">
         <div class="profileWrap">
           <div class="imgWrap">
-            <img draggable="false" src="<?php echo $zeplin ?>/home-people-2.png" srcset="<?php echo $zeplin ?>/home-people-2@2x.png 2x, <?php echo $zeplin ?>/home-people-2@3x.png 3x">
+            <img draggable="false" src="<?php echo $zeplin ?>/home-people02.png">
           </div>
           <div class="nameWrap">
             <span class="name">송용찬 사원</span>
@@ -53,7 +53,7 @@
       <div class="col-12 col-sm-6 col-lg-4">
         <div class="profileWrap">
           <div class="imgWrap">
-            <img draggable="false" src="<?php echo $zeplin ?>/home-people-3.png" srcset="<?php echo $zeplin ?>/home-people-3@2x.png 2x, <?php echo $zeplin ?>/home-people-3@3x.png 3x">
+            <img draggable="false" src="<?php echo $zeplin ?>/home-people03.png">
           </div>
           <div class="nameWrap">
             <span class="name">한덕기 과장</span>
@@ -68,7 +68,7 @@
       <div class="col-12 col-sm-6 col-lg-4">
         <div class="profileWrap">
           <div class="imgWrap">
-            <img draggable="false" src="<?php echo $zeplin ?>/home-people-4.png" srcset="<?php echo $zeplin ?>/home-people-4@2x.png 2x, <?php echo $zeplin ?>/home-people-4@3x.png 3x">
+            <img draggable="false" src="<?php echo $zeplin ?>/home-people04.png">
           </div>
           <div class="nameWrap">
             <span class="name">박세연 차장</span>
@@ -96,7 +96,7 @@
       <div class="col-12 col-sm-6 col-lg-4">
         <div class="profileWrap">
           <div class="imgWrap">
-            <img draggable="false" src="<?php echo $zeplin ?>/home-people-6.png" srcset="<?php echo $zeplin ?>/home-people-6@2x.png 2x, <?php echo $zeplin ?>/home-people-6@3x.png 3x">
+            <img draggable="false" src="<?php echo $zeplin ?>/home-people05.png">
           </div>
           <div class="nameWrap">
             <span class="name">이성도 차장</span>

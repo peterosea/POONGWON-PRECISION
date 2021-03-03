@@ -708,8 +708,10 @@ main.home {
       }
       .imgWrap {
         border-radius: 999px;
-        width: 190px;
-        height: 190px;
+        width: 230px;
+        height: 230px;
+        // width: 190px;
+        // height: 190px;
         margin-bottom: 100px;
         overflow: hidden;
         position: relative;
@@ -721,7 +723,7 @@ main.home {
           position: absolute;
           top: 50%;
           left: 50%;
-          transform: translate(-50%, -50%) scale(1.1);
+          transform: translate(-50%, -50%);
         }
       }
       .nameWrap {
