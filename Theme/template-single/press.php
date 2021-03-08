@@ -20,7 +20,10 @@ get_template_part('template-parts/header/page-archive');
         </div>
       </div>
       <div class="row content">
-        <?php the_content() ?>
+        <?php
+          $mypost = get_post($post->ID);
+          echo apply_filters('the_content',$mypost->post_content);
+        ?>
       </div>
       <div class="row footer">
         <div class="prev-next">
@@ -40,7 +43,7 @@ get_template_part('template-parts/header/page-archive');
           
           ?>
         </div>
-        <a class="btn list" href="/<?php echo get_post_type() ?>">
+        <a class="btn list" href="/<?php echo get_post_type(); ?>">
           목록
         </a>
       </div>
