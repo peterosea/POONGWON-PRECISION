@@ -146,7 +146,7 @@ HTML;
     }]
   });
   $('#slickSlideSmall').slick({
-    slidesToShow: 2,
+    slidesToShow: 3,
     slidesToScroll: 1,
     arrows: false,
     dots: false,

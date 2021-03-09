@@ -53,6 +53,7 @@ main.press-single {
       color: $brownish-grey;
       @include Text-Style-55;
       border-bottom: 1px solid $very-light-pink-four;
+      width: 100%;
       @include respondTo('mhg') {
         padding: 40px 60px;
       }
