@@ -73,11 +73,13 @@
       z-index: 9;
       display: flex;
       justify-content: center;
+      width:100%;
       @include respondTo('mmd') {
         bottom: 20px;
       }
       .slick-list {
         max-width: 960px;
+        width: 100%;
       }
       .slick-slide {
         cursor: pointer;
@@ -118,7 +120,7 @@
           height: 90px;
         }
         img {
-          // width: 100%;
+          width: 100%;
           filter: grayscale(80%);
           transition: filter 0.3s ease-in-out;
           will-change: filter;
