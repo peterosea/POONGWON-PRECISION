@@ -109,6 +109,9 @@
         </div>
       </div>
     </div>
+    <div class="btnWrap">
+      <a href="https://youtu.be/8myLbV9dB6Q" target="_blank" class="link_youtube">풍원정밀 기업 홍보영상</a>
+    </div>
   </div>
 </div>
 
