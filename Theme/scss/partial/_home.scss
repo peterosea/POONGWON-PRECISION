@@ -491,9 +491,9 @@ main.home {
       position: relative;
       background-attachment: fixed;
       &:nth-child(2) {
-        background-image: url("#{$zeplin}/2800.jpg");
+        background-image: url("#{$zeplin}/home-sec5-06.jpg");
         @include respondTo("msm") {
-          background-image: url("#{$zeplin}/home-sec5-05.jpg");
+          background-image: url("#{$zeplin}/home-sec5-06.jpg");
         }
       }
       @include respondTo("mlg") {
