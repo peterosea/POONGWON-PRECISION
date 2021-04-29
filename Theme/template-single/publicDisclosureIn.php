@@ -11,6 +11,9 @@ $_attachment = get_field('attached_file', get_the_ID());
 $_linkname = get_field('link_name', get_the_ID());
 if (empty($_linkname)) {
   $_linkname = '다운로드';
+} else {
+  // 항상 참
+  $_linkname = is_string($_attachment) ? basename($_attachment) : '';
 }
 ?>
 <main class="pageTemplate press-single">
