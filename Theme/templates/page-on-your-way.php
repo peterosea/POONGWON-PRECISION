@@ -27,7 +27,7 @@ get_template_part('template-parts/header/page');
         </div>
         <div class="col-12 col-md-6 iconCol">
           <img draggable="false" src="<?php echo $zeplin ?>/2783-black.svg" alt="풍원정밀">
-          <div class="address">경기도 안산시 단원구 산단로 35번길 24</div>
+          <div class="address">경기도 안산시 단원구 산단로35번길 24 (원시동)</div>
           <ul>
             <li>
               <img draggable="false" src="<?php echo $zeplin ?>/2762.svg" alt="">

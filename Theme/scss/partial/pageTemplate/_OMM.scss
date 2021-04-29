@@ -211,5 +211,12 @@ main.omm {
     @include respondTo('mlg') {
       padding-top: 0;
     }
+    .slickCarouselVideo .slickSlideSmall {
+      max-width: unset;
+      width: auto;
+      .thumbnail {
+        width: 270px;
+      }
+    }
   }
 }

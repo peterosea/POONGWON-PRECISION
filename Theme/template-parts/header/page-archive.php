@@ -6,32 +6,19 @@ $img_url = get_home_url() . '/wp-content/uploads';
 $zeplin = get_home_url() . '/wp-content/uploads/zeplin';
 
 // 현재 포스트타입 구하기
-$post_type = get_post_type();
+// $post_type = get_post_type();
+$post_type = get_query_var('post_type'); // 등록된 포스트가 없을때도 post type을 구할 수 있음
 if ( $post_type )
 {
     $post_type_data = get_post_type_object( $post_type );
     $post_type_slug = $post_type_data->rewrite['slug'];
 }
 ?>
-    <!-- <div class="coverBg" style="background-image: url('<?php echo wp_get_attachment_image_url(get_field('header_img', 'option'), 'full');?>')">
-    </div> -->
     <?php 
     if (function_exists('acf_add_options_page')) :
       if($is_IE) :
         ?>
         <header class="default ie11" style="background-image: url('<?php echo wp_get_attachment_image_url(get_field('header_img_'.$post_type_slug, 'option'), 'full');?>')">
-          <!-- <svg width="100%" viewBox="0 0 3000 437" overflow="hidden">
-            <defs>
-              <polygon id="triangle" points="3000,0 3000,340 1500,437 0,340 0,0" />
-            </defs>
-            <clipPath id="clip1">
-                <use xlink:href="#triangle" />
-            </clipPath>
-            <g transform="matrix(1 0 0 1 0 0)" clip-path="url(#clip1)">
-              <image width="100%" xlink:href="<?php echo wp_get_attachment_image_url(get_field('header_img', 'option'), 'full');?>" >
-              </image>
-            </g>
-          </svg> -->
       <?php
       else :
       ?>

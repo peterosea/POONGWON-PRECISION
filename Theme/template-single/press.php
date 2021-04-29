@@ -19,8 +19,14 @@ get_template_part('template-parts/header/page-archive');
           <?php echo get_the_date('Y-m-d') ?>
         </div>
       </div>
-      <div class="row content">
-        <?php the_content() ?>
+      <div class="row ">
+        <div class="content">
+          <?php
+            $mypost = get_post($post->ID);
+            $str = apply_filters('the_content',$mypost->post_content);
+            echo $str;
+          ?>
+        </div>
       </div>
       <div class="row footer">
         <div class="prev-next">
@@ -40,7 +46,7 @@ get_template_part('template-parts/header/page-archive');
           
           ?>
         </div>
-        <a class="btn list" href="/<?php echo get_post_type() ?>">
+        <a class="btn list" href="/<?php echo get_post_type(); ?>">
           목록
         </a>
       </div>

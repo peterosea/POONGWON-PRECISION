@@ -1,5 +1,5 @@
 <div class="section section4">
-  <div class="fullBg" style="background-image:url(<?php echo $zeplin ?>/2734-1.jpg)">
+  <div class="fullBg" style="background-image:url(<?php echo $zeplin ?>/home_section4_bg1.jpg)">
     <div class="container">
       <div class="wrap">
         <h1>

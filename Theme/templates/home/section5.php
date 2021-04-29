@@ -23,7 +23,7 @@
       <div class="col-12 col-sm-6 col-lg-4">
         <div class="profileWrap">
           <div class="imgWrap">
-            <img draggable="false" src="<?php echo $zeplin ?>/home-people-1.png" srcset="<?php echo $zeplin ?>/home-people-1@2x.png 2x, <?php echo $zeplin ?>/home-people-1@3x.png 3x">
+            <img draggable="false" src="<?php echo $zeplin ?>/home-people01.png">
           </div>
           <div class="nameWrap">
             <span class="name">김영진 과장</span>
@@ -38,7 +38,7 @@
       <div class="col-12 col-sm-6 col-lg-4">
         <div class="profileWrap">
           <div class="imgWrap">
-            <img draggable="false" src="<?php echo $zeplin ?>/home-people-2.png" srcset="<?php echo $zeplin ?>/home-people-2@2x.png 2x, <?php echo $zeplin ?>/home-people-2@3x.png 3x">
+            <img draggable="false" src="<?php echo $zeplin ?>/home-people02.png">
           </div>
           <div class="nameWrap">
             <span class="name">송용찬 사원</span>
@@ -53,7 +53,7 @@
       <div class="col-12 col-sm-6 col-lg-4">
         <div class="profileWrap">
           <div class="imgWrap">
-            <img draggable="false" src="<?php echo $zeplin ?>/home-people-3.png" srcset="<?php echo $zeplin ?>/home-people-3@2x.png 2x, <?php echo $zeplin ?>/home-people-3@3x.png 3x">
+            <img draggable="false" src="<?php echo $zeplin ?>/home-people03.png">
           </div>
           <div class="nameWrap">
             <span class="name">한덕기 과장</span>
@@ -68,7 +68,7 @@
       <div class="col-12 col-sm-6 col-lg-4">
         <div class="profileWrap">
           <div class="imgWrap">
-            <img draggable="false" src="<?php echo $zeplin ?>/home-people-4.png" srcset="<?php echo $zeplin ?>/home-people-4@2x.png 2x, <?php echo $zeplin ?>/home-people-4@3x.png 3x">
+            <img draggable="false" src="<?php echo $zeplin ?>/home-people04.png">
           </div>
           <div class="nameWrap">
             <span class="name">박세연 차장</span>
@@ -82,22 +82,21 @@
       <div class="col-12 col-sm-6 col-lg-4">
         <div class="profileWrap">
           <div class="imgWrap">
-            <img draggable="false" src="<?php echo $zeplin ?>/home-people-5.png" srcset="<?php echo $zeplin ?>/home-people-5@2x.png 2x, <?php echo $zeplin ?>/home-people-5@3x.png 3x">
+            <img draggable="false" src="<?php echo $zeplin ?>/people-jsy.png" >
           </div>
           <div class="nameWrap">
-            <span class="name">김영권 과장</span>
-            <span class="department">설비지원팀</span>
+            <span class="name">정선영 사원</span>
+            <span class="department">연구소</span>
           </div>
           <p>
-          대기업 못지않게 설비투자와 연구 개발에
-          지원을 아끼지 않아서 일할 맛이 나죠. 
+          성공적인 결과가 나올 때까지 수백수천 번의 실험을 거듭하지만 실패에도 늘 응원과 격려해 주는 회사 분위기가 좋습니다.
           </p>
         </div>
       </div>
       <div class="col-12 col-sm-6 col-lg-4">
         <div class="profileWrap">
           <div class="imgWrap">
-            <img draggable="false" src="<?php echo $zeplin ?>/home-people-6.png" srcset="<?php echo $zeplin ?>/home-people-6@2x.png 2x, <?php echo $zeplin ?>/home-people-6@3x.png 3x">
+            <img draggable="false" src="<?php echo $zeplin ?>/home-people05.png">
           </div>
           <div class="nameWrap">
             <span class="name">이성도 차장</span>
@@ -109,6 +108,9 @@
           </p>
         </div>
       </div>
+    </div>
+    <div class="btnWrap">
+      <a href="https://youtu.be/SQhcinoyIjM" target="_blank" class="link_youtube">풍원정밀 기업 홍보영상</a>
     </div>
   </div>
 </div>

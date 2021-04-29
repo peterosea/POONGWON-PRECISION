@@ -22,7 +22,7 @@ get_template_part('template-parts/header/page');
     <div class="container">
       <div class="row">
         <div class="col-12 col-md-5 imgCol">
-          <img draggable="false" src="<?php echo $zeplin ?>/management-01.png" srcset="<?php echo $zeplin ?>/management-01@2x.png 2x, <?php echo $zeplin ?>/management-01@3x.png 3x">
+          <img draggable="false" src="<?php echo $zeplin ?>/management-01-2.png" >
         </div>
         <div class="col-12 col-md-7 contentCol">
           <p class="labelContent">
