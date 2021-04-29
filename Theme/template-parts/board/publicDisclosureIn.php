@@ -74,7 +74,9 @@ HTML;
       $renderTable .= <<<HTML
           <tr>
             <td class="date">$_date</td>
-            <td class="title">$_title</td>
+            <td class="title">
+              <a href="$_permalink">$_title</a>
+            </td>
             <td class="author">$_author</td>
             <td class="attachment">
 HTML;
