@@ -19,7 +19,7 @@ get_template_part('template-parts/header/page-archive');
           <?php echo get_the_date('Y-m-d') ?>
         </div>
       </div>
-      <div class="row ">
+      <div class="row contentRow">
         <div class="content">
           <?php
             $mypost = get_post($post->ID);
